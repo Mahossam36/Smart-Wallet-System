@@ -1,0 +1,10 @@
+{
+        "balance": " 100.0",
+        "firstName": "John",
+        "id": "123-456-7890",
+        "isSuspended": "false",
+        "lastName": "Doe",
+        "password": "password123",
+        "phoneNumber": "1",
+        "username": "johndoe"
+}
