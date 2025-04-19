@@ -1,2 +1,9 @@
-﻿  main.cpp
-  Simple-Wallet-System.vcxproj -> E:\Github\Simple-Wallet-System\x64\Debug\Simple-Wallet-System.exe
+﻿  Admin.cpp
+  FileHandler.cpp
+  FileHandler.h
+  main.cpp
+  User.cpp
+  Generating Code...
+  LINK : E:\Github\Smart-Wallet-System\x64\Debug\Simple-Wallet-System.exe not found or not built by the last incremental link; performing full link
+x64\Debug\FileHandler.obj : warning LNK4042: object specified more than once; extras ignored
+  Simple-Wallet-System.vcxproj -> E:\Github\Smart-Wallet-System\x64\Debug\Simple-Wallet-System.exe
