@@ -131,11 +131,13 @@
     <ClCompile Include="FileHandler.cpp" />
     <ClCompile Include="FileHandler.h" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="testAccess.cpp" />
     <ClCompile Include="User.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Admin.h" />
     <ClInclude Include="json.hpp" />
+    <ClInclude Include="testAccess.h" />
     <ClInclude Include="User.h" />
   </ItemGroup>
   <ItemGroup>
