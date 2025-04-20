@@ -56,8 +56,16 @@ void User::setPassword(const string& newPassword) {
     password = newPassword;
 }
 
-void User::setBalance(double newBalance) {
+void User::setBalance(const double& newBalance) {
     balance = newBalance;
+}
+
+void User::setPhoneNumber(const string& phone) {
+    phoneNumber = phone;
+}
+
+void User::setId(const int& newId) {
+	id = newId;
 }
 
 void User::suspend() {
@@ -66,8 +74,4 @@ void User::suspend() {
 
 void User::activate() {
     isSuspended = false;
-}
-
-void User::setPhoneNumber(const string& phone) {
-    phoneNumber = phone;
 }

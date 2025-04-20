@@ -31,8 +31,8 @@ public:
 
     // Setters
     void setPassword(const string& newPassword);
-    void setBalance(double newBalance);
-    void setId(int newId);
+    void setBalance(const double& newBalance);
+    void setId(const int& newId);
     void setPhoneNumber(const string& phone);
     void suspend();
     void activate();

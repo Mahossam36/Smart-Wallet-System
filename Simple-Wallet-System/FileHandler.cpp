@@ -27,7 +27,7 @@ void FileHandler::SaveUserToJson() {
 	json jUsers;
 
 	// Loop through all users and convert to JSON
-	for (auto& i : UserData) {
+	for (const auto& i : UserData) {
 		const std::string& username = i.first;
 		const User& user = i.second;
 
