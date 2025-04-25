@@ -1,41 +1,46 @@
+#pragma once
 #include <string>
+
+
 using namespace std;
-
-class User {
+class User
+{
 private:
-    string firstName;
-    string lastName;
-    string username;
-    string password;
-    string phoneNumber;
-    double balance;
-    bool isSuspended;
-    int id;
+	string firstName;
+	string lastName;
+	string username;
+	string password;
+	string phoneNumber;
+	int id;
+	double balance;
+	bool isSuspended;
 
-   
+
 public:
-    User();
-    // Constructor
-    User(const std::string& first, const std::string& last, const std::string& uname, const std::string& pass,
-        int userId, bool isSuspended = false, double initialBalance = 0.0, const std::string& phone = "");
+	// constructor
+	User();
+	User(const string& first, const string& last, const string& uname, const string& pass, int userId,
+		bool isSus = false, double initialBalance = 0.0, const string& phone = "");
 
-    // Getters
-    string getFirstName() const;
-    string getLastName() const;
-    string getUsername() const;
-    string getPassword() const;
-    string getPhoneNumber() const;
-    double getBalance() const;
-    bool getSuspensionStatus() const;
-    int getId() const;
+	// Getters
+	string getFirstName() const;
+	string getLastName() const;
+	string getUsername() const;
+	string getPassword() const;
+	string getPhoneNumber() const;
+	int getId() const;
+	double getBalance() const;
+	bool getSuspensionStatus() const;
 
-    // Setters
-    void setPassword(const string& newPassword);
-    void setBalance(const double& newBalance);
-    void setId(const int& newId);
-    void setPhoneNumber(const string& phone);
-    void suspend();
-    void activate();
+
+	// Setters
+	void setPassword(const string& newPass);
+	void setBalance(double newBalance);
+	void setId(int newId);
+	void setPhoneNumber(const string& newPhone);
+
+	// change account state
+	void suspend();
+	void activate();
 };
 
-#pragma once

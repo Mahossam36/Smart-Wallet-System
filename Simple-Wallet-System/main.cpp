@@ -1,34 +1,26 @@
 #include <iostream>
-#include <fstream>
 #include "User.h"
 #include "Admin.h"
 #include "FileHandler.h"
-#include "testAccess.h"
+#include "UserManagement.h"
 using namespace std;
 
-
-int main() {
-
-	// Example usage of User and Admin classes
-
+int main()
+{
 	FileHandler file;
-	/* User user("John", "Doe", "johndoe1", "password123",false, 1, 100.0, "123-456-7890");
-	 User user2("John", "Doe", "johndoe2", "password123", false, 1, 100.0, "123-456-7890");
-	 User user3("John", "Doe", "johndoe3", "password123", false, 1, 100.0, "123-456-7890");
-	 User user4("John", "Doe", "johndoe4", "password123", false, 1, 100.0, "123-456-7890");
-	 User user5("John", "Doe", "johndoe5", "password123", true, 1, 100.0, "123-456-7890");*/
+
+	UserManagement::createAccount("John", "Doe", "johndoe1", "password123", "123-456-7890", 2000.0, 1);
+	UserManagement::createAccount("John", "Doe", "johndoe2", "password123", "123-456-7891", 2400.0, 2);
+	UserManagement::createAccount("John", "Doe", "johndoe3", "password123", "123-456-7895", 2700.0, 3);
+	UserManagement::createAccount("John", "Doe", "johndoe44", "password123", "123-456-7895", 6700.0, 4);
 
 
-	testAccess ta;
-	ta.testPrint();
-	cout << endl;
+	UserManagement::displayUser("johndoe2");
+	UserManagement::activateUser("johndoe2");
 
-
-
-
-	Admin admin("admin", "adminpass");
 
 
 
 	return 0;
 }
+

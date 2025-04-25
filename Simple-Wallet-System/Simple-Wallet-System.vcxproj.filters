@@ -30,7 +30,7 @@
     <ClCompile Include="FileHandler.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="testAccess.cpp">
+    <ClCompile Include="UserManagement.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -44,12 +44,12 @@
     <ClInclude Include="json.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="testAccess.h">
+    <ClInclude Include="UserManagement.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="UserData.json">
+    <None Include="usersData.json">
       <Filter>Resource Files</Filter>
     </None>
   </ItemGroup>

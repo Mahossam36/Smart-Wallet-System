@@ -1,0 +1,42 @@
+{
+    "johndoe1": {
+        "balance": 2000.0,
+        "firstName": "John",
+        "id": 1,
+        "isSuspended": false,
+        "lastName": "Doe",
+        "password": "password123",
+        "phoneNumber": "123-456-7890",
+        "username": "johndoe1"
+    },
+    "johndoe2": {
+        "balance": 2400.0,
+        "firstName": "John",
+        "id": 2,
+        "isSuspended": false,
+        "lastName": "Doe",
+        "password": "password123",
+        "phoneNumber": "123-456-7891",
+        "username": "johndoe2"
+    },
+    "johndoe3": {
+        "balance": 2700.0,
+        "firstName": "John",
+        "id": 3,
+        "isSuspended": false,
+        "lastName": "Doe",
+        "password": "password123",
+        "phoneNumber": "123-456-7895",
+        "username": "johndoe3"
+    },
+    "johndoe44": {
+        "balance": 6700.0,
+        "firstName": "John",
+        "id": 4,
+        "isSuspended": false,
+        "lastName": "Doe",
+        "password": "password123",
+        "phoneNumber": "123-456-7895",
+        "username": "johndoe44"
+    }
+}

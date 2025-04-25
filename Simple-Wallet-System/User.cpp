@@ -1,77 +1,84 @@
 #include "User.h"
 #include "FileHandler.h"
 
+// Constructor 
+User::User() {
 
-// Constructor
-User::User() : firstName(""), lastName(""), username(""), password(""), balance(0.0), isSuspended(false), phoneNumber(""), id(0) {}
+};
 
-User::User(const std::string& first, const std::string& last, const std::string& uname, const std::string& pass,
-    int userId, bool isSuspended, double initialBalance, const std::string& phone)
-    : firstName(first), lastName(last), username(uname), password(pass), id(userId), isSuspended(isSuspended),
-    balance(initialBalance), phoneNumber(phone) {
-
-    FileHandler::UserData[uname] = *this;
+User::User(const string& first, const string& last, const string& uname, const string& pass, int userId,
+	bool isSus, double initialBalance, const string& phone) {
+	firstName = first;
+	lastName = last;
+	username = uname;
+	password = pass;
+	id = userId;
+	balance = initialBalance;
+	phoneNumber = phone;
+	isSuspended = isSus;
 
 }
 
 
-
-
-// Getters (const methods)
+// Getters
 string User::getFirstName() const {
-    return firstName;
+	return firstName;
 }
 
 string User::getLastName() const {
-    return lastName;
+	return lastName;
 }
 
 string User::getUsername() const {
-    return username;
+	return username;
 }
 
 string User::getPassword() const {
-    return password;
-}
-
-double User::getBalance() const {
-    return balance;
-}
-
-bool User::getSuspensionStatus() const {
-    return isSuspended;
-}
-
-int User::getId() const {
-    return id;
+	return password;
 }
 
 string User::getPhoneNumber() const {
-    return phoneNumber;
+	return phoneNumber;
+}
+
+double User::getBalance() const {
+	return balance;
+}
+
+bool User::getSuspensionStatus() const {
+	return isSuspended;
+}
+
+int User::getId() const {
+	return id;
 }
 
 
-// Setters
-void User::setPassword(const string& newPassword) {
-    password = newPassword;
+// Setters 
+void User::setPassword(const string& newPass) {
+	password = newPass;
 }
 
-void User::setBalance(const double& newBalance) {
-    balance = newBalance;
+void User::setBalance(double newBalance) {
+	balance = newBalance;
 }
 
-void User::setPhoneNumber(const string& phone) {
-    phoneNumber = phone;
-}
-
-void User::setId(const int& newId) {
+void User::setId(int newId) {
 	id = newId;
 }
 
+void User::setPhoneNumber(const string& newPhone) {
+	phoneNumber = newPhone;
+}
+
+// change account state 
+
 void User::suspend() {
-    isSuspended = true;
+	isSuspended = true;
 }
 
 void User::activate() {
-    isSuspended = false;
+	isSuspended = false;
 }
+
+
