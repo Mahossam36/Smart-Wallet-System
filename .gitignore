@@ -11,22 +11,56 @@
 *.gch
 *.pch
 
-# Compiled Dynamic libraries
+# Compiled Dynamic Libraries
 *.so
 *.dylib
 *.dll
 
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
+# Compiled Static Libraries
 *.lai
 *.la
 *.a
 *.lib
 
+# Fortran Module Files
+*.mod
+*.smod
+
 # Executables
 *.exe
 *.out
 *.app
+
+# Debugging and Intermediate Files
+*.pdb
+*.ilk
+*.idb
+
+# Build Output Directories
+Debug/
+Release/
+x64/
+x86/
+
+# Visual Studio Files to Ignore
+.vs/
+*.user
+*.suo
+*.VC.db
+*.VC.opendb
+
+# Backup & Temp Files
+*.log
+*.tmp
+*.bak
+
+# CMake Generated Files (if ever used)
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Other
+*.ipch
+*.aps
+*.ncb
