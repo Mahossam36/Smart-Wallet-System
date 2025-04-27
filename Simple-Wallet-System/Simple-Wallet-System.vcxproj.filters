@@ -33,6 +33,9 @@
     <ClCompile Include="UserManagement.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Transaction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Admin.h">
@@ -47,9 +50,15 @@
     <ClInclude Include="UserManagement.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Transaction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="usersData.json">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="transactionsData.json">
       <Filter>Resource Files</Filter>
     </None>
   </ItemGroup>

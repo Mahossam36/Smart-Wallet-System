@@ -1,21 +1,28 @@
 #include "FileHandler.h"
 #include "json.hpp"
-#include<fstream>
+#include <fstream>
 #include <iostream>
+#include <iomanip>
+#include <chrono>
+#include <sstream>
 using json = nlohmann::json;
 using namespace std;
 
 // this line is added for every data structure in header file otherwise error happens
 unordered_map<string, User> FileHandler::usersData;
+// stored in vector allow sorting by date/ time 
+vector<Transaction> FileHandler::transactionsData;
 
 FileHandler::FileHandler() {
 	loadUsersFromFile();
+	loadTransactionsFromFile();
 }
 
 
 
 FileHandler::~FileHandler() {
 	saveUsersToFile();
+	saveTransactionsToFile();
 }
 
 
@@ -54,7 +61,35 @@ void FileHandler::saveUsersToFile() {
 }
 
 
+void FileHandler::saveTransactionsToFile() {
+	json jTransactions = json::array();
 
+	for (const auto& transaction : transactionsData) {
+
+		time_t transTime = chrono::system_clock::to_time_t(transaction.transactionTime);
+
+
+		jTransactions.push_back({
+			{"recipient", transaction.getRecipientUsername()},
+			{"sender", transaction.getSenderUsername()},
+			{"amount", transaction.getAmount()},
+			{"transTime", transTime},
+			{ "id", transaction.getId()}
+			});
+	}
+
+
+	ofstream saveinJson("transactionsData.json");
+
+	if (saveinJson.is_open()) {
+		saveinJson << setw(4) << jTransactions;  // Pretty print with indentation
+		saveinJson.close();
+		cout << "Successfully saved user data to transactionsData.json.\n";
+	}
+	else {
+		cerr << "Failed to open file for writing.\n";
+	}
+}
 
 void FileHandler::loadUsersFromFile() {
 	try {
@@ -94,4 +129,55 @@ void FileHandler::loadUsersFromFile() {
 	catch (const exception& e) {
 		cerr << "Failed to load usersData.json: " << e.what() << '\n';
 	}
+}
+
+void FileHandler::loadTransactionsFromFile() {
+	try {
+		ifstream file("transactionsData.json");
+		if (!file) throw runtime_error("File couldn't be opened.");
+
+		json Jtransactions;
+		file >> Jtransactions;
+
+		for (const auto& t : Jtransactions)
+		{
+
+
+			time_t transTime = t.at("transTime").get<time_t>();
+			chrono::system_clock::time_point timestamp = chrono::system_clock::from_time_t(transTime);
+
+
+			try {
+				Transaction transaction(
+					t.at("recipient").get<string>(),
+					t.at("sender").get<string>(),
+					t.at("amount").get<double>(),
+					timestamp
+				);
+
+
+			}
+			catch (const json::exception& e) {
+				cerr << "Error loading transaction " << e.what() << endl;
+			}
+
+
+			cout << "Loaded transactions data successfully" << endl;
+		}
+	}
+	catch (const exception& e) {
+		cerr << "Failed to load transactionsData.json: " << e.what() << '\n';
+	}
+}
+
+
+// i used it for testing the format of time (for testing only)
+string FileHandler::formatTimePoint(const chrono::system_clock::time_point& tp) {
+	time_t time_c = chrono::system_clock::to_time_t(tp);
+	tm local_tm{};
+	localtime_s(&local_tm, &time_c);
+
+	stringstream ss;
+	ss << put_time(&local_tm, "%d-%m-%Y %H:%M:%S");
+	return ss.str();
 }
