@@ -20,20 +20,20 @@ bool UserManagement::searchAccount(const string& username, const string& passwor
 	return false;
 }
 
-void UserManagement::createAccount(const string& firstName, const string& lastName,
+void UserManagement::createAccount(const string& firstName, const string& lastName, //create the user and save it to the hashe table 
 	const string& username, const string& password,
-	const string& phoneNumber, double balance, int id) {
+	const string& phoneNumber, int id) {
 
-	if (users.find(username) != users.end()) {
+	//commented bec it is already integrated in the sign up
+	/*if (users.find(username) != users.end()) {
 		cout << "Sorry, username '" << username << "' already exists." << endl;
-	}
-	else {
-		User newUser(firstName, lastName, username, password, id, false, balance, phoneNumber);
+	}*/
+	/*else*/ 
+		User newUser(firstName, lastName, username, password, id, phoneNumber);
 		users[username] = newUser;
 		cout << "Account for '" << username << "' created successfully!" << endl;
-	}
+	
 }
-
 
 void UserManagement::displayUser(const string& username) {
 	if (users.find(username) != users.end()) {
@@ -47,7 +47,7 @@ void UserManagement::displayUser(const string& username) {
 		cout << "Suspended: " << (user.getSuspensionStatus() ? "Yes" : "No") << "\n";
 	}
 	else {
-		cout << "User '" << username << "' not found." << endl;
+		cout << "User " << username << " not found." << endl;
 	}
 }
 

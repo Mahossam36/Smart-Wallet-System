@@ -130,7 +130,9 @@
     <ClCompile Include="Admin.cpp" />
     <ClCompile Include="FileHandler.cpp" />
     <ClCompile Include="FileHandler.h" />
+    <ClCompile Include="Login.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="SignUp.cpp" />
     <ClCompile Include="Transaction.cpp" />
     <ClCompile Include="User.cpp" />
     <ClCompile Include="UserManagement.cpp" />
@@ -138,6 +140,8 @@
   <ItemGroup>
     <ClInclude Include="Admin.h" />
     <ClInclude Include="json.hpp" />
+    <ClInclude Include="Login.h" />
+    <ClInclude Include="SignUp.h" />
     <ClInclude Include="Transaction.h" />
     <ClInclude Include="User.h" />
     <ClInclude Include="UserManagement.h" />

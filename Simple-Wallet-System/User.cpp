@@ -6,8 +6,8 @@ User::User() {
 
 };
 
-User::User(const string& first, const string& last, const string& uname, const string& pass, int userId,
-	bool isSus, double initialBalance, const string& phone) {
+User::User(const string& first, const string& last, const string& uname, const string& pass, int userId, const string& phone
+	, double initialBalance, bool isSus,bool flag) {
 	firstName = first;
 	lastName = last;
 	username = uname;
@@ -16,7 +16,7 @@ User::User(const string& first, const string& last, const string& uname, const s
 	balance = initialBalance;
 	phoneNumber = phone;
 	isSuspended = isSus;
-
+	userfailedattempts = flag;
 }
 
 
@@ -49,6 +49,11 @@ bool User::getSuspensionStatus() const {
 	return isSuspended;
 }
 
+bool User::getuserfailedattempts() const
+{
+	return userfailedattempts;
+}
+
 int User::getId() const {
 	return id;
 }
@@ -69,6 +74,9 @@ void User::setId(int newId) {
 
 void User::setPhoneNumber(const string& newPhone) {
 	phoneNumber = newPhone;
+}
+void User::setuserfailedattempts(bool x) {
+	userfailedattempts = x;
 }
 
 // change account state 

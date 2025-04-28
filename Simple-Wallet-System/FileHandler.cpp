@@ -43,7 +43,8 @@ void FileHandler::saveUsersToFile() {
 			{"balance", user.getBalance()},
 			{"isSuspended", user.getSuspensionStatus()},
 			{"phoneNumber", user.getPhoneNumber()},
-			{"id", user.getId()}
+			{"id", user.getId()},
+			{"userfailedattempts",user.getuserfailedattempts()}
 		};
 	}
 
@@ -112,9 +113,10 @@ void FileHandler::loadUsersFromFile() {
 					username,
 					juser.at("password").get<string>(),
 					juser.at("id").get<int>(),
-					juser.at("isSuspended").get<bool>(),
+					juser.at("phoneNumber").get<string>(),
 					juser.at("balance").get<double>(),
-					juser.at("phoneNumber").get<string>()
+					juser.at("isSuspended").get<bool>(),
+					juser.at("userfailedattempts").get<bool>()
 				);
 
 				usersData[username] = user;  // Storing user in the map

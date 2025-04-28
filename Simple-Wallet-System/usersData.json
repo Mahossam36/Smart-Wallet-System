@@ -1,4 +1,37 @@
 {
+    "Abdo": {
+        "balance": 0.0,
+        "firstName": "Abdelrahman",
+        "id": 10,
+        "isSuspended": false,
+        "lastName": "Yasser",
+        "password": "Abdo@06",
+        "phoneNumber": "01011550362",
+        "userfailedattempts": true,
+        "username": "Abdo"
+    },
+    "janaaadanaa": {
+        "balance": 600.0,
+        "firstName": "Jana",
+        "id": 5,
+        "isSuspended": false,
+        "lastName": "Dana",
+        "password": "jana9900",
+        "phoneNumber": "01167382940",
+        "userfailedattempts": true,
+        "username": "janaaadanaa"
+    },
+    "jndanaa": {
+        "balance": 600.0,
+        "firstName": "Jana",
+        "id": 5,
+        "isSuspended": false,
+        "lastName": "Dana",
+        "password": "jana00",
+        "phoneNumber": "01058273946",
+        "userfailedattempts": false,
+        "username": "jndanaa"
+    },
     "johndoe1": {
         "balance": 2000.0,
         "firstName": "John",
@@ -6,7 +39,8 @@
         "isSuspended": false,
         "lastName": "Doe",
         "password": "password123",
-        "phoneNumber": "123-456-7890",
+        "phoneNumber": "01574839261",
+        "userfailedattempts": true,
         "username": "johndoe1"
     },
     "johndoe2": {
@@ -16,7 +50,8 @@
         "isSuspended": false,
         "lastName": "Doe",
         "password": "password123",
-        "phoneNumber": "123-456-7891",
+        "phoneNumber": "01290817263",
+        "userfailedattempts": true,
         "username": "johndoe2"
     },
     "johndoe3": {
@@ -26,7 +61,8 @@
         "isSuspended": false,
         "lastName": "Doe",
         "password": "password123",
-        "phoneNumber": "123-456-7895",
+        "phoneNumber": "01234567890",
+        "userfailedattempts": true,
         "username": "johndoe3"
     },
     "johndoe44": {
@@ -36,7 +72,19 @@
         "isSuspended": false,
         "lastName": "Doe",
         "password": "password123",
-        "phoneNumber": "123-456-7895",
+        "phoneNumber": "01598234761",
+        "userfailedattempts": true,
         "username": "johndoe44"
+    },
+    "muuu": {
+        "balance": 600.0,
+        "firstName": "Jana",
+        "id": 5,
+        "isSuspended": false,
+        "lastName": "Dana",
+        "password": "mu123",
+        "phoneNumber": "01029384756",
+        "userfailedattempts": true,
+        "username": "muuu"
     }
 }
