@@ -11,15 +11,16 @@ Transaction::Transaction() {
 }
 
 Transaction::Transaction(const string recipientUser, const string senderUser, double transAmount,
-	chrono::system_clock::time_point ts) {
+	chrono::system_clock::time_point ts, bool approved) {
 
 	recipientUsername = recipientUser;
 	senderUsername = senderUser;
 	amount = transAmount;
 	transactionTime = ts;
 	id = nextId++;
+	isApproved = approved;
 
-	FileHandler::transactionsData.push_back(*this);
+
 
 }
 
@@ -40,3 +41,11 @@ int Transaction::getId() const {
 	return id;
 }
 
+bool Transaction::getIsApproved() const {
+	return isApproved;
+}
+
+// Setters 
+void Transaction::setIsApproved(bool approved) {
+	isApproved = approved;
+}

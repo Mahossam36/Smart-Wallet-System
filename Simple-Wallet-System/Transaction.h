@@ -10,6 +10,7 @@ private:
 	string senderUsername;
 	double amount;
 	int id;
+	bool isApproved;
 	static int nextId;
 
 
@@ -22,7 +23,7 @@ public:
 	Transaction();
 
 	Transaction(const string recipientUser, const string  senderUser, double transAmount,
-		chrono::system_clock::time_point ts);
+		chrono::system_clock::time_point ts, bool approved = true);
 
 	// Getters
 	string getRecipientUsername() const;
@@ -34,5 +35,9 @@ public:
 
 	int getId() const;
 
+	bool getIsApproved() const;
+
+	// Setters 
+	void setIsApproved(bool approved);
 };
 

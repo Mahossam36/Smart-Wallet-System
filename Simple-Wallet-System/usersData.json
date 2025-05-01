@@ -33,7 +33,7 @@
         "username": "jndanaa"
     },
     "johndoe1": {
-        "balance": 2000.0,
+        "balance": 4300.0,
         "firstName": "John",
         "id": 1,
         "isSuspended": false,
@@ -44,7 +44,7 @@
         "username": "johndoe1"
     },
     "johndoe2": {
-        "balance": 2400.0,
+        "balance": 300.0,
         "firstName": "John",
         "id": 2,
         "isSuspended": false,
@@ -55,7 +55,7 @@
         "username": "johndoe2"
     },
     "johndoe3": {
-        "balance": 2700.0,
+        "balance": 2450.5,
         "firstName": "John",
         "id": 3,
         "isSuspended": false,
@@ -66,7 +66,7 @@
         "username": "johndoe3"
     },
     "johndoe44": {
-        "balance": 6700.0,
+        "balance": 6749.5,
         "firstName": "John",
         "id": 4,
         "isSuspended": false,

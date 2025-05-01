@@ -18,8 +18,6 @@ FileHandler::FileHandler() {
 	loadTransactionsFromFile();
 }
 
-
-
 FileHandler::~FileHandler() {
 	saveUsersToFile();
 	saveTransactionsToFile();
@@ -61,7 +59,6 @@ void FileHandler::saveUsersToFile() {
 	}
 }
 
-
 void FileHandler::saveTransactionsToFile() {
 	json jTransactions = json::array();
 
@@ -75,7 +72,8 @@ void FileHandler::saveTransactionsToFile() {
 			{"sender", transaction.getSenderUsername()},
 			{"amount", transaction.getAmount()},
 			{"transTime", transTime},
-			{ "id", transaction.getId()}
+			{"isApproved", transaction.getIsApproved()},
+			{ "id", transaction.getId() }
 			});
 	}
 
@@ -150,13 +148,15 @@ void FileHandler::loadTransactionsFromFile() {
 
 
 			try {
-				Transaction transaction(
+				Transaction loadedTransaction(
 					t.at("recipient").get<string>(),
 					t.at("sender").get<string>(),
 					t.at("amount").get<double>(),
-					timestamp
+					timestamp,
+					t.at("isApproved").get<bool>()
 				);
 
+				transactionsData.push_back(loadedTransaction);
 
 			}
 			catch (const json::exception& e) {

@@ -7,18 +7,20 @@
 #include <iomanip>
 #include "Login.h"
 #include "SignUp.h"
+#include "transactionsManagement.h"
 using namespace std;
 
 int main()
 {
 	FileHandler file;//load the data at the start of the program 
+
 	bool end = false;//set it to true if you want to terminate the program
 	int ans;//program selector 
 	string firstname, lastname, username, password, phonenumber;
 	int id;
-	
-	
-	
+
+
+
 	do {
 		cout << "Welcome to Simple-Wallet-System \n 1-Log in \n 2-Sign up \n 3-Exit" << endl;
 		cin >> ans;
@@ -59,6 +61,9 @@ int main()
 
 
 	UserManagement::displayUser(Login::ActiveUser);//trying the activeuser string 
+
+
+
 	return 0;
 }
 
