@@ -41,6 +41,7 @@ Debug/
 Release/
 x64/
 x86/
+build/
 
 # Visual Studio Files to Ignore
 .vs/
