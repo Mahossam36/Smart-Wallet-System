@@ -164,8 +164,9 @@ void FileHandler::loadTransactionsFromFile() {
 			}
 
 
-			cout << "Loaded transactions data successfully" << endl;
-		}
+
+        }
+        cout << "Loaded transactions data successfully" << endl;
 	}
 	catch (const exception& e) {
 		cerr << "Failed to load transactionsData.json: " << e.what() << '\n';
