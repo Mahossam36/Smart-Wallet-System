@@ -8,7 +8,7 @@
         "lastName": "Yasser",
         "password": "Abdo@06",
         "phoneNumber": "01011550362",
-        "userfailedattempts": true,
+        "userfailedattempts": false,
         "username": "Abdo"
     },
     "Toqa_Mon5": {
@@ -46,6 +46,30 @@
         "phoneNumber": "01146053877",
         "userfailedattempts": true,
         "username": "ahmedUser22"
+    },
+    "fd": {
+        "balance": 0.0,
+        "email": "dfdfd@gmail.com",
+        "firstName": "ahmed",
+        "id": 3434343,
+        "isSuspended": false,
+        "lastName": "gawad",
+        "password": "Ahmed_password",
+        "phoneNumber": "01146053877",
+        "userfailedattempts": true,
+        "username": "fd"
+    },
+    "goodTestUser": {
+        "balance": 0.0,
+        "email": "testMessage@gmail.com",
+        "firstName": "ahmed",
+        "id": 3434,
+        "isSuspended": false,
+        "lastName": "mohamed",
+        "password": "Ahmed_test12",
+        "phoneNumber": "01343434343",
+        "userfailedattempts": true,
+        "username": "goodTestUser"
     },
     "janaaadanaa": {
         "balance": 600.0,
@@ -143,6 +167,18 @@
         "userfailedattempts": true,
         "username": "testClear"
     },
+    "testFinal": {
+        "balance": 0.0,
+        "email": "testFinal@gmail.com",
+        "firstName": "Ahmed",
+        "id": 34343433,
+        "isSuspended": false,
+        "lastName": "Mohamed",
+        "password": "Ahmed_test",
+        "phoneNumber": "01146053988",
+        "userfailedattempts": true,
+        "username": "testFinal"
+    },
     "testSignUp": {
         "balance": 0.0,
         "email": "test@gmail.com",
@@ -166,6 +202,18 @@
         "phoneNumber": "01146053877",
         "userfailedattempts": true,
         "username": "testUser1"
+    },
+    "testUserFinalNae": {
+        "balance": 0.0,
+        "email": "ahmed@gmail.cp",
+        "firstName": "TestFinalName",
+        "id": 489384938,
+        "isSuspended": false,
+        "lastName": "testFinalLast",
+        "password": "Ahmed_test",
+        "phoneNumber": "01146053877",
+        "userfailedattempts": true,
+        "username": "testUserFinalNae"
     },
     "testuser2": {
         "balance": 0.0,
@@ -226,5 +274,29 @@
         "phoneNumber": "01011550362",
         "userfailedattempts": true,
         "username": "trial"
+    },
+    "userName132": {
+        "balance": 0.0,
+        "email": "user@gmail.com",
+        "firstName": "ahmed",
+        "id": 34343,
+        "isSuspended": false,
+        "lastName": "nigend",
+        "password": "Ahmed_good123",
+        "phoneNumber": "01146053877",
+        "userfailedattempts": true,
+        "username": "userName132"
+    },
+    "userTest": {
+        "balance": 0.0,
+        "email": "userTest@gmail.com",
+        "firstName": "Ahmed",
+        "id": 38493849,
+        "isSuspended": false,
+        "lastName": "Mohamed",
+        "password": "Ahmed_test",
+        "phoneNumber": "01146053877",
+        "userfailedattempts": true,
+        "username": "userTest"
     }
 }

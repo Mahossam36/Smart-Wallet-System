@@ -6,6 +6,7 @@
 #include <iostream>
 #include <QString>
 #include "UserManagement.h"
+#include <string>
 
 signupwindow::signupwindow(QWidget *parent)
     : QDialog(parent)
@@ -66,7 +67,7 @@ void signupwindow::on_signUpButton_clicked()
     QString qPassword = ui->passwordLine->text();
     QString qPhoneNumber = ui->phoneNumLine->text();
     QString qEmail=ui->emailLine->text();
-    int id = ui->idLine->text().toInt();
+    QString qId = ui->idLine->text();
 
 
     string firstname = qFirstName.toStdString();
@@ -75,9 +76,10 @@ void signupwindow::on_signUpButton_clicked()
     string password = qPassword.toStdString();
     string phonenumber = qPhoneNumber.toStdString();
     string email=qEmail.toStdString();
+    string id = qId.toStdString();
 
     if (firstname.empty() || lastname.empty() || username.empty() ||
-        password.empty() || phonenumber.empty()|| email.empty() ||id==NULL) {
+        password.empty() || phonenumber.empty()|| email.empty() ||id.empty()) {
         QMessageBox::warning(this, "Input Error", "Please fill in all fields.");
         return;
     }
@@ -102,7 +104,7 @@ void signupwindow::on_signUpButton_clicked()
         return;
     }
 
-    UserManagement::createAccount(firstname,lastname,username,password, phonenumber, email, id);
+    UserManagement::createAccount(firstname,lastname,username,password, phonenumber, email, stoi(id));
     QMessageBox::information(this, "Sign Up Successful", "Created successfully!");
 
     ui->firstNameLine->clear();
