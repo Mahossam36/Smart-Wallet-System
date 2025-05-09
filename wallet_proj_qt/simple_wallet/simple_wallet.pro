@@ -16,8 +16,10 @@ SOURCES += \
     Transaction.cpp \
     User.cpp \
     UserManagement.cpp \
+    loginwindow.cpp \
     main.cpp \
     mainwindow.cpp \
+    signupwindow.cpp \
     transactionsManagement.cpp
 
 HEADERS += \
@@ -29,11 +31,15 @@ HEADERS += \
     User.h \
     UserManagement.h \
     json.hpp \
+    loginwindow.h \
     mainwindow.h \
+    signupwindow.h \
     transactionsManagement.h
 
 FORMS += \
-    mainwindow.ui
+    loginwindow.ui \
+    mainwindow.ui \
+    signupwindow.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -43,3 +49,6 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 DISTFILES += \
     transactionsData.json \
     usersData.json
+
+RESOURCES += \
+    screens.qrc

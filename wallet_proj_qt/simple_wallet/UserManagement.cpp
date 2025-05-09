@@ -1,6 +1,7 @@
 #include "UserManagement.h"
 #include <iostream>
 #include "FileHandler.h"
+#include<QMessageBox>
 using namespace std;
 
 
@@ -22,26 +23,23 @@ bool UserManagement::searchAccount(const string& username, const string& passwor
 
 void UserManagement::createAccount(const string& firstName, const string& lastName, //create the user and save it to the hashe table 
 	const string& username, const string& password,
-	const string& phoneNumber, int id) {
+    const string& phoneNumber, const string& email, int id) {
 
-	//commented bec it is already integrated in the sign up
-	/*if (users.find(username) != users.end()) {
-		cout << "Sorry, username '" << username << "' already exists." << endl;
-	}*/
-	/*else*/ 
-		User newUser(firstName, lastName, username, password, id, phoneNumber);
+
+    User newUser(firstName, lastName, username, password, id,email, phoneNumber);
 		users[username] = newUser;
-		cout << "Account for '" << username << "' created successfully!" << endl;
+
 	
 }
 
 void UserManagement::displayUser(const string& username) {
 	if (users.find(username) != users.end()) {
-		const User& user = users[username];
+        const User& user = users[username];
 		cout << "Username: " << user.getUsername() << "\n";
 		cout << "First Name: " << user.getFirstName() << "\n";
 		cout << "Last Name: " << user.getLastName() << "\n";
 		cout << "Phone Number: " << user.getPhoneNumber() << "\n";
+        cout<<"Email: "<<user.getEmail()<<"\n";
 		cout << "Balance: $" << user.getBalance() << "\n";
 		cout << "ID: " << user.getId() << "\n";
 		cout << "Suspended: " << (user.getSuspensionStatus() ? "Yes" : "No") << "\n";

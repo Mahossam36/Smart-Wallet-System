@@ -6,13 +6,14 @@ User::User() {
 
 };
 
-User::User(const string& first, const string& last, const string& uname, const string& pass, int userId, const string& phone
+User::User(const string& first, const string& last, const string& uname, const string& pass, int userId,const string& mail, const string& phone
 	, double initialBalance, bool isSus,bool flag) {
 	firstName = first;
 	lastName = last;
 	username = uname;
 	password = pass;
 	id = userId;
+    email=mail;
 	balance = initialBalance;
 	phoneNumber = phone;
 	isSuspended = isSus;
@@ -58,6 +59,9 @@ int User::getId() const {
 	return id;
 }
 
+string User::getEmail() const{
+    return email;
+}
 
 // Setters 
 void User::setPassword(const string& newPass) {
@@ -72,12 +76,16 @@ void User::setId(int newId) {
 	id = newId;
 }
 
+void User::setEmail(string& mail){
+    email=mail;
+}
 void User::setPhoneNumber(const string& newPhone) {
 	phoneNumber = newPhone;
 }
 void User::setuserfailedattempts(bool x) {
 	userfailedattempts = x;
 }
+
 
 // change account state 
 

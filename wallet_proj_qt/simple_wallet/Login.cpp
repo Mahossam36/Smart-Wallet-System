@@ -2,65 +2,64 @@
 #include "UserManagement.h"
 #include "FileHandler.h"
 #include "User.h"
+#include"loginwindow.h"
+#include"ui_loginwindow.h"
 #include <iostream>
+#include<string>
+#include<QWidget>
+#include<QMessageBox>
 using namespace std;
+
 
 Admin Login::admin("master_control0", "J9T$4Ag@KhM");
 int Login::totalFailedAttempts = 0;
 const int Login::maxFailedAttempts = 3;
 string Login::ActiveUser = "";//intail value of the active user is empty;
 
-void Login::login(const string& username, const string& password) {
+void Login::login(string& username, string& password) {
+    // Admin login
+    if (username == admin.getUsername() && password == admin.getPassword()) {
+        QMessageBox::information(nullptr, "Login Successful", "Admin login successful!");
+        totalFailedAttempts = 0;
+        return;
+    }
 
-	// Admin login
-	if (username == admin.getUsername() && password == admin.getPassword()) {
-		cout << "Admin login successful!" << endl;
-		totalFailedAttempts = 0; // reset attempts
-		return;
-	}
+    // Search for user
+    auto it = FileHandler::usersData.find(username);
 
-	// Search for user
-	auto it = FileHandler::usersData.find(username);
+    if (it == FileHandler::usersData.end()) {
+        QMessageBox::warning(nullptr, "Login Failed", "Username not found.");
+        return;
+    }
 
-	// If user not found
-	if (it == FileHandler::usersData.end()) {
-		//totalFailedAttempts++;
-		cout << "Username not found." << endl;
-		//cout << "Failed attempts: " << totalFailedAttempts << "/" << maxFailedAttempts << endl;
+    User& realUser = it->second;
 
-		/*if (totalFailedAttempts >= maxFailedAttempts) {
-			cout << "Too many failed attempts. Access locked. Contact admin." << endl;
-		}*/
-		return;
-	}
-	else {
+    if (!realUser.getuserfailedattempts()) {
+        QMessageBox::critical(nullptr, "Account Locked",
+                              "Your account is locked due to too many failed login attempts...\nTry contacting the admin.");
+        return;
+    }
 
-		// User found
-		User& realUser = it->second;
+    UserManagement userManagement;
+    if (userManagement.searchAccount(username, password)) {
+        totalFailedAttempts = 0;
+        ActiveUser = realUser.getUsername();
+        QMessageBox::information(nullptr, "Login Successful", "Login successful!");
+    } else {
+        totalFailedAttempts++;
 
-		// Check if user is locked
-		if (realUser.getuserfailedattempts() == false) {
-			cout << "Your account is locked due to too many failed login attempts..." << endl;
-			cout << "Try contacting the admin." << endl;
-			return;//terminate the login 
-		}
+        QString attemptsMsg = QString("Invalid password.\nFailed attempts: %1/%2.")
+                                  .arg(totalFailedAttempts)
+                                  .arg(maxFailedAttempts);
 
-		// Username exists — now check password
-		UserManagement userManagement;
-		if (userManagement.searchAccount(username, password)) {
-			totalFailedAttempts = 0;
-			ActiveUser = realUser.getUsername();//saves the current user username for future uses 
-			cout << "Login successful!" << endl;
-		}
-		else {
-			totalFailedAttempts++;
-			cout << "Invalid password." << endl;
-			cout << "Failed attempts: " << totalFailedAttempts << "/" << maxFailedAttempts << endl;
+        QMessageBox::warning(nullptr, "Login Failed", attemptsMsg);
 
-			if (totalFailedAttempts >= maxFailedAttempts) {
-				realUser.setuserfailedattempts(false); // Lock the account
-				cout << "Your account is now locked due to too many failed login attempts." << endl;
-			}
-		}
-	}
+        if (totalFailedAttempts >= maxFailedAttempts) {
+            realUser.setuserfailedattempts(false);
+            QMessageBox::critical(nullptr, "Account Locked",
+                                  "Your account is now locked due to too many failed login attempts.");
+            totalFailedAttempts = 0;
+        }
+    }
 }
+

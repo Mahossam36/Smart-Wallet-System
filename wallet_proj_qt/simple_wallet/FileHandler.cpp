@@ -37,6 +37,7 @@ void FileHandler::saveUsersToFile() {
 			{"firstName", user.getFirstName()},
 			{"lastName", user.getLastName()},
 			{"username", user.getUsername()},
+            {"email",user.getEmail()},
 			{"password", user.getPassword()},
 			{"balance", user.getBalance()},
 			{"isSuspended", user.getSuspensionStatus()},
@@ -111,6 +112,7 @@ void FileHandler::loadUsersFromFile() {
 					username,
 					juser.at("password").get<string>(),
 					juser.at("id").get<int>(),
+                    juser.at("email").get<string>(),
 					juser.at("phoneNumber").get<string>(),
 					juser.at("balance").get<double>(),
 					juser.at("isSuspended").get<bool>(),
@@ -164,9 +166,8 @@ void FileHandler::loadTransactionsFromFile() {
 			}
 
 
-
-        }
-        cout << "Loaded transactions data successfully" << endl;
+			cout << "Loaded transactions data successfully" << endl;
+		}
 	}
 	catch (const exception& e) {
 		cerr << "Failed to load transactionsData.json: " << e.what() << '\n';

@@ -7,6 +7,7 @@ QStackedWidget * MainWindow::stackedWidget = nullptr;
 secWin * MainWindow::secPage;
 mainReal * MainWindow::firstPage;
 
+
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -19,6 +20,7 @@ MainWindow::MainWindow(QWidget *parent)
     // making object for each page to be used later
     firstPage = new mainReal();
     secPage = new secWin();
+
 
 
     // add pages to the widget

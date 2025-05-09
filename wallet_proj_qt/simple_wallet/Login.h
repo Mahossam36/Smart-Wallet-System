@@ -2,14 +2,16 @@
 #include <string>
 #include "Admin.h"
 #include <unordered_map>
+using namespace std;
 
 class Login {
 public:
-    static void login(const std::string& username, const std::string& password);
+
+    static void login( string& username, string& password);
     static string ActiveUser;
 
 private:
     static Admin admin;
-     static int totalFailedAttempts;
-    static const int maxFailedAttempts ;
+    static int totalFailedAttempts;
+    static const int maxFailedAttempts ; 
 };
