@@ -5,6 +5,7 @@
 #include<QStackedWidget>
 #include"loginwindow.h"
 #include"signupwindow.h"
+#include "usersendrequest_gui.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -21,6 +22,7 @@ public:
     QStackedWidget static  *stackedWidget;
     LoginWindow static *loginwindow;
     signupwindow static* signwindow;
+    static userSendRequest_gui * sendRequestWin;
     ~MainWindow();
 
 /*private slots:

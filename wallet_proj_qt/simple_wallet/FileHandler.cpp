@@ -10,8 +10,8 @@ using namespace std;
 
 // this line is added for every data structure in header file otherwise error happens
 unordered_map<string, User> FileHandler::usersData;
-// stored in vector allow sorting by date/ time 
-vector<Transaction> FileHandler::transactionsData;
+// stored in vector allow sorting by date/ time
+deque<Transaction> FileHandler::transactionsData;
 
 FileHandler::FileHandler() {
 	loadUsersFromFile();
@@ -148,6 +148,7 @@ void FileHandler::loadTransactionsFromFile() {
 			time_t transTime = t.at("transTime").get<time_t>();
 			chrono::system_clock::time_point timestamp = chrono::system_clock::from_time_t(transTime);
 
+            cout << formatTimePoint(timestamp) << endl;
 
 			try {
 				Transaction loadedTransaction(
@@ -166,8 +167,10 @@ void FileHandler::loadTransactionsFromFile() {
 			}
 
 
-			cout << "Loaded transactions data successfully" << endl;
-		}
+
+        }
+
+        cout << "Loaded transactions data successfully" << endl;
 	}
 	catch (const exception& e) {
 		cerr << "Failed to load transactionsData.json: " << e.what() << '\n';

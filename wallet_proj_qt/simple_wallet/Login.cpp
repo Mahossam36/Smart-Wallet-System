@@ -2,12 +2,13 @@
 #include "UserManagement.h"
 #include "FileHandler.h"
 #include "User.h"
-#include"loginwindow.h"
-#include"ui_loginwindow.h"
+#include "loginwindow.h"
+#include "ui_loginwindow.h"
 #include <iostream>
-#include<string>
-#include<QWidget>
-#include<QMessageBox>
+#include <string>
+#include <QWidget>
+#include <QMessageBox>
+#include "mainwindow.h"
 using namespace std;
 
 
@@ -45,6 +46,7 @@ void Login::login(string& username, string& password) {
         totalFailedAttempts = 0;
         ActiveUser = realUser.getUsername();
         QMessageBox::information(nullptr, "Login Successful", "Login successful!");
+        MainWindow::stackedWidget->setCurrentWidget(MainWindow::sendRequestWin);
     } else {
         totalFailedAttempts++;
 

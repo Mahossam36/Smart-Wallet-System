@@ -4,6 +4,7 @@
 #include "User.h"
 #include "Transaction.h"
 #include <vector>
+#include <deque>
 using namespace std;
 
 class FileHandler
@@ -22,7 +23,7 @@ public:
 	FileHandler();
 	~FileHandler();
 	static unordered_map<string, User> usersData;
-	static vector<Transaction> transactionsData;
+    static deque<Transaction> transactionsData;
 
 };
 

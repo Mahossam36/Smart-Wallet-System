@@ -55,10 +55,6 @@ signupwindow::~signupwindow()
 }
 
 
-
-
-
-
 void signupwindow::on_signUpButton_clicked()
 {
     QString qFirstName = ui->firstNameLine->text();

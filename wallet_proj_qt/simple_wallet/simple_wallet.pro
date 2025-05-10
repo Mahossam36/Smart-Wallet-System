@@ -1,4 +1,4 @@
-QT       += core gui
+QT       += core gui svgwidgets
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -20,7 +20,8 @@ SOURCES += \
     main.cpp \
     mainwindow.cpp \
     signupwindow.cpp \
-    transactionsManagement.cpp
+    transactionsManagement.cpp \
+    usersendrequest_gui.cpp
 
 HEADERS += \
     Admin.h \
@@ -34,12 +35,14 @@ HEADERS += \
     loginwindow.h \
     mainwindow.h \
     signupwindow.h \
-    transactionsManagement.h
+    transactionsManagement.h \
+    usersendrequest_gui.h
 
 FORMS += \
     loginwindow.ui \
     mainwindow.ui \
-    signupwindow.ui
+    signupwindow.ui \
+    usersendrequest_gui.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

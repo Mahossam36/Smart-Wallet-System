@@ -4,5 +4,8 @@
         <file>screen2.png</file>
         <file>background.jpg</file>
     </qresource>
-    <qresource prefix="/"/>
+    <qresource prefix="/sendrequest">
+        <file>undraw_vault_tyfh.svg</file>
+        <file>checked.png</file>
+    </qresource>
 </RCC>
