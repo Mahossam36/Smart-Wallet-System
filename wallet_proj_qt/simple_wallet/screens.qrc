@@ -2,10 +2,21 @@
     <qresource prefix="/screen1Background">
         <file>screen1Background.png</file>
         <file>screen2.png</file>
+        <file>moneyicon.jpg</file>
+        <file>logouticon.png</file>
+        <file>editprofileicon.jpg</file>
+        <file>requestmoneyicon.png</file>
+        <file>sendmoneyicon.png</file>
+        <file>transactionhistoryicon.jpg</file>
+        <file>coinbalanceicon - Copy.jpg</file>
+        <file>adjustbalanceicon.jpg</file>
+        <file>deleteuser.png</file>
+        <file>suspendusericon.jpeg</file>
+        <file>viewusersicon.png</file>
         <file>background.jpg</file>
     </qresource>
+    <qresource prefix="/"/>
     <qresource prefix="/sendrequest">
         <file>undraw_vault_tyfh.svg</file>
-        <file>checked.png</file>
     </qresource>
 </RCC>

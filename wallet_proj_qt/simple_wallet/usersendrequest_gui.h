@@ -19,6 +19,8 @@ public:
 private slots:
     void on_done_clicked();
 
+    void on_back_clicked();
+
 private:
     Ui::userSendRequest_gui *ui;
 };

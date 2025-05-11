@@ -12,7 +12,7 @@
 using namespace std;
 
 
-Admin Login::admin("master_control0", "J9T$4Ag@KhM");
+Admin Login::admin("admin", "123");
 int Login::totalFailedAttempts = 0;
 const int Login::maxFailedAttempts = 3;
 string Login::ActiveUser = "";//intail value of the active user is empty;
@@ -21,6 +21,7 @@ void Login::login(string& username, string& password) {
     // Admin login
     if (username == admin.getUsername() && password == admin.getPassword()) {
         QMessageBox::information(nullptr, "Login Successful", "Admin login successful!");
+        MainWindow::stackedWidget->setCurrentWidget(MainWindow::adminmainmenuWin);
         totalFailedAttempts = 0;
         return;
     }
@@ -46,7 +47,7 @@ void Login::login(string& username, string& password) {
         totalFailedAttempts = 0;
         ActiveUser = realUser.getUsername();
         QMessageBox::information(nullptr, "Login Successful", "Login successful!");
-        MainWindow::stackedWidget->setCurrentWidget(MainWindow::sendRequestWin);
+        MainWindow::stackedWidget->setCurrentWidget(MainWindow::usermainmenuWin);
     } else {
         totalFailedAttempts++;
 

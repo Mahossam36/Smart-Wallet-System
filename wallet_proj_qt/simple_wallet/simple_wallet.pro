@@ -16,11 +16,14 @@ SOURCES += \
     Transaction.cpp \
     User.cpp \
     UserManagement.cpp \
+    adminmainmenu.cpp \
+    balance.cpp \
     loginwindow.cpp \
     main.cpp \
     mainwindow.cpp \
     signupwindow.cpp \
     transactionsManagement.cpp \
+    usermainmenu.cpp \
     usersendrequest_gui.cpp
 
 HEADERS += \
@@ -31,17 +34,23 @@ HEADERS += \
     Transaction.h \
     User.h \
     UserManagement.h \
+    adminmainmenu.h \
+    balance.h \
     json.hpp \
     loginwindow.h \
     mainwindow.h \
     signupwindow.h \
     transactionsManagement.h \
+    usermainmenu.h \
     usersendrequest_gui.h
 
 FORMS += \
+    adminmainmenu.ui \
+    balance.ui \
     loginwindow.ui \
     mainwindow.ui \
     signupwindow.ui \
+    usermainmenu.ui \
     usersendrequest_gui.ui
 
 # Default rules for deployment.
@@ -51,7 +60,8 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 DISTFILES += \
     transactionsData.json \
-    usersData.json
+    usersData.json \
+
 
 RESOURCES += \
     screens.qrc

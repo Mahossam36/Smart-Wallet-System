@@ -14,6 +14,7 @@
 #include <QPropertyAnimation>
 #include <QTimer>
 #include <QGraphicsOpacityEffect>
+#include "mainwindow.h"
 using namespace  std ;
 
 userSendRequest_gui::userSendRequest_gui(QWidget *parent)
@@ -132,5 +133,11 @@ void userSendRequest_gui::on_done_clicked()
 
     }
 
+}
+
+
+void userSendRequest_gui::on_back_clicked()
+{
+    MainWindow::stackedWidget->setCurrentWidget(MainWindow::usermainmenuWin);
 }
 

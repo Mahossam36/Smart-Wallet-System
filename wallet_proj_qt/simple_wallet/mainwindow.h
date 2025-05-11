@@ -6,6 +6,9 @@
 #include"loginwindow.h"
 #include"signupwindow.h"
 #include "usersendrequest_gui.h"
+#include "usermainmenu.h"
+#include "adminmainmenu.h"
+#include  "balance.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -19,10 +22,13 @@ class MainWindow : public QMainWindow
 
 public:
     MainWindow(QWidget *parent = nullptr);
-    QStackedWidget static  *stackedWidget;
-    LoginWindow static *loginwindow;
-    signupwindow static* signwindow;
+    static QStackedWidget  *stackedWidget;
+    static LoginWindow  *loginwindow;
+    static signupwindow * signwindow;
     static userSendRequest_gui * sendRequestWin;
+    static usermainmenu * usermainmenuWin;
+    static adminmainmenu * adminmainmenuWin;
+    static balance * balanceWin;
     ~MainWindow();
 
 /*private slots:

@@ -6,6 +6,9 @@ QStackedWidget* MainWindow::stackedWidget = nullptr;
 LoginWindow* MainWindow::loginwindow=nullptr;
 signupwindow* MainWindow::signwindow=nullptr;
 userSendRequest_gui * MainWindow::sendRequestWin = nullptr;
+usermainmenu* MainWindow::usermainmenuWin=nullptr;
+adminmainmenu* MainWindow::adminmainmenuWin=nullptr;
+balance* MainWindow::balanceWin =nullptr;
 
 
 MainWindow::MainWindow(QWidget *parent)
@@ -18,11 +21,16 @@ MainWindow::MainWindow(QWidget *parent)
     loginwindow=new LoginWindow(this);
     signwindow=new signupwindow(this);
     sendRequestWin = new userSendRequest_gui(this);
-
+    usermainmenuWin = new usermainmenu(this);
+    adminmainmenuWin = new adminmainmenu(this);
+    balanceWin = new  balance(this);
 
     stackedWidget->addWidget(signwindow);
     stackedWidget->addWidget(loginwindow);
     stackedWidget->addWidget(sendRequestWin);
+    stackedWidget->addWidget(usermainmenuWin);
+    stackedWidget->addWidget(adminmainmenuWin);
+    stackedWidget->addWidget(balanceWin);
     setCentralWidget(stackedWidget);
 
 }
