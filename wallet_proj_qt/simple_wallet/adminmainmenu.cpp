@@ -1,6 +1,7 @@
 #include "adminmainmenu.h"
 #include "ui_adminmainmenu.h"
 #include"mainwindow.h"
+#include"viewusers.h"
 
 adminmainmenu::adminmainmenu(QWidget *parent)
     : QDialog(parent)
@@ -23,7 +24,8 @@ void adminmainmenu::on_backButton_clicked()
 
 void adminmainmenu::on_viewusersbutton_clicked()
 {
-
+    MainWindow::view->populatelist();
+    MainWindow::stackedWidget->setCurrentWidget(MainWindow::view);
 }
 
 

@@ -9,6 +9,7 @@
 #include "usermainmenu.h"
 #include "adminmainmenu.h"
 #include  "balance.h"
+#include"viewusers.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -29,6 +30,7 @@ public:
     static usermainmenu * usermainmenuWin;
     static adminmainmenu * adminmainmenuWin;
     static balance * balanceWin;
+    static ViewUsers  * view;
     ~MainWindow();
 
 /*private slots:

@@ -7,6 +7,7 @@ using namespace std;
 
 // alias for the FileHandler static data 
 auto& users = FileHandler::usersData;
+auto& transaction_data = FileHandler::transactionsData;
 
 bool UserManagement::searchAccount(const string& username, const string& password) {
 	if (users.find(username) != users.end() && password == users[username].getPassword())
@@ -66,4 +67,28 @@ void UserManagement::activateUser(const string& username) {
 	else {
 		cout << "User '" << username << "' not found." << endl;
 	}
+}
+
+void UserManagement::deleteUser(const string& username){
+    //first we itearte on the transaction data and if found a sender or receiver with the same name replace it with deletedUser
+    auto transaction_it=transaction_data.begin();
+    while(transaction_it!=transaction_data.end()){
+        if(transaction_it->getSenderUsername()==username){
+            transaction_it->setSenderUsername("deletedUser");
+        }
+        if(transaction_it->getRecipientUsername()==username){
+            transaction_it->setRecipientUsername("deletedUser");
+        }
+        transaction_it++;
+    }
+
+    //second we itreate in the users data and if user found then erase this user
+    auto it=users.begin();
+    while(it!=users.end()){
+        if(it->second.getUsername()==username){
+            users.erase(it);
+            break;
+        }
+        it++;
+    }
 }

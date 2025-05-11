@@ -49,3 +49,9 @@ bool Transaction::getIsApproved() const {
 void Transaction::setIsApproved(bool approved) {
 	isApproved = approved;
 }
+void Transaction::setRecipientUsername(const string& name)  {
+    recipientUsername=name;
+}
+void Transaction::setSenderUsername(const string& name){
+    senderUsername=name;
+}

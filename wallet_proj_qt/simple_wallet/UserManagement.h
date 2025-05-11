@@ -11,5 +11,6 @@ public:
 	static void displayUser(const string& username);
 	static void suspendUser(const string& username);
 	static void activateUser(const string& username);
+    static void deleteUser(const string& username);
 };
 

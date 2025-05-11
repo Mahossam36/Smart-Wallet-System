@@ -39,5 +39,8 @@ public:
 
 	// Setters 
 	void setIsApproved(bool approved);
+    void setRecipientUsername(const string&name) ;
+    void setSenderUsername(const string& name) ;
+
 };
 

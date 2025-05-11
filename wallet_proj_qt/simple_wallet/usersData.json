@@ -1,4 +1,16 @@
 {
+    "Abdo": {
+        "balance": 100002.0,
+        "email": "abdelrahmany006@gmail.com",
+        "firstName": "Abdelrahman",
+        "id": 2023170349,
+        "isSuspended": true,
+        "lastName": "Yasser",
+        "password": "Abdo@06",
+        "phoneNumber": "01011550362",
+        "userfailedattempts": true,
+        "username": "Abdo"
+    },
     "ahmedUser": {
         "balance": 2499.0,
         "email": "ahmed@gmail.com",
@@ -11,16 +23,148 @@
         "userfailedattempts": true,
         "username": "ahmedUser"
     },
+    "jndanaa": {
+        "balance": 600.0,
+        "email": "jndanaa@gmail.com",
+        "firstName": "Jana",
+        "id": 5,
+        "isSuspended": false,
+        "lastName": "Dana",
+        "password": "jana00",
+        "phoneNumber": "01058273946",
+        "userfailedattempts": false,
+        "username": "jndanaa"
+    },
+    "johndoe1": {
+        "balance": 4300.0,
+        "email": "johndoe1@gmail.com",
+        "firstName": "John",
+        "id": 1,
+        "isSuspended": false,
+        "lastName": "Doe",
+        "password": "password123",
+        "phoneNumber": "01574839261",
+        "userfailedattempts": true,
+        "username": "johndoe1"
+    },
+    "johndoe2": {
+        "balance": 300.0,
+        "email": "johndoe2@gmail.com",
+        "firstName": "John",
+        "id": 2,
+        "isSuspended": false,
+        "lastName": "Doe",
+        "password": "password123",
+        "phoneNumber": "01290817263",
+        "userfailedattempts": true,
+        "username": "johndoe2"
+    },
+    "johndoe3": {
+        "balance": 2450.5,
+        "email": "johndoe3@gmail.com",
+        "firstName": "John",
+        "id": 3,
+        "isSuspended": false,
+        "lastName": "Doe",
+        "password": "password123",
+        "phoneNumber": "01234567890",
+        "userfailedattempts": true,
+        "username": "johndoe3"
+    },
+    "johndoe44": {
+        "balance": 6749.5,
+        "email": "johndoe44@gmail.com",
+        "firstName": "John",
+        "id": 4,
+        "isSuspended": false,
+        "lastName": "Doe",
+        "password": "password123",
+        "phoneNumber": "01598234761",
+        "userfailedattempts": true,
+        "username": "johndoe44"
+    },
+    "trial": {
+        "balance": 0.0,
+        "email": "tasdwasd@gmail.com",
+        "firstName": "mmm",
+        "id": 2023241,
+        "isSuspended": false,
+        "lastName": "dawdsadw",
+        "password": "Trail_pass",
+        "phoneNumber": "01011550362",
+        "userfailedattempts": false,
+        "username": "trial"
+    },
+    "user10": {
+        "balance": 785.25,
+        "email": "user10@gmail.com",
+        "firstName": "Mona",
+        "id": 10,
+        "isSuspended": false,
+        "lastName": "Sami",
+        "password": "mona_pass",
+        "phoneNumber": "01010101010",
+        "userfailedattempts": false,
+        "username": "user10"
+    },
     "user2": {
-        "balance": 5501.0,
+        "balance": 10.0,
         "email": "user2@gmail.com`",
         "firstName": "ahmed",
         "id": 3434,
-        "isSuspended": false,
+        "isSuspended": true,
         "lastName": "mohamed",
         "password": "Ahmed_",
         "phoneNumber": "01146053877",
         "userfailedattempts": true,
         "username": "user2"
+    },
+    "user6": {
+        "balance": 1500.0,
+        "email": "user6@gmail.com",
+        "firstName": "Sarah",
+        "id": 6,
+        "isSuspended": false,
+        "lastName": "Ali",
+        "password": "sarahpass",
+        "phoneNumber": "01122334455",
+        "userfailedattempts": false,
+        "username": "user6"
+    },
+    "user7": {
+        "balance": 270.75,
+        "email": "user7@gmail.com",
+        "firstName": "Omar",
+        "id": 7,
+        "isSuspended": true,
+        "lastName": "Fahmy",
+        "password": "omar123",
+        "phoneNumber": "01233445566",
+        "userfailedattempts": true,
+        "username": "user7"
+    },
+    "user8": {
+        "balance": 9999.9,
+        "email": "user8@gmail.com",
+        "firstName": "Laila",
+        "id": 8,
+        "isSuspended": false,
+        "lastName": "Hassan",
+        "password": "laila2024",
+        "phoneNumber": "01099887766",
+        "userfailedattempts": false,
+        "username": "user8"
+    },
+    "user9": {
+        "balance": 0.0,
+        "email": "user9@gmail.com",
+        "firstName": "Tarek",
+        "id": 9,
+        "isSuspended": true,
+        "lastName": "Kamel",
+        "password": "tarek0",
+        "phoneNumber": "01111222333",
+        "userfailedattempts": true,
+        "username": "user9"
     }
 }

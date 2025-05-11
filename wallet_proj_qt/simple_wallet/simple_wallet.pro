@@ -21,10 +21,12 @@ SOURCES += \
     loginwindow.cpp \
     main.cpp \
     mainwindow.cpp \
+    mycustomrow1.cpp \
     signupwindow.cpp \
     transactionsManagement.cpp \
     usermainmenu.cpp \
-    usersendrequest_gui.cpp
+    usersendrequest_gui.cpp \
+    viewusers.cpp
 
 HEADERS += \
     Admin.h \
@@ -39,19 +41,23 @@ HEADERS += \
     json.hpp \
     loginwindow.h \
     mainwindow.h \
+    mycustomrow1.h \
     signupwindow.h \
     transactionsManagement.h \
     usermainmenu.h \
-    usersendrequest_gui.h
+    usersendrequest_gui.h \
+    viewusers.h
 
 FORMS += \
     adminmainmenu.ui \
     balance.ui \
     loginwindow.ui \
     mainwindow.ui \
+    mycustomrow1.ui \
     signupwindow.ui \
     usermainmenu.ui \
-    usersendrequest_gui.ui
+    usersendrequest_gui.ui \
+    viewusers.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
