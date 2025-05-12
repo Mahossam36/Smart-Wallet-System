@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include<QStackedWidget>
+#include "admin_viewuser_transaction.h"
 #include"loginwindow.h"
 #include"signupwindow.h"
 #include "usersendrequest_gui.h"
@@ -31,6 +32,8 @@ public:
     static adminmainmenu * adminmainmenuWin;
     static balance * balanceWin;
     static ViewUsers  * view;
+    static Admin_ViewUser_Transaction * Admin_Transaction;
+
     ~MainWindow();
 
 /*private slots:

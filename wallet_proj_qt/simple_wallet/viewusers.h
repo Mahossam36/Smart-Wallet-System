@@ -37,6 +37,8 @@ private slots:
 
     void on_backButton_2_clicked();
 
+    void on_vth_pushButton_2_clicked();
+
 private:
     Ui::ViewUsers *ui;
 };

@@ -213,3 +213,10 @@ void ViewUsers::on_backButton_2_clicked()
      MainWindow::stackedWidget->setCurrentWidget(MainWindow::adminmainmenuWin);
 }
 
+
+void ViewUsers::on_vth_pushButton_2_clicked()
+{
+    MainWindow::stackedWidget->setCurrentWidget(MainWindow::Admin_Transaction);
+
+}
+

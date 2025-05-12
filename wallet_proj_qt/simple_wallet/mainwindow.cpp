@@ -1,4 +1,5 @@
 #include "mainwindow.h"
+#include "admin_viewuser_transaction.h"
 #include "ui_mainwindow.h"
 #include "loginwindow.h"
 
@@ -10,6 +11,8 @@ usermainmenu* MainWindow::usermainmenuWin=nullptr;
 adminmainmenu* MainWindow::adminmainmenuWin=nullptr;
 balance* MainWindow::balanceWin =nullptr;
 ViewUsers* MainWindow::view=nullptr;
+Admin_ViewUser_Transaction* MainWindow:: Admin_Transaction= nullptr;
+
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -25,6 +28,8 @@ MainWindow::MainWindow(QWidget *parent)
     adminmainmenuWin = new adminmainmenu(this);
     balanceWin = new  balance(this);
     view = new ViewUsers(this);
+    Admin_Transaction = new Admin_ViewUser_Transaction(this);
+
 
     stackedWidget->addWidget(signwindow);
     stackedWidget->addWidget(loginwindow);
@@ -33,6 +38,8 @@ MainWindow::MainWindow(QWidget *parent)
     stackedWidget->addWidget(adminmainmenuWin);
     stackedWidget->addWidget(balanceWin);
     stackedWidget->addWidget(view);
+    stackedWidget->addWidget(Admin_Transaction);
+
     setCentralWidget(stackedWidget);
 
 }

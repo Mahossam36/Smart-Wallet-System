@@ -16,6 +16,7 @@ SOURCES += \
     Transaction.cpp \
     User.cpp \
     UserManagement.cpp \
+    admin_viewuser_transaction.cpp \
     adminmainmenu.cpp \
     balance.cpp \
     loginwindow.cpp \
@@ -36,6 +37,7 @@ HEADERS += \
     Transaction.h \
     User.h \
     UserManagement.h \
+    admin_viewuser_transaction.h \
     adminmainmenu.h \
     balance.h \
     json.hpp \
@@ -49,6 +51,7 @@ HEADERS += \
     viewusers.h
 
 FORMS += \
+    admin_viewuser_transaction.ui \
     adminmainmenu.ui \
     balance.ui \
     loginwindow.ui \
