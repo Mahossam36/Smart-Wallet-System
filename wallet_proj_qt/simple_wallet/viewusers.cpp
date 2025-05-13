@@ -7,6 +7,7 @@
 #include"SignUp.h"
 #include"mainwindow.h"
 
+User ViewUsers::choosenUser;
 
 ViewUsers::ViewUsers(QWidget *parent)
     : QDialog(parent)
@@ -80,6 +81,16 @@ void ViewUsers::on_Viewmore_button_clicked()
 
 void ViewUsers::on_listWidget_currentRowChanged(int currentRow) //return the index of the row in the list
 {
+
+    ui->save_pushButton->setVisible(false);
+    ui->email_lineedit->setReadOnly(true);
+    ui->password_lineEdit->setReadOnly(true);
+    ui->Balance_lineEdit->setReadOnly(true);
+    ui->email_lineedit->setFrame(false);
+    ui->password_lineEdit->setFrame(false);
+    ui->Balance_lineEdit->setFrame(false);
+
+
     string currentuser;
     QListWidgetItem *item = ui->listWidget->item(currentRow);//create an iteam with the current selected row
     if (item) {
@@ -88,8 +99,11 @@ void ViewUsers::on_listWidget_currentRowChanged(int currentRow) //return the ind
             currentuser=row->getUsername().toStdString();
         }
     }
+    ;
     //assigning the data to the labels and figures
     auto it =FileHandler::usersData.find(currentuser);
+    choosenUser=it->second;
+
     ui->username_label->setText(QString::fromStdString(it->first));
     ui->fname_label->setText(QString::fromStdString((it->second).getFirstName()));
     ui->lname_label->setText(QString::fromStdString((it->second).getLastName()));
@@ -217,6 +231,6 @@ void ViewUsers::on_backButton_2_clicked()
 void ViewUsers::on_vth_pushButton_2_clicked()
 {
     MainWindow::stackedWidget->setCurrentWidget(MainWindow::Admin_Transaction);
-
+    MainWindow::Admin_Transaction->displa_User_Info_on_Screen();
 }
 

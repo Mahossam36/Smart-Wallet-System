@@ -18,6 +18,7 @@ public:
     explicit ViewUsers(QWidget *parent = nullptr);
     void populatelist();
     void updatelist();
+    static User choosenUser;
 
     unordered_map<string,User>::iterator it;
     ~ViewUsers();

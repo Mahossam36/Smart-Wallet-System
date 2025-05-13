@@ -20,7 +20,7 @@
       <x>30</x>
       <y>20</y>
       <width>400</width>
-      <height>331</height>
+      <height>301</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -32,78 +32,18 @@ background-color: #598bb8;
      <property name="geometry">
       <rect>
        <x>30</x>
-       <y>20</y>
-       <width>341</width>
-       <height>101</height>
+       <y>10</y>
+       <width>358</width>
+       <height>71</height>
       </rect>
      </property>
-     <layout class="QVBoxLayout" name="verticalLayout">
-      <item>
-       <widget class="QLabel" name="First_Name">
-        <property name="font">
-         <font>
-          <pointsize>28</pointsize>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>First</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLabel" name="label_7">
-        <property name="enabled">
-         <bool>true</bool>
-        </property>
-        <property name="font">
-         <font>
-          <pointsize>28</pointsize>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>Second</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </widget>
-    <widget class="QWidget" name="">
-     <property name="geometry">
-      <rect>
-       <x>30</x>
-       <y>140</y>
-       <width>22</width>
-       <height>151</height>
-      </rect>
-     </property>
-     <layout class="QVBoxLayout" name="verticalLayout_2">
-      <item>
-       <widget class="QLabel" name="Username_icon">
-        <property name="maximumSize">
-         <size>
-          <width>20</width>
-          <height>20</height>
-         </size>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap>profile_7542248.png</pixmap>
-        </property>
-        <property name="scaledContents">
-         <bool>true</bool>
-        </property>
-       </widget>
-      </item>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
       <item>
        <widget class="QLabel" name="Balance_icon">
         <property name="maximumSize">
          <size>
-          <width>20</width>
-          <height>20</height>
+          <width>60</width>
+          <height>60</height>
          </size>
         </property>
         <property name="text">
@@ -118,59 +58,30 @@ background-color: #598bb8;
        </widget>
       </item>
       <item>
-       <widget class="QLabel" name="PhoneNo_icon">
-        <property name="maximumSize">
-         <size>
-          <width>20</width>
-          <height>20</height>
-         </size>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap>phone-call_1082233.png</pixmap>
-        </property>
-        <property name="scaledContents">
+       <widget class="QLabel" name="Balance_Labe">
+        <property name="enabled">
          <bool>true</bool>
         </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLabel" name="Email_icon">
-        <property name="maximumSize">
+        <property name="minimumSize">
          <size>
-          <width>20</width>
-          <height>20</height>
+          <width>289</width>
+          <height>40</height>
          </size>
         </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap>email_4546924.png</pixmap>
-        </property>
-        <property name="scaledContents">
-         <bool>true</bool>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLabel" name="Nationalid_icon">
         <property name="maximumSize">
          <size>
-          <width>20</width>
-          <height>20</height>
+          <width>289</width>
+          <height>40</height>
          </size>
         </property>
+        <property name="font">
+         <font>
+          <pointsize>24</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
         <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap>id-card_9284909.png</pixmap>
-        </property>
-        <property name="scaledContents">
-         <bool>true</bool>
+         <string>TEST</string>
         </property>
        </widget>
       </item>
@@ -179,92 +90,241 @@ background-color: #598bb8;
     <widget class="QWidget" name="">
      <property name="geometry">
       <rect>
-       <x>70</x>
-       <y>140</y>
-       <width>291</width>
-       <height>141</height>
+       <x>30</x>
+       <y>90</y>
+       <width>342</width>
+       <height>176</height>
       </rect>
      </property>
-     <layout class="QVBoxLayout" name="verticalLayout_3">
+     <layout class="QVBoxLayout" name="verticalLayout_2">
       <item>
-       <widget class="QLabel" name="UserName_Label">
-        <property name="enabled">
-         <bool>true</bool>
+       <widget class="QLabel" name="Full_Name">
+        <property name="minimumSize">
+         <size>
+          <width>340</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>289</width>
+          <height>30</height>
+         </size>
         </property>
         <property name="font">
          <font>
-          <pointsize>16</pointsize>
+          <pointsize>20</pointsize>
           <bold>true</bold>
          </font>
         </property>
         <property name="text">
-         <string>Second</string>
+         <string>Full Name</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QLabel" name="Balance_Labe">
-        <property name="enabled">
-         <bool>true</bool>
-        </property>
-        <property name="font">
-         <font>
-          <pointsize>16</pointsize>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>Second</string>
-        </property>
-       </widget>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QLabel" name="Username_icon">
+          <property name="maximumSize">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap>profile_7542248.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="UserName_Label">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>289</width>
+            <height>27</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>289</width>
+            <height>27</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>16</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>TEST</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
       </item>
       <item>
-       <widget class="QLabel" name="PhoneNo_Labe">
-        <property name="enabled">
-         <bool>true</bool>
-        </property>
-        <property name="font">
-         <font>
-          <pointsize>16</pointsize>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>Second</string>
-        </property>
-       </widget>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="Nationalid_icon">
+          <property name="maximumSize">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap>id-card_9284909.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="Nationalid_Labe">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>289</width>
+            <height>27</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>289</width>
+            <height>27</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>16</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>TEST</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
       </item>
       <item>
-       <widget class="QLabel" name="Email_Label">
-        <property name="enabled">
-         <bool>true</bool>
-        </property>
-        <property name="font">
-         <font>
-          <pointsize>16</pointsize>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>Second</string>
-        </property>
-       </widget>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLabel" name="Email_icon">
+          <property name="maximumSize">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap>email_4546924.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="Email_Label">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>289</width>
+            <height>27</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>289</width>
+            <height>27</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>16</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>TEST</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
       </item>
       <item>
-       <widget class="QLabel" name="Nationalid_Labe">
-        <property name="enabled">
-         <bool>true</bool>
-        </property>
-        <property name="font">
-         <font>
-          <pointsize>16</pointsize>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>Second</string>
-        </property>
-       </widget>
+       <layout class="QHBoxLayout" name="horizontalLayout_5">
+        <item>
+         <widget class="QLabel" name="PhoneNo_icon">
+          <property name="maximumSize">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap>phone-call_1082233.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="PhoneNo_Labe">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>289</width>
+            <height>27</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>289</width>
+            <height>27</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>16</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>TEST</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
       </item>
      </layout>
     </widget>
@@ -275,7 +335,7 @@ background-color: #598bb8;
       <x>450</x>
       <y>20</y>
       <width>571</width>
-      <height>331</height>
+      <height>301</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -310,9 +370,9 @@ background-color: #598bb8;
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>370</y>
+      <y>340</y>
       <width>991</width>
-      <height>241</height>
+      <height>271</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -320,28 +380,6 @@ background-color: #598bb8;
 background-color: #598bb8;
 </string>
     </property>
-    <widget class="QLabel" name="label_12">
-     <property name="enabled">
-      <bool>true</bool>
-     </property>
-     <property name="geometry">
-      <rect>
-       <x>30</x>
-       <y>100</y>
-       <width>471</width>
-       <height>46</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>28</pointsize>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="text">
-      <string>Transaction here</string>
-     </property>
-    </widget>
     <widget class="QLabel" name="Username_icon_4">
      <property name="geometry">
       <rect>
@@ -364,28 +402,170 @@ background-color: #598bb8;
       <bool>true</bool>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton">
+    <widget class="QScrollArea" name="scrollArea">
      <property name="geometry">
       <rect>
        <x>30</x>
-       <y>10</y>
-       <width>32</width>
-       <height>32</height>
+       <y>80</y>
+       <width>931</width>
+       <height>180</height>
+      </rect>
+     </property>
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOn</enum>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>914</width>
+        <height>180</height>
+       </rect>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LayoutDirection::LeftToRight</enum>
+      </property>
+      <widget class="QListWidget" name="listWidget">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>30</y>
+         <width>231</width>
+         <height>111</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="Line" name="line">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>65</y>
+       <width>921</width>
+       <height>1</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"> background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Orientation::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>45</y>
+       <width>63</width>
+       <height>20</height>
       </rect>
      </property>
      <property name="text">
-      <string/>
+      <string>Receiver</string>
      </property>
-     <property name="icon">
-      <iconset>
-       <normaloff>left_12655291.png</normaloff>left_12655291.png</iconset>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>45</y>
+       <width>63</width>
+       <height>20</height>
+      </rect>
      </property>
-     <property name="iconSize">
-      <size>
-       <width>32</width>
-       <height>32</height>
-      </size>
+     <property name="text">
+      <string>Sender</string>
      </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>45</y>
+       <width>63</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Status</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>620</x>
+       <y>45</y>
+       <width>63</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Date</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>770</x>
+       <y>45</y>
+       <width>63</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Amount</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>0</y>
+       <width>193</width>
+       <height>38</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_6">
+      <item>
+       <widget class="QPushButton" name="pushButton">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>left_12655291.png</normaloff>left_12655291.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>32</width>
+          <height>32</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_12">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Transaction</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
     </widget>
    </widget>
   </widget>

@@ -14,7 +14,8 @@ class Admin_ViewUser_Transaction : public QMainWindow
 public:
     explicit Admin_ViewUser_Transaction(QWidget *parent = nullptr);
     ~Admin_ViewUser_Transaction();
-
+    void displa_User_Info_on_Screen();
+    void push_5_to_Transaction_History();
 private slots:
     void on_pushButton_clicked();
 
