@@ -10,8 +10,10 @@ using namespace std;
 
 // this line is added for every data structure in header file otherwise error happens
 unordered_map<string, User> FileHandler::usersData;
-// stored in vector allow sorting by date/ time
-deque<Transaction> FileHandler::transactionsData;
+unordered_map<int,Transaction> FileHandler::transactionsData;
+map<string,set<int>> FileHandler :: senderData;
+map<string,set<int>> FileHandler :: recipientData;
+
 
 FileHandler::FileHandler() {
 	loadUsersFromFile();
@@ -63,18 +65,18 @@ void FileHandler::saveUsersToFile() {
 void FileHandler::saveTransactionsToFile() {
 	json jTransactions = json::array();
 
-	for (const auto& transaction : transactionsData) {
+    for (size_t i=1 ; i<=transactionsData.size();i++) {
 
-		time_t transTime = chrono::system_clock::to_time_t(transaction.transactionTime);
+        time_t transTime = chrono::system_clock::to_time_t(transactionsData[i].transactionTime);
 
 
 		jTransactions.push_back({
-			{"recipient", transaction.getRecipientUsername()},
-			{"sender", transaction.getSenderUsername()},
-			{"amount", transaction.getAmount()},
-			{"transTime", transTime},
-			{"isApproved", transaction.getIsApproved()},
-			{ "id", transaction.getId() }
+            {"recipient", transactionsData[i].getRecipientUsername()},
+            {"sender", transactionsData[i].getSenderUsername()},
+            {"amount", transactionsData[i].getAmount()},
+            {"transTime", transTime},
+            {"isApproved", transactionsData[i].getIsApproved()},
+            { "id", transactionsData[i].getId() }
 			});
 	}
 
@@ -141,7 +143,7 @@ void FileHandler::loadTransactionsFromFile() {
 		json Jtransactions;
 		file >> Jtransactions;
 
-		for (const auto& t : Jtransactions)
+        for (const auto& t : Jtransactions)
 		{
 
 
@@ -159,7 +161,6 @@ void FileHandler::loadTransactionsFromFile() {
 					t.at("isApproved").get<bool>()
 				);
 
-				transactionsData.push_back(loadedTransaction);
 
 			}
 			catch (const json::exception& e) {

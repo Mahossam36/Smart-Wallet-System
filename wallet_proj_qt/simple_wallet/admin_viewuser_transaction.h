@@ -15,9 +15,15 @@ public:
     explicit Admin_ViewUser_Transaction(QWidget *parent = nullptr);
     ~Admin_ViewUser_Transaction();
     void displa_User_Info_on_Screen();
-    void push_5_to_Transaction_History();
+    void on_pushButton_4_clicked();
+    int index;
+    bool isNewest;
+    int current ;
 private slots:
     void on_pushButton_clicked();
+    void populateRow(int i);
+
+    void on_pushButton_3_clicked();
 
 private:
     Ui::Admin_ViewUser_Transaction *ui;

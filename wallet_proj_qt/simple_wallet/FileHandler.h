@@ -1,10 +1,10 @@
 #pragma once
+#include <map>
 #include <unordered_map>
 #include <string>
+#include <set>
 #include "User.h"
 #include "Transaction.h"
-#include <vector>
-#include <deque>
 using namespace std;
 
 class FileHandler
@@ -23,7 +23,12 @@ public:
 	FileHandler();
 	~FileHandler();
 	static unordered_map<string, User> usersData;
-    static deque<Transaction> transactionsData;
+    static unordered_map<int,Transaction> transactionsData;
+    static map<string,set<int>>  senderData;
+    static map<string,set<int>>  recipientData;
+
+
+
 
 };
 

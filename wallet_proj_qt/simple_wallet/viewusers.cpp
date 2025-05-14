@@ -232,5 +232,7 @@ void ViewUsers::on_vth_pushButton_2_clicked()
 {
     MainWindow::stackedWidget->setCurrentWidget(MainWindow::Admin_Transaction);
     MainWindow::Admin_Transaction->displa_User_Info_on_Screen();
+    MainWindow::Admin_Transaction->on_pushButton_4_clicked();
+
 }
 

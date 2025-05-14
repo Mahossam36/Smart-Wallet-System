@@ -26,6 +26,7 @@ void adminmainmenu::on_viewusersbutton_clicked()
 {
     MainWindow::view->populatelist();
     MainWindow::stackedWidget->setCurrentWidget(MainWindow::view);
+
 }
 
 

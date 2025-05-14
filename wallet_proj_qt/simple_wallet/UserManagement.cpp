@@ -71,15 +71,15 @@ void UserManagement::activateUser(const string& username) {
 
 void UserManagement::deleteUser(const string& username){
     //first we itearte on the transaction data and if found a sender or receiver with the same name replace it with deletedUser
-    auto transaction_it=transaction_data.begin();
-    while(transaction_it!=transaction_data.end()){
-        if(transaction_it->getSenderUsername()==username){
-            transaction_it->setSenderUsername("deletedUser");
+
+    for(size_t i =1 ; i<=transaction_data.size();i++){
+        if(transaction_data[i].getSenderUsername()==username){
+            transaction_data[i].setSenderUsername("deletedUser");
         }
-        if(transaction_it->getRecipientUsername()==username){
-            transaction_it->setRecipientUsername("deletedUser");
+        if(transaction_data[i].getRecipientUsername()==username){
+            transaction_data[i].setRecipientUsername("deletedUser");
         }
-        transaction_it++;
+
     }
 
     //second we itreate in the users data and if user found then erase this user

@@ -24,7 +24,6 @@ SOURCES += \
     mainwindow.cpp \
     mycustomrow1.cpp \
     signupwindow.cpp \
-    transactionparent.cpp \
     transactionsManagement.cpp \
     usermainmenu.cpp \
     usersendrequest_gui.cpp \
@@ -46,7 +45,6 @@ HEADERS += \
     mainwindow.h \
     mycustomrow1.h \
     signupwindow.h \
-    transactionparent.h \
     transactionsManagement.h \
     usermainmenu.h \
     usersendrequest_gui.h \
