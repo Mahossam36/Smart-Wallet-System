@@ -11,7 +11,9 @@
 #include <QTableWidgetItem>
 #include <iomanip>
 #include <sstream>
-User &user =ViewUsers::choosenUser;
+#include "Login.h"
+  User &user =ViewUsers::choosenUser;
+
 auto& all_Ids_of_Current_user= transactionsManagement:: last_transactions_of_user;
 Admin_ViewUser_Transaction::Admin_ViewUser_Transaction(QWidget *parent)
     : QMainWindow(parent)
@@ -30,8 +32,10 @@ Admin_ViewUser_Transaction::~Admin_ViewUser_Transaction()
 
 void Admin_ViewUser_Transaction::on_pushButton_clicked()
 {
+    if (Login::adminlogged)
     MainWindow::stackedWidget->setCurrentWidget(MainWindow::view);
-
+else
+     MainWindow::stackedWidget->setCurrentWidget(MainWindow::usermainmenuWin);
 }
 
 

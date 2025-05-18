@@ -9,6 +9,7 @@
 #include <QWidget>
 #include <QMessageBox>
 #include "mainwindow.h"
+#include "viewusers.h"
 using namespace std;
 
 
@@ -16,10 +17,12 @@ Admin Login::admin("admin", "123");
 int Login::totalFailedAttempts = 0;
 const int Login::maxFailedAttempts = 3;
 string Login::ActiveUser = "";//intail value of the active user is empty;
-
+bool Login::adminlogged = false ;
 void Login::login(string& username, string& password) {
     // Admin login
+
     if (username == admin.getUsername() && password == admin.getPassword()) {
+        adminlogged = true ;
         QMessageBox::information(nullptr, "Login Successful", "Admin login successful!");
         MainWindow::stackedWidget->setCurrentWidget(MainWindow::adminmainmenuWin);
         totalFailedAttempts = 0;
@@ -47,6 +50,7 @@ void Login::login(string& username, string& password) {
         totalFailedAttempts = 0;
         ActiveUser = realUser.getUsername();
         QMessageBox::information(nullptr, "Login Successful", "Login successful!");
+        ViewUsers::choosenUser = realUser ;
         MainWindow::stackedWidget->setCurrentWidget(MainWindow::usermainmenuWin);
     } else {
         totalFailedAttempts++;

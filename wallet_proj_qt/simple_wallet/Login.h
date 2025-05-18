@@ -9,7 +9,7 @@ public:
 
     static void login( string& username, string& password);
     static string ActiveUser;
-
+    static bool adminlogged ;
 private:
     static Admin admin;
     static int totalFailedAttempts;

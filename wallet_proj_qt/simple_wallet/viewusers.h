@@ -3,7 +3,6 @@
 
 #include <QDialog>
 #include<User.h>
-#include<unordered_map>
     using namespace std;
 
 namespace Ui {
@@ -20,7 +19,6 @@ public:
     void updatelist();
     static User choosenUser;
 
-    unordered_map<string,User>::iterator it;
     ~ViewUsers();
 
 private slots:

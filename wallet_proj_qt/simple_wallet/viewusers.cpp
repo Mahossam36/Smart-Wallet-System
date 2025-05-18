@@ -6,6 +6,8 @@
 #include<qmessagebox.h>
 #include"SignUp.h"
 #include"mainwindow.h"
+#include<iostream>
+using namespace std;
 
 User ViewUsers::choosenUser;
 
@@ -15,25 +17,7 @@ ViewUsers::ViewUsers(QWidget *parent)
 {
     ui->setupUi(this);
 
-    //visuals allmost all from chatgpt
-
-
-    /*  // Assume splitter is a pointer to your QSplitter
-        QWidget *first = ui->splitter->widget(0);
-        QWidget *second = ui->splitter->widget(1);
-
-        // Remove both from splitter
-        first->setParent(nullptr);
-        second->setParent(nullptr);
-
-        // Re-add in reversed order
-        ui->splitter->addWidget(second);
-        ui->splitter->addWidget(first);
-                                        */
-
     ui->save_pushButton->setVisible(false);
-
-
 
     ui->splitter->setSizes({150, 300});
     ui->splitter->setStretchFactor(0, 0);  // Prevent resizing left
@@ -41,21 +25,14 @@ ViewUsers::ViewUsers(QWidget *parent)
 
 }
 void  ViewUsers::populatelist(){
-    it =FileHandler::usersData.begin();
-    for(int i=0;i<ui->listWidget->count();i++){ //to prevent dublicates
-        if(it!=FileHandler::usersData.end()){
-            it++;
-        }
-        else
-            break;
-    }
-    // qDebug() << "usersData size:" << FileHandler::usersData.size();
+    ui->listWidget->clear();
+    auto it =FileHandler::usersData.begin();
     for(int i=0;i<5;i++){
         if(it!=FileHandler::usersData.end()){
-            qDebug() << "Username:" << QString::fromStdString(it->second.getUsername());
+
             MyCustomRow1 *row = new MyCustomRow1(it->second.getUsername(), it->second.getPhoneNumber(), it->second.getBalance()); //create the row with the data
             QListWidgetItem *item = new QListWidgetItem(ui->listWidget); //create an iteam for the list
-            qDebug() << "Size hint:" << row->sizeHint();
+
             item->setSizeHint(row->sizeHint());
             ui->listWidget->addItem(item);//add the iteam
             ui->listWidget->setItemWidget(item, row);//add the data with the template
@@ -64,6 +41,11 @@ void  ViewUsers::populatelist(){
             break;
         it++;
     }
+
+    if (ui->listWidget->count() > 0) {//there is items in the list
+        ui->listWidget->setCurrentRow(0); // so when i reset i view the data of the first user on the list intiali even if the user didnt choose  as spcefic user
+    }   //if the user changed the row then on_listWidget_currentRowChanged will be trigered and the data will change
+
     if(it==FileHandler::usersData.end()){
         ui->Viewmore_button->setVisible(false);
     }
@@ -74,14 +56,45 @@ void  ViewUsers::populatelist(){
 
 void ViewUsers::on_Viewmore_button_clicked()
 {
-    populatelist();
+    /* why we repate the same logic of the populate and not calling it ?
+         * bec the populate function clears first the list and this is not the case in view more i want too view more data not delete the old one
+         * and i need a diffrent iteartor too keep track of the current viewd items every time
+         * why do i clear in the first place ?
+         * well i finded out that when we add a new user this user maybe add at an index where the itearator was before which leads to a problem of not viewing this user
+         * this was fixed by always clears the list when going to the viewusers then starts over when we click view more so even if the new user is add and he is in the top 5 he will be added too
+         */
+    auto it1= FileHandler::usersData.begin();
+    advance(it1,ui->listWidget->count());//skipes the already existing users in list
+    //add the next five users
+    for(int i=0;i<5;i++){
+        if(it1!=FileHandler::usersData.end()){
+
+            MyCustomRow1 *row = new MyCustomRow1(it1->second.getUsername(), it1->second.getPhoneNumber(), it1->second.getBalance()); //create the row with the data
+            QListWidgetItem *item = new QListWidgetItem(ui->listWidget); //create an iteam for the list
+
+            item->setSizeHint(row->sizeHint());
+            ui->listWidget->addItem(item);//add the iteam
+            ui->listWidget->setItemWidget(item, row);//add the data with the template
+        }
+        else
+            break;
+        it1++;
+    }
+    if(it1==FileHandler::usersData.end()){
+        ui->Viewmore_button->setVisible(false);
+    }
+    else
+        ui->Viewmore_button->setVisible(true);
 
 }
 
 
 void ViewUsers::on_listWidget_currentRowChanged(int currentRow) //return the index of the row in the list
 {
-
+    //very important cuz if i clear the data then
+        if (currentRow < 0 || currentRow >= ui->listWidget->count()) {
+        return;
+    }
     ui->save_pushButton->setVisible(false);
     ui->email_lineedit->setReadOnly(true);
     ui->password_lineEdit->setReadOnly(true);
@@ -137,16 +150,18 @@ void ViewUsers::on_edit_pushButton_clicked()
     ui->save_pushButton->setVisible(true);
 
 }
+//CHANGED
+//more effictive than looping over the whole list just changes the currente selected row no more
 void ViewUsers::updatelist(){
-    //same here it acess the row first then in the row it calles the function update which updates the row data with the given data
-    for (int i = 0; i < ui->listWidget->count(); ++i) {
-        QListWidgetItem* item = ui->listWidget->item(i);
-        MyCustomRow1* row = qobject_cast<MyCustomRow1*>(ui->listWidget->itemWidget(item));
+    QListWidgetItem* currentItem = ui->listWidget->currentItem();//get the index of the selected row
+    if (currentItem) {
+        // int index = ui->listWidget->row(currentItem);
+        MyCustomRow1* row = qobject_cast<MyCustomRow1*>(ui->listWidget->itemWidget(currentItem));//creating obj of this row
 
         if (row) {
             string username = row->getUsername().toStdString();
             const auto& user = FileHandler::usersData[username];
-            row->updateFields(user.getPhoneNumber(), user.getBalance());//UpdateFields is a function in the MyCustomRow1
+            row->updateFields(user.getPhoneNumber(), user.getBalance());
         }
     }
 }

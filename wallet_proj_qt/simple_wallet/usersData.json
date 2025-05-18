@@ -12,7 +12,7 @@
         "username": "Abdo"
     },
     "ahmedUser": {
-        "balance": 2499.0,
+        "balance": 1499.0,
         "email": "ahmed@gmail.com",
         "firstName": "Ahmed",
         "id": 333434,
@@ -24,7 +24,7 @@
         "username": "ahmedUser"
     },
     "jndanaa": {
-        "balance": 600.0,
+        "balance": 1600.0,
         "email": "jndanaa@gmail.com",
         "firstName": "Jana",
         "id": 5,

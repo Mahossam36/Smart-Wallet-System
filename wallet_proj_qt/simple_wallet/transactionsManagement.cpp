@@ -136,6 +136,9 @@ void transactionsManagement::pushing_Ids_of_current_user_to_set(string Username)
     }
 
 }
+vector<Transaction> transactionsManagement::fetch(const std::string& username , bool is_sorted ){
+
+}
 
 
 
