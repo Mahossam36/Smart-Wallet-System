@@ -27,7 +27,8 @@ void usermainmenu::on_backButton_clicked()
 
 void usermainmenu::on_editprofilebutton_clicked()
 {
-
+    MainWindow::editprofile->populate();
+    MainWindow::stackedWidget->setCurrentWidget(MainWindow::editprofile);
 }
 
 

@@ -20,6 +20,8 @@ SOURCES += \
     adminmainmenu.cpp \
     approverequestwin.cpp \
     balance.cpp \
+    changepassword.cpp \
+    editprofile.cpp \
     loginwindow.cpp \
     main.cpp \
     mainwindow.cpp \
@@ -43,6 +45,8 @@ HEADERS += \
     adminmainmenu.h \
     approverequestwin.h \
     balance.h \
+    changepassword.h \
+    editprofile.h \
     json.hpp \
     loginwindow.h \
     mainwindow.h \
@@ -59,6 +63,8 @@ FORMS += \
     adminmainmenu.ui \
     approverequestwin.ui \
     balance.ui \
+    changepassword.ui \
+    editprofile.ui \
     loginwindow.ui \
     mainwindow.ui \
     mycustomrow1.ui \

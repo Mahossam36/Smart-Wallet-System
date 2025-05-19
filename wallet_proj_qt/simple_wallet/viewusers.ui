@@ -19,7 +19,7 @@
      <x>10</x>
      <y>10</y>
      <width>1031</width>
-     <height>621</height>
+     <height>611</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_10">
@@ -376,38 +376,6 @@ QPushButton:hover {
             <property name="spacing">
              <number>0</number>
             </property>
-            <item>
-             <widget class="QLabel" name="label">
-              <property name="font">
-               <font>
-                <family>Arial Unicode MS</family>
-                <pointsize>10</pointsize>
-               </font>
-              </property>
-              <property name="text">
-               <string>Password:</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLineEdit" name="password_lineEdit">
-              <property name="font">
-               <font>
-                <family>Arial Unicode MS</family>
-                <pointsize>14</pointsize>
-               </font>
-              </property>
-              <property name="text">
-               <string/>
-              </property>
-              <property name="frame">
-               <bool>false</bool>
-              </property>
-              <property name="placeholderText">
-               <string>Password</string>
-              </property>
-             </widget>
-            </item>
            </layout>
           </item>
           <item>
@@ -642,7 +610,7 @@ QPushButton:hover {
             <item>
              <layout class="QHBoxLayout" name="horizontalLayout_8">
               <property name="spacing">
-               <number>20</number>
+               <number>10</number>
               </property>
               <item>
                <widget class="QPushButton" name="edit_pushButton">
@@ -663,6 +631,28 @@ QPushButton:hover {
                 </property>
                 <property name="text">
                  <string>Edit</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="ChangePassword">
+                <property name="styleSheet">
+                 <string notr="true">QPushButton {
+    background-color: #598bb8;   /* dark blue */
+    color: white;
+    border: none;                /* no border line */
+    border-radius: 12px;         /* rounded corners */
+    padding: 8px 16px;
+    font-size: 19px;
+    background-image: none;      /* no image */
+}
+
+QPushButton:hover {
+    background-color: #0D1B5A;   /* darker on hover */
+}</string>
+                </property>
+                <property name="text">
+                 <string>Change Password</string>
                 </property>
                </widget>
               </item>

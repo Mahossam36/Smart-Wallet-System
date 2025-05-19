@@ -13,6 +13,7 @@ balance* MainWindow::balanceWin =nullptr;
 ViewUsers* MainWindow::view=nullptr;
 Admin_ViewUser_Transaction* MainWindow:: Admin_Transaction= nullptr;
 approveRequestWin * MainWindow::userApproveRequest = nullptr;
+EditProfile * MainWindow::editprofile = nullptr;
 
 
 MainWindow::MainWindow(QWidget *parent)
@@ -31,6 +32,7 @@ MainWindow::MainWindow(QWidget *parent)
     view = new ViewUsers(this);
     Admin_Transaction = new Admin_ViewUser_Transaction(this);
     userApproveRequest = new approveRequestWin(this);
+    editprofile = new EditProfile(this);
 
 
     stackedWidget->addWidget(signwindow);
@@ -42,7 +44,7 @@ MainWindow::MainWindow(QWidget *parent)
     stackedWidget->addWidget(view);
     stackedWidget->addWidget(Admin_Transaction);
     stackedWidget->addWidget(userApproveRequest);
-
+    stackedWidget->addWidget(editprofile);
     setCentralWidget(stackedWidget);
 
 }

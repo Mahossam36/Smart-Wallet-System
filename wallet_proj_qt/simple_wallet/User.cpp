@@ -79,6 +79,14 @@ void User::setId(int newId) {
 void User::setEmail(string& mail){
     email=mail;
 }
+
+void User::setFname(string& fname){
+    firstName=fname;
+}
+
+void User::setLname(string& lname){
+    lastName=lname;
+}
 void User::setPhoneNumber(const string& newPhone) {
 	phoneNumber = newPhone;
 }

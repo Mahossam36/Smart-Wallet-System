@@ -44,6 +44,8 @@ public:
 	void setPhoneNumber(const string& newPhone);
 	void setuserfailedattempts(bool x);
     void setEmail(string& mail);
+    void setFname(string& fname);
+    void setLname(string& lname);
 
 	// change account state
 	void suspend();

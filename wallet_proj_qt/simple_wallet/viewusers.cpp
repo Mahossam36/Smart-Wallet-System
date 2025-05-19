@@ -7,6 +7,7 @@
 #include"SignUp.h"
 #include"mainwindow.h"
 #include<iostream>
+#include<changepassword.h>
 using namespace std;
 
 User ViewUsers::choosenUser;
@@ -97,10 +98,10 @@ void ViewUsers::on_listWidget_currentRowChanged(int currentRow) //return the ind
     }
     ui->save_pushButton->setVisible(false);
     ui->email_lineedit->setReadOnly(true);
-    ui->password_lineEdit->setReadOnly(true);
+   // ui->password_lineEdit->setReadOnly(true);
     ui->Balance_lineEdit->setReadOnly(true);
     ui->email_lineedit->setFrame(false);
-    ui->password_lineEdit->setFrame(false);
+    //ui->password_lineEdit->setFrame(false);
     ui->Balance_lineEdit->setFrame(false);
 
 
@@ -122,11 +123,11 @@ void ViewUsers::on_listWidget_currentRowChanged(int currentRow) //return the ind
     ui->lname_label->setText(QString::fromStdString((it->second).getLastName()));
     ui->id_label->setText(QString::fromStdString(to_string((it->second).getId())));
     ui->email_lineedit->setText(QString::fromStdString((it->second).getEmail()));
-    ui->password_lineEdit->setText(QString::fromStdString((it->second).getPassword()));
+   // ui->password_lineEdit->setText(QString::fromStdString((it->second).getPassword()));
     ui->phonenum_label->setText(QString::fromStdString((it->second).getPhoneNumber()));
     ui->Balance_lineEdit->setText(QString::fromStdString(to_string((it->second).getBalance())));
     ui->email_lineedit->setReadOnly(true);
-    ui->password_lineEdit->setReadOnly(true);
+  //  ui->password_lineEdit->setReadOnly(true);
     ui->Balance_lineEdit->setReadOnly(true);
     if((it->second).getSuspensionStatus()){
         ui->sus_pushButton->setText("UnSuspend");
@@ -140,11 +141,11 @@ void ViewUsers::on_listWidget_currentRowChanged(int currentRow) //return the ind
 void ViewUsers::on_edit_pushButton_clicked()
 {
     ui->email_lineedit->setReadOnly(false);
-    ui->password_lineEdit->setReadOnly(false);
+   // ui->password_lineEdit->setReadOnly(false);
     ui->Balance_lineEdit->setReadOnly(false);
 
     ui->email_lineedit->setFrame(true);
-    ui->password_lineEdit->setFrame(true);
+   // ui->password_lineEdit->setFrame(true);
     ui->Balance_lineEdit->setFrame(true);
 
     ui->save_pushButton->setVisible(true);
@@ -168,34 +169,34 @@ void ViewUsers::updatelist(){
 
 void ViewUsers::on_save_pushButton_clicked()
 {
-    string pass=ui->password_lineEdit->text().toStdString();
+   /* string pass=ui->password_lineEdit->text().toStdString();
     string passwordValidMessage = SignUp::passChecker(pass);
     if(passwordValidMessage != "") {
         QString qPasswordMessage = QString::fromStdString(passwordValidMessage);
         QMessageBox::warning(this, "Weak Password", qPasswordMessage);
-    }
-    else{
+    }*/
+    //else{
         string username=ui->username_label->text().toStdString();
         FileHandler::usersData[username].setBalance((ui->Balance_lineEdit->text()).toDouble());
         string email=(ui->email_lineedit->text()).toStdString();
         FileHandler::usersData[username].setEmail(email);
 
-        FileHandler::usersData[username].setPassword(pass);
+        //FileHandler::usersData[username].setPassword(pass);
 
         updatelist();
 
         ui->save_pushButton->setVisible(false);
 
         ui->email_lineedit->setReadOnly(true);
-        ui->password_lineEdit->setReadOnly(true);
+        //ui->password_lineEdit->setReadOnly(true);
         ui->Balance_lineEdit->setReadOnly(true);
 
         ui->email_lineedit->setFrame(false);
-        ui->password_lineEdit->setFrame(false);
+        //ui->password_lineEdit->setFrame(false);
         ui->Balance_lineEdit->setFrame(false);
 
         QMessageBox::information(this,"Saved","Data User Updataed Successfully!");
-    }
+    //}
 }
 
 
@@ -249,5 +250,14 @@ void ViewUsers::on_vth_pushButton_2_clicked()
     MainWindow::Admin_Transaction->displa_User_Info_on_Screen();
     MainWindow::Admin_Transaction->on_pushButton_4_clicked();
 
+}
+
+
+void ViewUsers::on_ChangePassword_clicked()
+{
+    ChangePassword changepass;
+    changepass.cuser=ui->username_label->text().toStdString();
+    changepass.setModal(true);
+    changepass.exec();
 }
 
