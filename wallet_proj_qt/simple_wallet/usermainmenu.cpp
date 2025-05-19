@@ -39,7 +39,8 @@ void usermainmenu::on_sendmoneybutton_clicked()
 
 void usermainmenu::on_requestmoneybutton_clicked()
 {
-    MainWindow::stackedWidget->setCurrentWidget(MainWindow::sendRequestWin);
+    MainWindow::userApproveRequest->showListOfRequests();
+    MainWindow::stackedWidget->setCurrentWidget(MainWindow::userApproveRequest);
 
 }
 

@@ -9,14 +9,10 @@ auto& tmUsers = FileHandler::usersData;
 auto& tmTransactions = FileHandler::transactionsData;
 auto& sender_map = FileHandler::senderData;
 auto& recipient_map = FileHandler::recipientData;
+auto& tmRequests = FileHandler::requests;
 
-set<int> transactionsManagement:: last_transactions_of_user;
+set<int> transactionsManagement::last_transactions_of_user;
 
-
-// helper function used with sort algorithm to sort by id
-bool compareById(const Transaction& a, const Transaction& b) {
-	return a.getId() < b.getId();
-}
 
 
 // sendMoney function output : 0 --> recipient user not found
@@ -81,64 +77,63 @@ int transactionsManagement::requestMoney(string recipientUser, string senderUser
 //					 1 --> sender rejected the request 
 //					 2 --> request is approved and money is transfered
 int transactionsManagement::approveRequest(int requestID, bool reject) {
-	// i will later modifiy this search to be done by binary search to make it faster
-	// maybe split the searching functionality in a seprate function if we need to use it in other functions
-    if ( requestID >= int (tmTransactions.size()))
-    {   requestID=-1;
-	}
-
-
     Transaction request = tmTransactions[requestID];
 
-	string recipientUser = request.getRecipientUsername();
-	string senderUser = request.getSenderUsername();
-	double amount = request.getAmount();
+    string recipientUser = request.getRecipientUsername();
+    string senderUser = request.getSenderUsername();
+    double amount = request.getAmount();
 
-	// check if sender doesnot have enough money
-	if (tmUsers[senderUser].getBalance() < request.getAmount()) {
+    // sender reject the request
+    if (reject == true) {
+        tmRequests[senderUser].erase(requestID);
         tmTransactions.erase(requestID);
-		return 0;
-	}
+        return 0;
+    }
+
+    // check if sender doesnot have enough money
+    if (tmUsers[senderUser].getBalance() < request.getAmount()) {
+        return 1;
+    }
 
 
-	// sender reject the request
-	if (reject == true) {
-        tmTransactions.erase(requestID);
-		return 1;
-	}
 
 
-	//request is approved and money is sent
-	tmUsers[senderUser].setBalance(tmUsers[senderUser].getBalance() - amount);
-	tmUsers[recipientUser].setBalance(tmUsers[recipientUser].getBalance() + amount);
+
+    //request is approved and money is sent
+    tmUsers[senderUser].setBalance(tmUsers[senderUser].getBalance() - amount);
+    tmUsers[recipientUser].setBalance(tmUsers[recipientUser].getBalance() + amount);
     tmTransactions[requestID].setIsApproved(true);
-	return 2;
+    tmRequests[senderUser].erase(requestID);
+    sender_map[senderUser].insert(requestID);
+    recipient_map[recipientUser].insert(requestID);
+    return 2;
 }
 
 
 void transactionsManagement::pushing_Ids_of_current_user_to_set(string Username){
     static string lastUsername = "";
 
+
     if (Username != lastUsername) {
         last_transactions_of_user.clear();
         lastUsername = Username;
     }
-    if(! sender_map.find(Username)->second.empty())
-    {
-        auto& it1= sender_map.find(Username)->second;
-        last_transactions_of_user.insert(it1.begin(),it1.end());
+
+
+    if (sender_map.find(Username) != sender_map.end() && !sender_map[Username].empty()) {
+        auto& it1 = sender_map[Username];
+        last_transactions_of_user.insert(it1.begin(), it1.end());
     }
 
-     if(!recipient_map.find(Username)->second.empty())
-    {
-        auto& it2= recipient_map.find(Username)->second;
-        last_transactions_of_user.insert(it2.begin(),it2.end());
+    if (recipient_map.find(Username) != recipient_map.end() && !recipient_map[Username].empty()) {
+        auto& it2 = recipient_map[Username];
+        last_transactions_of_user.insert(it2.begin(), it2.end());
     }
 
-}
-vector<Transaction> transactionsManagement::fetch(const std::string& username , bool is_sorted ){
+
 
 }
+
 
 
 

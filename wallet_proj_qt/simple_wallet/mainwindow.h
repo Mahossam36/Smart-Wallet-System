@@ -11,6 +11,7 @@
 #include "adminmainmenu.h"
 #include  "balance.h"
 #include"viewusers.h"
+#include "approverequestwin.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -33,6 +34,7 @@ public:
     static balance * balanceWin;
     static ViewUsers  * view;
     static Admin_ViewUser_Transaction * Admin_Transaction;
+    static approveRequestWin * userApproveRequest;
 
     ~MainWindow();
 

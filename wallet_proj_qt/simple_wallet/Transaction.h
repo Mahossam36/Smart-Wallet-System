@@ -33,7 +33,7 @@ public:
 	int getId() const;
     double getAmount()  const;
     bool getIsApproved() const;
-    string getFormattedTransactionTime() const;
+
     // Setters
     void setRecipientUsername(const string&name) ;
     void setSenderUsername(const string& name) ;
@@ -42,6 +42,7 @@ public:
 
 
     // Methods
-    void saveTransactions_to_stractures();
+    void saveTransactions_to_structures();
+    string getFormattedTransactionTime() const;
 };
 

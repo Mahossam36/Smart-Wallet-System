@@ -18,11 +18,13 @@ SOURCES += \
     UserManagement.cpp \
     admin_viewuser_transaction.cpp \
     adminmainmenu.cpp \
+    approverequestwin.cpp \
     balance.cpp \
     loginwindow.cpp \
     main.cpp \
     mainwindow.cpp \
     mycustomrow1.cpp \
+    requestitem.cpp \
     signupwindow.cpp \
     transactionsManagement.cpp \
     usermainmenu.cpp \
@@ -39,11 +41,13 @@ HEADERS += \
     UserManagement.h \
     admin_viewuser_transaction.h \
     adminmainmenu.h \
+    approverequestwin.h \
     balance.h \
     json.hpp \
     loginwindow.h \
     mainwindow.h \
     mycustomrow1.h \
+    requestitem.h \
     signupwindow.h \
     transactionsManagement.h \
     usermainmenu.h \
@@ -53,10 +57,12 @@ HEADERS += \
 FORMS += \
     admin_viewuser_transaction.ui \
     adminmainmenu.ui \
+    approverequestwin.ui \
     balance.ui \
     loginwindow.ui \
     mainwindow.ui \
     mycustomrow1.ui \
+    requestitem.ui \
     signupwindow.ui \
     usermainmenu.ui \
     usersendrequest_gui.ui \

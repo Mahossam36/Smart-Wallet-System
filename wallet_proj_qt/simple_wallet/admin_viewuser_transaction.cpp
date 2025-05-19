@@ -12,7 +12,10 @@
 #include <iomanip>
 #include <sstream>
 #include "Login.h"
-  User &user =ViewUsers::choosenUser;
+using namespace std;
+
+
+User &user =ViewUsers::choosenUser;
 
 auto& all_Ids_of_Current_user= transactionsManagement:: last_transactions_of_user;
 Admin_ViewUser_Transaction::Admin_ViewUser_Transaction(QWidget *parent)
@@ -40,7 +43,6 @@ else
 
 
 void Admin_ViewUser_Transaction:: displa_User_Info_on_Screen(){
-
     ui->Full_Name->setText(QString::fromStdString(user.getFirstName()+" "+user.getLastName()));
     ui->PhoneNo_Labe->setText(QString::fromStdString(user.getPhoneNumber()));
     ui->UserName_Label->setText(QString::fromStdString(user.getUsername()));
@@ -81,7 +83,10 @@ void Admin_ViewUser_Transaction::populateRow(int i) {
 
 
 void Admin_ViewUser_Transaction::on_pushButton_4_clicked() {
+    cout << "here we crashed" << endl;
     transactionsManagement::pushing_Ids_of_current_user_to_set(user.getUsername());
+    cout << "we dont reach here" << endl;
+
     static string lastUsername = "";
     static bool Isnew= true;
 

@@ -20,7 +20,7 @@ Transaction::Transaction(const string recipientUser, const string senderUser, do
     isApproved = approved;
     id = nextId++;
 
-    saveTransactions_to_stractures();
+    saveTransactions_to_structures();
 }
 
 
@@ -45,19 +45,6 @@ double Transaction::getAmount()  const {
     return amount;
 }
 
-string Transaction::getFormattedTransactionTime() const {
-    // Convert chrono::system_clock::time_point to time_t
-    time_t timeT = chrono::system_clock::to_time_t(transactionTime);
-
-    // Convert time_t to tm struct (local time)
-    struct tm* tm = std::localtime(&timeT);
-
-    // Format the time as a string
-    std::stringstream ss;
-    ss << std::put_time(tm, "%Y-%m-%d %H:%M:%S");  // Format as "YYYY-MM-DD HH:MM:SS"
-    return ss.str();  // Return the formatted string
-}
-
 // Setters 
 void Transaction::setRecipientUsername(const string& name)  {
     recipientUsername=name;
@@ -72,12 +59,35 @@ void Transaction::setIsApproved(bool approved) {
 
 
 //Methods
-void Transaction::saveTransactions_to_stractures(){
-    FileHandler::senderData[(this->senderUsername)].insert((this->id));
-    FileHandler::recipientData[this->recipientUsername].insert((this->id));
-    FileHandler::transactionsData[this->id]= *this;
+void Transaction::saveTransactions_to_structures(){
+    // if the transactions is just a request not approved yet by sender
+    // later when the user approve i will delete the id from the set and
+    // and its id to the sender and recipient hashtable
+    if(this->getIsApproved() == false) {
+        FileHandler::transactionsData[this->id] = *this;
+        FileHandler::requests[this->senderUsername].insert(this->id);
+
+    }  // if the transactions is a send money transaction just save its data
+    else {
+        FileHandler::senderData[(this->senderUsername)].insert(this->id);
+        FileHandler::recipientData[this->recipientUsername].insert(this->id);
+        FileHandler::transactionsData[this->id]= *this;
+    }
 
 
+}
 
+
+string Transaction::getFormattedTransactionTime() const {
+    // Convert chrono::system_clock::time_point to time_t
+    time_t timeT = chrono::system_clock::to_time_t(transactionTime);
+
+    // Convert time_t to tm struct (local time)
+    struct tm* tm = std::localtime(&timeT);
+
+    // Format the time as a string
+    std::stringstream ss;
+    ss << std::put_time(tm, "%Y-%m-%d %H:%M:%S");  // Format as "YYYY-MM-DD HH:MM:SS"
+    return ss.str();  // Return the formatted string
 }
 

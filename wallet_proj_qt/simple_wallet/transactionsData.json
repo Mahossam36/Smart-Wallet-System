@@ -1,114 +1,18 @@
 [
     {
-        "amount": 1200.0,
+        "amount": 200.0,
         "id": 1,
-        "isApproved": false,
-        "recipient": "user2",
+        "isApproved": true,
+        "recipient": "user1",
         "sender": "user2",
-        "transTime": 0
+        "transTime": 1747668531
     },
     {
-        "amount": 1200.0,
-        "id": 2,
-        "isApproved": false,
-        "recipient": "user2",
-        "sender": "ahmedUser",
-        "transTime": 0
-    },
-    {
-        "amount": 1200.0,
+        "amount": 200.0,
         "id": 3,
-        "isApproved": false,
-        "recipient": "ahmedUser",
-        "sender": "user2",
-        "transTime": 0
-    },
-    {
-        "amount": 1200.0,
-        "id": 4,
-        "isApproved": false,
-        "recipient": "user2",
-        "sender": "ahmedUser",
-        "transTime": 0
-    },
-    {
-        "amount": 1200.0,
-        "id": 5,
-        "isApproved": false,
-        "recipient": "ahmedUser",
-        "sender": "user2",
-        "transTime": 0
-    },
-    {
-        "amount": 1200.0,
-        "id": 6,
-        "isApproved": false,
-        "recipient": "ahmedUser",
-        "sender": "user2",
-        "transTime": 0
-    },
-    {
-        "amount": 1200.0,
-        "id": 7,
-        "isApproved": false,
-        "recipient": "ahmedUser",
-        "sender": "user2",
-        "transTime": 0
-    },
-    {
-        "amount": 1200.0,
-        "id": 8,
-        "isApproved": false,
-        "recipient": "user2",
-        "sender": "ahmedUser",
-        "transTime": 0
-    },
-    {
-        "amount": 1200.0,
-        "id": 9,
-        "isApproved": false,
-        "recipient": "Abdo",
-        "sender": "ahmedUser",
-        "transTime": 0
-    },
-    {
-        "amount": 1200.0,
-        "id": 10,
         "isApproved": true,
-        "recipient": "Abdo",
-        "sender": "ahmedUser",
-        "transTime": 0
-    },
-    {
-        "amount": 100000.0,
-        "id": 11,
-        "isApproved": false,
-        "recipient": "Abdo",
-        "sender": "ahmedUser",
-        "transTime": 1747159868
-    },
-    {
-        "amount": 123.0,
-        "id": 12,
-        "isApproved": false,
-        "recipient": "Abdo",
-        "sender": "johndoe2",
-        "transTime": 1747160039
-    },
-    {
-        "amount": 123.0,
-        "id": 13,
-        "isApproved": false,
-        "recipient": "johndoe2",
-        "sender": "ahmedUser",
-        "transTime": 1747160039
-    },
-    {
-        "amount": 1000.0,
-        "id": 14,
-        "isApproved": true,
-        "recipient": "jndanaa",
-        "sender": "ahmedUser",
-        "transTime": 1747576329
+        "recipient": "user2",
+        "sender": "user1",
+        "transTime": 1747668541
     }
 ]

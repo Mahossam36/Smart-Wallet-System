@@ -22,10 +22,11 @@ private:
 public:
 	FileHandler();
 	~FileHandler();
-	static unordered_map<string, User> usersData;
+    static unordered_map<string, User> usersData;
     static unordered_map<int,Transaction> transactionsData;
-    static map<string,set<int>>  senderData;
-    static map<string,set<int>>  recipientData;
+    static unordered_map<string,set<int>>  senderData;
+    static unordered_map<string,set<int>>  recipientData;
+    static unordered_map<string,set<int>> requests;
 
 
 

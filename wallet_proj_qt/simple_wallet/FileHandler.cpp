@@ -11,8 +11,9 @@ using namespace std;
 // this line is added for every data structure in header file otherwise error happens
 unordered_map<string, User> FileHandler::usersData;
 unordered_map<int,Transaction> FileHandler::transactionsData;
-map<string,set<int>> FileHandler :: senderData;
-map<string,set<int>> FileHandler :: recipientData;
+unordered_map<string,set<int>> FileHandler::senderData;
+unordered_map<string,set<int>> FileHandler::recipientData;
+unordered_map<string,set<int>> FileHandler::requests;
 
 
 FileHandler::FileHandler() {
@@ -70,14 +71,18 @@ void FileHandler::saveTransactionsToFile() {
         time_t transTime = chrono::system_clock::to_time_t(transactionsData[i].transactionTime);
 
 
-		jTransactions.push_back({
-            {"recipient", transactionsData[i].getRecipientUsername()},
-            {"sender", transactionsData[i].getSenderUsername()},
-            {"amount", transactionsData[i].getAmount()},
-            {"transTime", transTime},
-            {"isApproved", transactionsData[i].getIsApproved()},
-            { "id", transactionsData[i].getId() }
-			});
+        if(transactionsData[i].getId() != 0 && transactionsData[i].getRecipientUsername() != "") {
+            jTransactions.push_back({
+                {"recipient", transactionsData[i].getRecipientUsername()},
+                {"sender", transactionsData[i].getSenderUsername()},
+                {"amount", transactionsData[i].getAmount()},
+                {"transTime", transTime},
+                {"isApproved", transactionsData[i].getIsApproved()},
+                { "id", transactionsData[i].getId() }
+            });
+
+        }
+
 	}
 
 
