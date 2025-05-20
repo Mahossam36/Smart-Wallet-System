@@ -50,12 +50,14 @@ void adminmainmenu::on_suspenduserbutton_clicked()
 
 void adminmainmenu::on_viewusertransactionbutton_clicked()
 {
-
+    MainWindow::stackedWidget->setCurrentWidget(MainWindow::alltransactions);
+    MainWindow::alltransactions->get_transactions();
 }
 
 
 void adminmainmenu::on_adjustuserbalancebutton_clicked()
 {
+    MainWindow::stackedWidget->setCurrentWidget(MainWindow::addUser);
 
 }
 

@@ -9,10 +9,26 @@
     },
     {
         "amount": 200.0,
-        "id": 3,
+        "id": 2,
         "isApproved": true,
         "recipient": "user2",
         "sender": "user1",
         "transTime": 1747668541
+    },
+    {
+        "amount": 200.0,
+        "id": 3,
+        "isApproved": true,
+        "recipient": "user1",
+        "sender": "user2",
+        "transTime": 1747737772
+    },
+    {
+        "amount": 100.0,
+        "id": 4,
+        "isApproved": true,
+        "recipient": "user1",
+        "sender": "user2",
+        "transTime": 1747737779
     }
 ]

@@ -422,7 +422,7 @@ border-radius: 12px;         /* rounded corners */
 }</string>
    </property>
    <property name="text">
-    <string>Adjust User Balance</string>
+    <string>add User</string>
    </property>
    <property name="icon">
     <iconset>

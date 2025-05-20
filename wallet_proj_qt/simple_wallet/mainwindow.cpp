@@ -14,6 +14,8 @@ ViewUsers* MainWindow::view=nullptr;
 Admin_ViewUser_Transaction* MainWindow:: Admin_Transaction= nullptr;
 approveRequestWin * MainWindow::userApproveRequest = nullptr;
 EditProfile * MainWindow::editprofile = nullptr;
+view_all_transactions *MainWindow::alltransactions = nullptr;
+AddUser * MainWindow::addUser=nullptr;
 
 
 MainWindow::MainWindow(QWidget *parent)
@@ -33,7 +35,8 @@ MainWindow::MainWindow(QWidget *parent)
     Admin_Transaction = new Admin_ViewUser_Transaction(this);
     userApproveRequest = new approveRequestWin(this);
     editprofile = new EditProfile(this);
-
+    alltransactions = new view_all_transactions(this);
+    addUser = new AddUser(this);
 
     stackedWidget->addWidget(signwindow);
     stackedWidget->addWidget(loginwindow);
@@ -45,6 +48,8 @@ MainWindow::MainWindow(QWidget *parent)
     stackedWidget->addWidget(Admin_Transaction);
     stackedWidget->addWidget(userApproveRequest);
     stackedWidget->addWidget(editprofile);
+    stackedWidget->addWidget(alltransactions);
+    stackedWidget->addWidget(addUser);
     setCentralWidget(stackedWidget);
 
 }

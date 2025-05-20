@@ -16,6 +16,7 @@ SOURCES += \
     Transaction.cpp \
     User.cpp \
     UserManagement.cpp \
+    adduser.cpp \
     admin_viewuser_transaction.cpp \
     adminmainmenu.cpp \
     approverequestwin.cpp \
@@ -31,6 +32,7 @@ SOURCES += \
     transactionsManagement.cpp \
     usermainmenu.cpp \
     usersendrequest_gui.cpp \
+    view_all_transactions.cpp \
     viewusers.cpp
 
 HEADERS += \
@@ -41,6 +43,7 @@ HEADERS += \
     Transaction.h \
     User.h \
     UserManagement.h \
+    adduser.h \
     admin_viewuser_transaction.h \
     adminmainmenu.h \
     approverequestwin.h \
@@ -56,9 +59,11 @@ HEADERS += \
     transactionsManagement.h \
     usermainmenu.h \
     usersendrequest_gui.h \
+    view_all_transactions.h \
     viewusers.h
 
 FORMS += \
+    adduser.ui \
     admin_viewuser_transaction.ui \
     adminmainmenu.ui \
     approverequestwin.ui \
@@ -72,6 +77,7 @@ FORMS += \
     signupwindow.ui \
     usermainmenu.ui \
     usersendrequest_gui.ui \
+    view_all_transactions.ui \
     viewusers.ui
 
 # Default rules for deployment.

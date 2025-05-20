@@ -1,6 +1,6 @@
 {
     "user1": {
-        "balance": 2700.0,
+        "balance": 3000.0,
         "email": "user1@gmail.com",
         "firstName": "ahmed",
         "id": 4343,
@@ -12,7 +12,7 @@
         "username": "user1"
     },
     "user2": {
-        "balance": 4300.0,
+        "balance": 4000.0,
         "email": "user2@gmail.com",
         "firstName": "ahmed",
         "id": 4343,
@@ -22,5 +22,17 @@
         "phoneNumber": "01146053877",
         "userfailedattempts": true,
         "username": "user2"
+    },
+    "user3": {
+        "balance": 0.0,
+        "email": "user3@gmail.com",
+        "firstName": "abdo",
+        "id": 4343,
+        "isSuspended": false,
+        "lastName": "yasser",
+        "password": "Test_",
+        "phoneNumber": "01146053877",
+        "userfailedattempts": true,
+        "username": "user3"
     }
 }

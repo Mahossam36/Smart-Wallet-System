@@ -51,6 +51,7 @@ void Login::login(string& username, string& password) {
         ActiveUser = realUser.getUsername();
         QMessageBox::information(nullptr, "Login Successful", "Login successful!");
         ViewUsers::choosenUser = realUser ;
+        adminlogged = false;
         MainWindow::stackedWidget->setCurrentWidget(MainWindow::usermainmenuWin);
     } else {
         totalFailedAttempts++;
