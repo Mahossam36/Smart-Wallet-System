@@ -1,4 +1,28 @@
 {
+    "Elkomy": {
+        "balance": 8065.0,
+        "email": "ahmed@gmail.com",
+        "firstName": "Ahmed",
+        "id": 123,
+        "isSuspended": false,
+        "lastName": "Elkomy",
+        "password": "7700c6e5b6ef1eb88ad4bc60bfabe240c7dbcb06e95e0aad07a14d6b667103b7",
+        "phoneNumber": "01698547856",
+        "userfailedattempts": true,
+        "username": "Elkomy"
+    },
+    "ahmed": {
+        "balance": 12555.0,
+        "email": "as",
+        "firstName": "te",
+        "id": 132,
+        "isSuspended": false,
+        "lastName": "c",
+        "password": "7700c6e5b6ef1eb88ad4bc60bfabe240c7dbcb06e95e0aad07a14d6b667103b7",
+        "phoneNumber": "01534975321",
+        "userfailedattempts": true,
+        "username": "ahmed"
+    },
     "hashtest": {
         "balance": 0.0,
         "email": "hashtes@gmail.com",
@@ -10,6 +34,18 @@
         "phoneNumber": "01011550362",
         "userfailedattempts": true,
         "username": "hashtest"
+    },
+    "test": {
+        "balance": 9380.0,
+        "email": "c",
+        "firstName": "test",
+        "id": 123,
+        "isSuspended": false,
+        "lastName": "t",
+        "password": "7700c6e5b6ef1eb88ad4bc60bfabe240c7dbcb06e95e0aad07a14d6b667103b7",
+        "phoneNumber": "01354789654",
+        "userfailedattempts": true,
+        "username": "test"
     },
     "user2": {
         "balance": 4000.0,
@@ -32,7 +68,7 @@
         "lastName": "yasser",
         "password": "dfcd5ae1872fbcea751202d3f9cadd5a254051f2bd5e5fce927ff9bd0b12765c",
         "phoneNumber": "01146053877",
-        "userfailedattempts": true,
+        "userfailedattempts": false,
         "username": "user3"
     }
 }

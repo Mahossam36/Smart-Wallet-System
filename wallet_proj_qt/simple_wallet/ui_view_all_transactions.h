@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'view_all_transactions.ui'
 **
-** Created by: Qt User Interface Compiler version 6.6.3
+** Created by: Qt User Interface Compiler version 6.9.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -56,7 +56,7 @@ public:
 ""));
         widget_3 = new QWidget(view_all_transactions);
         widget_3->setObjectName("widget_3");
-        widget_3->setGeometry(QRect(40, 30, 981, 581));
+        widget_3->setGeometry(QRect(10, 20, 1041, 591));
         widget_3->setStyleSheet(QString::fromUtf8("border-radius: 32;\n"
 "background-color:#598bb8;\n"
 ""));
@@ -71,8 +71,8 @@ public:
         line->setStyleSheet(QString::fromUtf8(" background-color: rgb(0, 0, 0);\n"
 "border: 2px solid black;\n"
 ""));
-        line->setFrameShape(QFrame::HLine);
-        line->setFrameShadow(QFrame::Sunken);
+        line->setFrameShape(QFrame::Shape::HLine);
+        line->setFrameShadow(QFrame::Shadow::Sunken);
         label_2 = new QLabel(widget_3);
         label_2->setObjectName("label_2");
         label_2->setGeometry(QRect(40, 45, 71, 20));
@@ -111,7 +111,7 @@ public:
         pushButton->setObjectName("pushButton");
         pushButton->setMaximumSize(QSize(35, 35));
         QIcon icon;
-        icon.addFile(QString::fromUtf8("left_12655291.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon.addFile(QString::fromUtf8("left_12655291.png"), QSize(), QIcon::Mode::Normal, QIcon::State::Off);
         pushButton->setIcon(icon);
         pushButton->setIconSize(QSize(35, 35));
 
@@ -164,7 +164,7 @@ public:
         pushButton_3->setGeometry(QRect(885, 21, 20, 20));
         pushButton_3->setMaximumSize(QSize(20, 20));
         QIcon icon1;
-        icon1.addFile(QString::fromUtf8("back_14493189.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon1.addFile(QString::fromUtf8("back_14493189.png"), QSize(), QIcon::Mode::Normal, QIcon::State::Off);
         pushButton_3->setIcon(icon1);
         pushButton_3->setIconSize(QSize(30, 20));
 

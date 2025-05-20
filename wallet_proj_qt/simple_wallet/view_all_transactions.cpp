@@ -19,11 +19,24 @@ void view_all_transactions::on_pushButton_clicked(){
     MainWindow::stackedWidget->setCurrentWidget(MainWindow::adminmainmenuWin);
 }
 void view_all_transactions::get_transactions(){
-    for(int i = 1; i <= FileHandler::transactionsData.size(); i++) {
-        if(FileHandler::transactionsData[i].getId() != 0 && FileHandler::transactionsData[i].getRecipientUsername() != "" ) {
-            populateRow(i);
+    ui->tableWidget->setRowCount(0);
+    if(issorted){
+        for(int i = 1; i <= FileHandler::transactionsData.size(); i++) {
+            if(FileHandler::transactionsData[i].getId() != 0 && FileHandler::transactionsData[i].getRecipientUsername() != "" ) {
+                populateRow(i);
+            }
+        }
+
+
+    }
+    else{
+        for(int i = FileHandler::transactionsData.size(); i >= 1; i--) {
+            if(FileHandler::transactionsData[i].getId() != 0 && FileHandler::transactionsData[i].getRecipientUsername() != "" ) {
+                populateRow(i);
+            }
         }
     }
+
 }
 void view_all_transactions::populateRow(int i ){
     if(ui->tableWidget->rowCount()<tTransactions.size()){
@@ -48,4 +61,11 @@ void view_all_transactions::populateRow(int i ){
     double amount = FileHandler::transactionsData[i].getAmount();
     ui->tableWidget->setItem(row, 4, new QTableWidgetItem(QString::number(amount, 'f', 2)));
     }
+}
+void view_all_transactions::on_pushButton_3_clicked(){
+    if(issorted)
+        issorted=false;
+    else
+        issorted=true;
+    view_all_transactions::get_transactions();
 }

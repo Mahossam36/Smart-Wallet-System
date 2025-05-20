@@ -15,9 +15,10 @@ public:
     explicit view_all_transactions(QWidget *parent = nullptr);
     ~view_all_transactions();
     void get_transactions();
+    bool issorted = true;
 private slots:
     void on_pushButton_clicked();
-
+    void on_pushButton_3_clicked();
     void populateRow(int i);
 
 private:
