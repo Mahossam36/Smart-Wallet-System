@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'changepassword.ui'
 **
-** Created by: Qt User Interface Compiler version 6.9.0
+** Created by: Qt User Interface Compiler version 6.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -26,6 +26,8 @@ public:
     QVBoxLayout *verticalLayout;
     QLabel *label;
     QLabel *label_2;
+    QLineEdit *password_textbox_2;
+    QLabel *label_3;
     QLineEdit *password_textbox;
     QHBoxLayout *horizontalLayout;
     QPushButton *Cancel_Button;
@@ -35,19 +37,22 @@ public:
     {
         if (ChangePassword->objectName().isEmpty())
             ChangePassword->setObjectName("ChangePassword");
-        ChangePassword->resize(400, 300);
+        ChangePassword->resize(541, 379);
         ChangePassword->setStyleSheet(QString::fromUtf8("QDialog {\n"
 "    border-radius: 20px;\n"
-"    background-color: white;\n"
+"    background-color:#cddce8;\n"
 "}"));
         verticalLayout = new QVBoxLayout(ChangePassword);
         verticalLayout->setObjectName("verticalLayout");
         label = new QLabel(ChangePassword);
         label->setObjectName("label");
         QFont font;
-        font.setFamilies({QString::fromUtf8("Arial")});
+        font.setFamilies({QString::fromUtf8("Segoe UI")});
         font.setPointSize(28);
+        font.setBold(true);
         label->setFont(font);
+        label->setAutoFillBackground(false);
+        label->setStyleSheet(QString::fromUtf8("color:#0D1B5A"));
 
         verticalLayout->addWidget(label);
 
@@ -55,21 +60,41 @@ public:
         label_2->setObjectName("label_2");
         QFont font1;
         font1.setPointSize(12);
+        font1.setBold(true);
         label_2->setFont(font1);
+        label_2->setStyleSheet(QString::fromUtf8("color:#0D1B5A"));
 
         verticalLayout->addWidget(label_2);
 
-        password_textbox = new QLineEdit(ChangePassword);
-        password_textbox->setObjectName("password_textbox");
+        password_textbox_2 = new QLineEdit(ChangePassword);
+        password_textbox_2->setObjectName("password_textbox_2");
+        password_textbox_2->setEnabled(true);
         QFont font2;
         font2.setFamilies({QString::fromUtf8("Arial")});
         font2.setPointSize(16);
+        password_textbox_2->setFont(font2);
+        password_textbox_2->setFrame(true);
+
+        verticalLayout->addWidget(password_textbox_2);
+
+        label_3 = new QLabel(ChangePassword);
+        label_3->setObjectName("label_3");
+        label_3->setFont(font1);
+        label_3->setStyleSheet(QString::fromUtf8("color:#0D1B5A"));
+
+        verticalLayout->addWidget(label_3);
+
+        password_textbox = new QLineEdit(ChangePassword);
+        password_textbox->setObjectName("password_textbox");
         password_textbox->setFont(font2);
+        password_textbox->setAutoFillBackground(false);
 
         verticalLayout->addWidget(password_textbox);
 
         horizontalLayout = new QHBoxLayout();
+        horizontalLayout->setSpacing(7);
         horizontalLayout->setObjectName("horizontalLayout");
+        horizontalLayout->setContentsMargins(-1, 0, -1, -1);
         Cancel_Button = new QPushButton(ChangePassword);
         Cancel_Button->setObjectName("Cancel_Button");
         Cancel_Button->setStyleSheet(QString::fromUtf8("QPushButton {\n"
@@ -119,8 +144,10 @@ public:
     {
         ChangePassword->setWindowTitle(QCoreApplication::translate("ChangePassword", "Dialog", nullptr));
         label->setText(QCoreApplication::translate("ChangePassword", "Update Your Password", nullptr));
-        label_2->setText(QCoreApplication::translate("ChangePassword", "New Password : ", nullptr));
-        password_textbox->setPlaceholderText(QCoreApplication::translate("ChangePassword", "New Password", nullptr));
+        label_2->setText(QCoreApplication::translate("ChangePassword", "New Password:", nullptr));
+        password_textbox_2->setPlaceholderText(QCoreApplication::translate("ChangePassword", "Enter Password", nullptr));
+        label_3->setText(QCoreApplication::translate("ChangePassword", "Confirm Password:", nullptr));
+        password_textbox->setPlaceholderText(QCoreApplication::translate("ChangePassword", "Enter Password", nullptr));
         Cancel_Button->setText(QCoreApplication::translate("ChangePassword", "Cancel", nullptr));
         confirm_Button->setText(QCoreApplication::translate("ChangePassword", "Confirm", nullptr));
     } // retranslateUi

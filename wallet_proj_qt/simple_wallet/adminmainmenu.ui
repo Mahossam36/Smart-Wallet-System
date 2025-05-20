@@ -53,7 +53,7 @@
   <widget class="QLabel" name="label_4">
    <property name="geometry">
     <rect>
-     <x>170</x>
+     <x>167</x>
      <y>80</y>
      <width>721</width>
      <height>481</height>
@@ -68,44 +68,13 @@ border-radius: 30px;         /* rounded corners */
     <string/>
    </property>
   </widget>
-  <widget class="QPushButton" name="backButton">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>590</y>
-     <width>93</width>
-     <height>29</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Arial Unicode MS</family>
-     <pointsize>-1</pointsize>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QPushButton {
-    background-color: #ffffff;   /* dark blue */
-    color: black;
-    border: none;                /* no border line */
-    border-radius: 12px;         /* rounded corners */
-    padding: 8px 16px;
-    font-size: 15px;
-    background-image: none;      /* no image */
-}
-</string>
-   </property>
-   <property name="text">
-    <string>&lt;  BACK</string>
-   </property>
-  </widget>
   <widget class="QPushButton" name="viewusersbutton">
    <property name="geometry">
     <rect>
-     <x>190</x>
-     <y>100</y>
+     <x>187</x>
+     <y>130</y>
      <width>331</width>
-     <height>131</height>
+     <height>161</height>
     </rect>
    </property>
    <property name="font">
@@ -156,184 +125,13 @@ border-radius: 12px;         /* rounded corners */
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QPushButton" name="edituserbutton">
-   <property name="geometry">
-    <rect>
-     <x>540</x>
-     <y>100</y>
-     <width>331</width>
-     <height>131</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Segoe UI</family>
-     <pointsize>-1</pointsize>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QPushButton {
-    background-color: #cddce8;   /* light blue */
-    color: black;
-    border: none;                /* no border line */
-    border-radius: 12px;         /* rounded corners */
-    padding: 8px 16px;
-    font-size: 21px;
-    background-image: none;      /* no image */
-}
-
-QPushButton:hover {
-    background-color: #598bb8;   /* darker on hover */
-color: Black;
- border: none;  
-border-radius: 12px;         /* rounded corners */
-    padding: 8px 16px;
-    font-size: 21px;
-    background-image: none;      /* no image */
-}</string>
-   </property>
-   <property name="text">
-    <string>Edit User Account</string>
-   </property>
-   <property name="icon">
-    <iconset>
-     <normaloff>editprofileicon.jpg</normaloff>editprofileicon.jpg</iconset>
-   </property>
-   <property name="iconSize">
-    <size>
-     <width>70</width>
-     <height>70</height>
-    </size>
-   </property>
-   <property name="autoDefault">
-    <bool>true</bool>
-   </property>
-   <property name="flat">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="deleteuserbutton">
-   <property name="geometry">
-    <rect>
-     <x>190</x>
-     <y>250</y>
-     <width>331</width>
-     <height>131</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Segoe UI</family>
-     <pointsize>-1</pointsize>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QPushButton {
-    background-color: #cddce8;   /* light blue */
-    color: black;
-    border: none;                /* no border line */
-    border-radius: 12px;         /* rounded corners */
-    padding: 8px 16px;
-    font-size: 21px;
-    background-image: none;      /* no image */
-}
-
-QPushButton:hover {
-    background-color: #598bb8;   /* darker on hover */
-color: Black;
- border: none;  
-border-radius: 12px;         /* rounded corners */
-    padding: 8px 16px;
-    font-size: 21px;
-    background-image: none;      /* no image */
-}</string>
-   </property>
-   <property name="text">
-    <string>Delete </string>
-   </property>
-   <property name="icon">
-    <iconset>
-     <normaloff>deleteuser.png</normaloff>deleteuser.png</iconset>
-   </property>
-   <property name="iconSize">
-    <size>
-     <width>70</width>
-     <height>70</height>
-    </size>
-   </property>
-   <property name="autoDefault">
-    <bool>true</bool>
-   </property>
-   <property name="flat">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="suspenduserbutton">
-   <property name="geometry">
-    <rect>
-     <x>540</x>
-     <y>250</y>
-     <width>331</width>
-     <height>131</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Segoe UI</family>
-     <pointsize>-1</pointsize>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QPushButton {
-    background-color: #cddce8;   /* light blue */
-    color: black;
-    border: none;                /* no border line */
-    border-radius: 12px;         /* rounded corners */
-    padding: 8px 16px;
-    font-size: 21px;
-    background-image: none;      /* no image */
-}
-
-QPushButton:hover {
-    background-color: #598bb8;   /* darker on hover */
-color: Black;
- border: none;  
-border-radius: 12px;         /* rounded corners */
-    padding: 8px 16px;
-    font-size: 21px;
-    background-image: none;      /* no image */
-}</string>
-   </property>
-   <property name="text">
-    <string>Suspend User</string>
-   </property>
-   <property name="icon">
-    <iconset>
-     <normaloff>suspendusericon.jpeg</normaloff>suspendusericon.jpeg</iconset>
-   </property>
-   <property name="iconSize">
-    <size>
-     <width>80</width>
-     <height>80</height>
-    </size>
-   </property>
-   <property name="autoDefault">
-    <bool>true</bool>
-   </property>
-   <property name="flat">
-    <bool>true</bool>
-   </property>
-  </widget>
   <widget class="QPushButton" name="viewusertransactionbutton">
    <property name="geometry">
     <rect>
-     <x>190</x>
-     <y>410</y>
+     <x>187</x>
+     <y>340</y>
      <width>331</width>
-     <height>131</height>
+     <height>161</height>
     </rect>
    </property>
    <property name="font">
@@ -365,7 +163,7 @@ border-radius: 12px;         /* rounded corners */
 }</string>
    </property>
    <property name="text">
-    <string>View User Transaction</string>
+    <string>View Transactions</string>
    </property>
    <property name="icon">
     <iconset>
@@ -384,13 +182,13 @@ border-radius: 12px;         /* rounded corners */
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QPushButton" name="adjustuserbalancebutton">
+  <widget class="QPushButton" name="adduserbutton">
    <property name="geometry">
     <rect>
-     <x>540</x>
-     <y>410</y>
+     <x>537</x>
+     <y>130</y>
      <width>331</width>
-     <height>131</height>
+     <height>161</height>
     </rect>
    </property>
    <property name="font">
@@ -422,11 +220,68 @@ border-radius: 12px;         /* rounded corners */
 }</string>
    </property>
    <property name="text">
-    <string>add User</string>
+    <string>Add User</string>
    </property>
    <property name="icon">
     <iconset>
-     <normaloff>adjustbalanceicon.jpg</normaloff>adjustbalanceicon.jpg</iconset>
+     <normaloff>addusericon.png</normaloff>addusericon.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>60</width>
+     <height>60</height>
+    </size>
+   </property>
+   <property name="autoDefault">
+    <bool>true</bool>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="logoutbutton">
+   <property name="geometry">
+    <rect>
+     <x>537</x>
+     <y>340</y>
+     <width>331</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>-1</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #cddce8;   /* dark blue */
+    color: black;
+    border: none;                /* no border line */
+    border-radius: 12px;         /* rounded corners */
+    padding: 8px 16px;
+    font-size: 21px;
+    background-image: none;      /* no image */
+}
+
+QPushButton:hover {
+    background-color: #598bb8;   /* darker on hover */
+color: Black;
+ border: none;  
+border-radius: 12px;         /* rounded corners */
+    padding: 8px 16px;
+    font-size: 21px;
+    background-image: none;      /* no image */
+}</string>
+   </property>
+   <property name="text">
+    <string>Logout</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>logouticon.png</normaloff>logouticon.png</iconset>
    </property>
    <property name="iconSize">
     <size>

@@ -16,19 +16,14 @@ public:
     ~adminmainmenu();
 
 private slots:
-    void on_backButton_clicked();
 
     void on_viewusersbutton_clicked();
 
-    void on_edituserbutton_clicked();
-
-    void on_deleteuserbutton_clicked();
-
-    void on_suspenduserbutton_clicked();
-
     void on_viewusertransactionbutton_clicked();
 
-    void on_adjustuserbalancebutton_clicked();
+    void on_adduserbutton_clicked();
+
+    void on_logoutbutton_clicked();
 
 private:
     Ui::adminmainmenu *ui;

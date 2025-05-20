@@ -33,14 +33,14 @@
   <widget class="QLabel" name="label_9">
    <property name="geometry">
     <rect>
-     <x>90</x>
+     <x>70</x>
      <y>10</y>
-     <width>901</width>
+     <width>921</width>
      <height>481</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);
+    <string notr="true">background-color: #cddce8;
 border-radius: 30px;         /* rounded corners */
     padding: 8px 16px;</string>
    </property>
@@ -80,7 +80,7 @@ border-radius: 30px;         /* rounded corners */
        <widget class="QPushButton" name="save_pushButton">
         <property name="styleSheet">
          <string notr="true">QPushButton {
-    background-color: #ffffff;   /* dark blue */
+    background-color: #ffffff;   /* light blue */
     color: black;
     border: none;                /* no border line */
     border-radius: 12px;         /* rounded corners */
@@ -89,8 +89,9 @@ border-radius: 30px;         /* rounded corners */
     background-image: none;      /* no image */
 }
 
+
 QPushButton:hover {
-    background-color: #0D1B5A;   /* darker on hover */
+    background-color: #598bb8;   /* darker on hover */
 color: white;
 }</string>
         </property>
@@ -123,7 +124,7 @@ color: white;
        <widget class="QPushButton" name="edit_pushButton">
         <property name="styleSheet">
          <string notr="true">QPushButton {
-    background-color: #ffffff;   /* dark blue */
+    background-color: #ffffff;   /* light blue */
     color: black;
     border: none;                /* no border line */
     border-radius: 12px;         /* rounded corners */
@@ -132,8 +133,9 @@ color: white;
     background-image: none;      /* no image */
 }
 
+
 QPushButton:hover {
-    background-color: #0D1B5A;   /* darker on hover */
+    background-color: #598bb8;   /* darker on hover */
 color: white;
 }</string>
         </property>
@@ -146,7 +148,7 @@ color: white;
        <widget class="QPushButton" name="del_pushButton">
         <property name="styleSheet">
          <string notr="true">QPushButton {
-    background-color: #ffffff;   /* dark blue */
+    background-color: #ffffff;   /* light blue */
     color: black;
     border: none;                /* no border line */
     border-radius: 12px;         /* rounded corners */
@@ -155,8 +157,9 @@ color: white;
     background-image: none;      /* no image */
 }
 
+
 QPushButton:hover {
-    background-color: #0D1B5A;   /* darker on hover */
+    background-color: #598bb8;   /* darker on hover */
 color: white;
 }</string>
         </property>
@@ -169,7 +172,7 @@ color: white;
        <widget class="QPushButton" name="ChangePassword_Button">
         <property name="styleSheet">
          <string notr="true">QPushButton {
-    background-color: #ffffff;   /* dark blue */
+    background-color: #ffffff;   /* light blue */
     color: black;
     border: none;                /* no border line */
     border-radius: 12px;         /* rounded corners */
@@ -178,8 +181,9 @@ color: white;
     background-image: none;      /* no image */
 }
 
+
 QPushButton:hover {
-    background-color: #0D1B5A;   /* darker on hover */
+    background-color: #598bb8;   /* darker on hover */
 color: white;
 }</string>
         </property>
@@ -202,17 +206,18 @@ color: white;
         </property>
         <property name="styleSheet">
          <string notr="true">QPushButton {
-    background-color: #ffffff;   /* dark blue */
+    background-color: #ffffff;   /* light blue */
     color: black;
     border: none;                /* no border line */
     border-radius: 12px;         /* rounded corners */
-    padding: 2px 16px;
+    padding: 8px 16px;
     font-size: 21px;
     background-image: none;      /* no image */
 }
 
+
 QPushButton:hover {
-    background-color: #0D1B5A;   /* darker on hover */
+    background-color: #598bb8;   /* darker on hover */
 color: white;
 }</string>
         </property>
@@ -241,9 +246,9 @@ color: white;
   <widget class="QWidget" name="verticalLayoutWidget">
    <property name="geometry">
     <rect>
-     <x>100</x>
+     <x>80</x>
      <y>20</y>
-     <width>881</width>
+     <width>901</width>
      <height>461</height>
     </rect>
    </property>
@@ -508,7 +513,10 @@ color: white;
            </font>
           </property>
           <property name="autoFillBackground">
-           <bool>true</bool>
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color:#cddce8</string>
           </property>
           <property name="frameShape">
            <enum>QFrame::Shape::NoFrame</enum>
@@ -573,6 +581,9 @@ color: white;
               <family>Arial Unicode MS</family>
               <pointsize>18</pointsize>
              </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color:#cddce8</string>
             </property>
             <property name="frame">
              <bool>false</bool>

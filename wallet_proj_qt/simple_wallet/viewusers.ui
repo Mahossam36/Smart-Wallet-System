@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #cddce8;</string>
+  </property>
   <widget class="QWidget" name="verticalLayoutWidget_3">
    <property name="geometry">
     <rect>
@@ -60,7 +63,7 @@
            </sizepolicy>
           </property>
           <property name="styleSheet">
-           <string notr="true"/>
+           <string notr="true">background-color:#ffffff</string>
           </property>
           <property name="frameShape">
            <enum>QFrame::Shape::NoFrame</enum>
@@ -107,15 +110,18 @@ QPushButton:hover {
             </property>
             <property name="styleSheet">
              <string notr="true">QPushButton {
-    background-color: #b0c4d4;   /* dark blue */
-    color: black;
+    background-color: #598bb8;   /* dark blue */
+    color: white;
     border: none;                /* no border line */
     border-radius: 12px;         /* rounded corners */
     padding: 8px 16px;
-    font-size: 15px;
+    font-size: 19px;
     background-image: none;      /* no image */
 }
-</string>
+
+QPushButton:hover {
+    background-color: #0D1B5A;   /* darker on hover */
+}</string>
             </property>
             <property name="text">
              <string>&lt;  BACK</string>
@@ -358,6 +364,9 @@ QPushButton:hover {
                 <pointsize>14</pointsize>
                </font>
               </property>
+              <property name="styleSheet">
+               <string notr="true">background-color:#ffffff</string>
+              </property>
               <property name="text">
                <string/>
               </property>
@@ -405,7 +414,7 @@ QPushButton:hover {
                </font>
               </property>
               <property name="autoFillBackground">
-               <bool>true</bool>
+               <bool>false</bool>
               </property>
               <property name="frameShape">
                <enum>QFrame::Shape::NoFrame</enum>
@@ -470,6 +479,9 @@ QPushButton:hover {
                   <family>Arial Unicode MS</family>
                   <pointsize>14</pointsize>
                  </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color:#ffffff</string>
                 </property>
                 <property name="frame">
                  <bool>false</bool>

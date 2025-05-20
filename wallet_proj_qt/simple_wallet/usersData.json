@@ -11,21 +11,9 @@
         "userfailedattempts": true,
         "username": "hashtest"
     },
-    "user1": {
-        "balance": 3000.0,
-        "email": "user1@gmail.com",
-        "firstName": "ahmed",
-        "id": 4343,
-        "isSuspended": false,
-        "lastName": "mohamed",
-        "password": "08f1c6e377ca95c36c3b8dbc438b6dd835ddecf2e4f1b76b384fc572118b193f",
-        "phoneNumber": "01146053877",
-        "userfailedattempts": true,
-        "username": "user1"
-    },
     "user2": {
         "balance": 4000.0,
-        "email": "user2@gmail.com",
+        "email": "user@gmail.com",
         "firstName": "ahmed",
         "id": 4343,
         "isSuspended": false,
@@ -36,7 +24,7 @@
         "username": "user2"
     },
     "user3": {
-        "balance": 0.0,
+        "balance": 10000.0,
         "email": "user3@gmail.com",
         "firstName": "abdo",
         "id": 4343,

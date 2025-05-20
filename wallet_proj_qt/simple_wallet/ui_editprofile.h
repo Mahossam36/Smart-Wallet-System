@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'editprofile.ui'
 **
-** Created by: Qt User Interface Compiler version 6.9.0
+** Created by: Qt User Interface Compiler version 6.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -88,8 +88,8 @@ public:
 ""));
         label_9 = new QLabel(EditProfile);
         label_9->setObjectName("label_9");
-        label_9->setGeometry(QRect(90, 10, 901, 481));
-        label_9->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
+        label_9->setGeometry(QRect(70, 10, 921, 481));
+        label_9->setStyleSheet(QString::fromUtf8("background-color: #cddce8;\n"
 "border-radius: 30px;         /* rounded corners */\n"
 "    padding: 8px 16px;"));
         verticalLayoutWidget_2 = new QWidget(EditProfile);
@@ -108,7 +108,7 @@ public:
         save_pushButton = new QPushButton(verticalLayoutWidget_2);
         save_pushButton->setObjectName("save_pushButton");
         save_pushButton->setStyleSheet(QString::fromUtf8("QPushButton {\n"
-"    background-color: #ffffff;   /* dark blue */\n"
+"    background-color: #ffffff;   /* light blue */\n"
 "    color: black;\n"
 "    border: none;                /* no border line */\n"
 "    border-radius: 12px;         /* rounded corners */\n"
@@ -117,8 +117,9 @@ public:
 "    background-image: none;      /* no image */\n"
 "}\n"
 "\n"
+"\n"
 "QPushButton:hover {\n"
-"    background-color: #0D1B5A;   /* darker on hover */\n"
+"    background-color: #598bb8;   /* darker on hover */\n"
 "color: white;\n"
 "}"));
 
@@ -137,7 +138,7 @@ public:
         edit_pushButton = new QPushButton(verticalLayoutWidget_2);
         edit_pushButton->setObjectName("edit_pushButton");
         edit_pushButton->setStyleSheet(QString::fromUtf8("QPushButton {\n"
-"    background-color: #ffffff;   /* dark blue */\n"
+"    background-color: #ffffff;   /* light blue */\n"
 "    color: black;\n"
 "    border: none;                /* no border line */\n"
 "    border-radius: 12px;         /* rounded corners */\n"
@@ -146,8 +147,9 @@ public:
 "    background-image: none;      /* no image */\n"
 "}\n"
 "\n"
+"\n"
 "QPushButton:hover {\n"
-"    background-color: #0D1B5A;   /* darker on hover */\n"
+"    background-color: #598bb8;   /* darker on hover */\n"
 "color: white;\n"
 "}"));
 
@@ -156,7 +158,7 @@ public:
         del_pushButton = new QPushButton(verticalLayoutWidget_2);
         del_pushButton->setObjectName("del_pushButton");
         del_pushButton->setStyleSheet(QString::fromUtf8("QPushButton {\n"
-"    background-color: #ffffff;   /* dark blue */\n"
+"    background-color: #ffffff;   /* light blue */\n"
 "    color: black;\n"
 "    border: none;                /* no border line */\n"
 "    border-radius: 12px;         /* rounded corners */\n"
@@ -165,8 +167,9 @@ public:
 "    background-image: none;      /* no image */\n"
 "}\n"
 "\n"
+"\n"
 "QPushButton:hover {\n"
-"    background-color: #0D1B5A;   /* darker on hover */\n"
+"    background-color: #598bb8;   /* darker on hover */\n"
 "color: white;\n"
 "}"));
 
@@ -175,7 +178,7 @@ public:
         ChangePassword_Button = new QPushButton(verticalLayoutWidget_2);
         ChangePassword_Button->setObjectName("ChangePassword_Button");
         ChangePassword_Button->setStyleSheet(QString::fromUtf8("QPushButton {\n"
-"    background-color: #ffffff;   /* dark blue */\n"
+"    background-color: #ffffff;   /* light blue */\n"
 "    color: black;\n"
 "    border: none;                /* no border line */\n"
 "    border-radius: 12px;         /* rounded corners */\n"
@@ -184,8 +187,9 @@ public:
 "    background-image: none;      /* no image */\n"
 "}\n"
 "\n"
+"\n"
 "QPushButton:hover {\n"
-"    background-color: #0D1B5A;   /* darker on hover */\n"
+"    background-color: #598bb8;   /* darker on hover */\n"
 "color: white;\n"
 "}"));
 
@@ -202,17 +206,18 @@ public:
         font.setFamilies({QString::fromUtf8("Arial Unicode MS")});
         backButton->setFont(font);
         backButton->setStyleSheet(QString::fromUtf8("QPushButton {\n"
-"    background-color: #ffffff;   /* dark blue */\n"
+"    background-color: #ffffff;   /* light blue */\n"
 "    color: black;\n"
 "    border: none;                /* no border line */\n"
 "    border-radius: 12px;         /* rounded corners */\n"
-"    padding: 2px 16px;\n"
+"    padding: 8px 16px;\n"
 "    font-size: 21px;\n"
 "    background-image: none;      /* no image */\n"
 "}\n"
 "\n"
+"\n"
 "QPushButton:hover {\n"
-"    background-color: #0D1B5A;   /* darker on hover */\n"
+"    background-color: #598bb8;   /* darker on hover */\n"
 "color: white;\n"
 "}"));
 
@@ -227,7 +232,7 @@ public:
 
         verticalLayoutWidget = new QWidget(EditProfile);
         verticalLayoutWidget->setObjectName("verticalLayoutWidget");
-        verticalLayoutWidget->setGeometry(QRect(100, 20, 881, 461));
+        verticalLayoutWidget->setGeometry(QRect(80, 20, 901, 461));
         verticalLayout = new QVBoxLayout(verticalLayoutWidget);
         verticalLayout->setObjectName("verticalLayout");
         verticalLayout->setSizeConstraint(QLayout::SizeConstraint::SetMinAndMaxSize);
@@ -251,8 +256,8 @@ public:
         line_4 = new QFrame(verticalLayoutWidget);
         line_4->setObjectName("line_4");
         line_4->setStyleSheet(QString::fromUtf8("border-top: 2px solid #598bb8;"));
-        line_4->setFrameShape(QFrame::Shape::HLine);
-        line_4->setFrameShadow(QFrame::Shadow::Sunken);
+        line_4->setFrameShape(QFrame::HLine);
+        line_4->setFrameShadow(QFrame::Sunken);
 
         verticalLayout->addWidget(line_4);
 
@@ -273,8 +278,8 @@ public:
         line_3 = new QFrame(verticalLayoutWidget);
         line_3->setObjectName("line_3");
         line_3->setStyleSheet(QString::fromUtf8("border-top: 2px solid #598bb8;"));
-        line_3->setFrameShape(QFrame::Shape::HLine);
-        line_3->setFrameShadow(QFrame::Shadow::Sunken);
+        line_3->setFrameShape(QFrame::HLine);
+        line_3->setFrameShadow(QFrame::Sunken);
 
         verticalLayout->addWidget(line_3);
 
@@ -349,8 +354,8 @@ public:
         line_2 = new QFrame(verticalLayoutWidget);
         line_2->setObjectName("line_2");
         line_2->setStyleSheet(QString::fromUtf8("border-top: 2px solid #598bb8;"));
-        line_2->setFrameShape(QFrame::Shape::HLine);
-        line_2->setFrameShadow(QFrame::Shadow::Sunken);
+        line_2->setFrameShape(QFrame::HLine);
+        line_2->setFrameShadow(QFrame::Sunken);
 
         verticalLayout->addWidget(line_2);
 
@@ -388,7 +393,8 @@ public:
         phonenum_label = new QLabel(verticalLayoutWidget);
         phonenum_label->setObjectName("phonenum_label");
         phonenum_label->setFont(font4);
-        phonenum_label->setAutoFillBackground(true);
+        phonenum_label->setAutoFillBackground(false);
+        phonenum_label->setStyleSheet(QString::fromUtf8("background-color:#cddce8"));
         phonenum_label->setFrameShape(QFrame::Shape::NoFrame);
 
         verticalLayout_5->addWidget(phonenum_label);
@@ -421,6 +427,7 @@ public:
         Balance_lineEdit = new QLineEdit(verticalLayoutWidget);
         Balance_lineEdit->setObjectName("Balance_lineEdit");
         Balance_lineEdit->setFont(font4);
+        Balance_lineEdit->setStyleSheet(QString::fromUtf8("background-color:#cddce8"));
         Balance_lineEdit->setFrame(false);
 
         horizontalLayout_5->addWidget(Balance_lineEdit);

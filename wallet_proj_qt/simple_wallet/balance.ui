@@ -19,9 +19,9 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>0</x>
+     <x>-16</x>
      <y>0</y>
-     <width>1101</width>
+     <width>1121</width>
      <height>691</height>
     </rect>
    </property>
@@ -64,7 +64,11 @@
     font-size: 15px;
     background-image: none;      /* no image */
 }
-</string>
+
+QPushButton:hover {
+    background-color: #598bb8;   /* darker on hover */
+color: white;
+}</string>
    </property>
    <property name="text">
     <string>&lt;  BACK</string>
@@ -73,7 +77,7 @@
   <widget class="QLabel" name="label_3">
    <property name="geometry">
     <rect>
-     <x>230</x>
+     <x>225</x>
      <y>80</y>
      <width>631</width>
      <height>481</height>
@@ -88,56 +92,13 @@ border-radius: 30px;         /* rounded corners */
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>340</x>
-     <y>170</y>
-     <width>361</width>
-     <height>241</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="pixmap">
-    <pixmap>coinbalanceicon - Copy.jpg</pixmap>
-   </property>
-   <property name="scaledContents">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="QLabel" name="balancelabel">
-   <property name="geometry">
-    <rect>
-     <x>330</x>
-     <y>410</y>
-     <width>411</width>
-     <height>111</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>20</pointsize>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color:rgb(89, 139, 184);
-border-radius: 30px;         /* rounded corners */
-    padding: 8px 16px;</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
   <widget class="QLabel" name="label_5">
    <property name="geometry">
     <rect>
-     <x>450</x>
-     <y>80</y>
-     <width>201</width>
-     <height>111</height>
+     <x>452</x>
+     <y>70</y>
+     <width>181</width>
+     <height>151</height>
     </rect>
    </property>
    <property name="palette">
@@ -261,7 +222,7 @@ border-radius: 30px;         /* rounded corners */
    <property name="font">
     <font>
      <family>Brush Script MT</family>
-     <pointsize>48</pointsize>
+     <pointsize>55</pointsize>
      <italic>true</italic>
      <bold>false</bold>
     </font>
@@ -271,6 +232,49 @@ border-radius: 30px;         /* rounded corners */
    </property>
    <property name="text">
     <string>Wally</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>343</x>
+     <y>190</y>
+     <width>361</width>
+     <height>241</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>coinbalanceicon - Copy.jpg</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="balancelabel">
+   <property name="geometry">
+    <rect>
+     <x>331</x>
+     <y>430</y>
+     <width>411</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(89, 139, 184);
+border-radius: 30px;         /* rounded corners */
+    padding: 8px 16px;</string>
+   </property>
+   <property name="text">
+    <string/>
    </property>
   </widget>
  </widget>

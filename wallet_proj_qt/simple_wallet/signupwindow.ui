@@ -16,7 +16,7 @@
   <widget class="QLineEdit" name="firstNameLine">
    <property name="geometry">
     <rect>
-     <x>620</x>
+     <x>610</x>
      <y>110</y>
      <width>321</width>
      <height>41</height>
@@ -66,7 +66,7 @@
   <widget class="QLineEdit" name="phoneNumLine">
    <property name="geometry">
     <rect>
-     <x>620</x>
+     <x>610</x>
      <y>460</y>
      <width>321</width>
      <height>41</height>
@@ -187,7 +187,7 @@ QPushButton:hover {
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>570</x>
+     <x>600</x>
      <y>0</y>
      <width>441</width>
      <height>81</height>
@@ -252,7 +252,7 @@ QPushButton:hover {
   <widget class="QLineEdit" name="userNameLine">
    <property name="geometry">
     <rect>
-     <x>620</x>
+     <x>610</x>
      <y>250</y>
      <width>321</width>
      <height>41</height>
@@ -302,7 +302,7 @@ QPushButton:hover {
   <widget class="QLineEdit" name="idLine">
    <property name="geometry">
     <rect>
-     <x>620</x>
+     <x>610</x>
      <y>390</y>
      <width>321</width>
      <height>41</height>
@@ -352,7 +352,7 @@ QPushButton:hover {
   <widget class="QLineEdit" name="emailLine">
    <property name="geometry">
     <rect>
-     <x>620</x>
+     <x>610</x>
      <y>320</y>
      <width>321</width>
      <height>41</height>
@@ -417,7 +417,7 @@ QPushButton:hover {
   <widget class="QLineEdit" name="passwordLine">
    <property name="geometry">
     <rect>
-     <x>620</x>
+     <x>610</x>
      <y>530</y>
      <width>321</width>
      <height>41</height>
@@ -470,7 +470,7 @@ QPushButton:hover {
   <widget class="QLineEdit" name="lastNameLine">
    <property name="geometry">
     <rect>
-     <x>620</x>
+     <x>610</x>
      <y>180</y>
      <width>321</width>
      <height>41</height>
@@ -520,7 +520,7 @@ QPushButton:hover {
   <widget class="QPushButton" name="showButton">
    <property name="geometry">
     <rect>
-     <x>940</x>
+     <x>930</x>
      <y>540</y>
      <width>81</width>
      <height>29</height>

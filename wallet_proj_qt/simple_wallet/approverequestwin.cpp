@@ -88,8 +88,9 @@ void approveRequestWin::handleReject(int transactionId) {
 
 
 
-void approveRequestWin::on_backBtn_clicked()
+
+void approveRequestWin::on_backButton_clicked()
 {
-    MainWindow::stackedWidget->setCurrentWidget(MainWindow::usermainmenuWin);
+       MainWindow::stackedWidget->setCurrentWidget(MainWindow::usermainmenuWin);
 }
 

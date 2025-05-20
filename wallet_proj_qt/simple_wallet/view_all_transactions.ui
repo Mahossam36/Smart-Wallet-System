@@ -13,18 +13,42 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #cddce8;</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1061</width>
+     <height>651</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:#cddce8;
+
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
   <widget class="QWidget" name="widget_3" native="true">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>20</y>
-     <width>991</width>
-     <height>601</height>
+     <x>40</x>
+     <y>30</y>
+     <width>981</width>
+     <height>581</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">border-radius: 32;
-background-color: #598bb8;
+background-color:#598bb8;
 </string>
    </property>
    <widget class="QLabel" name="Username_icon_4">
@@ -67,14 +91,20 @@ border: 2px solid black;
      <enum>Qt::Orientation::Horizontal</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="label">
+   <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
       <x>40</x>
       <y>45</y>
-      <width>63</width>
+      <width>71</width>
       <height>20</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <bold>true</bold>
+     </font>
     </property>
     <property name="styleSheet">
      <string notr="true">color: black;</string>
@@ -83,7 +113,7 @@ border: 2px solid black;
      <string>Receiver</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_2">
+   <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
       <x>250</x>
@@ -92,6 +122,12 @@ border: 2px solid black;
       <height>20</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
     <property name="styleSheet">
      <string notr="true">color: black;</string>
     </property>
@@ -99,7 +135,7 @@ border: 2px solid black;
      <string>Sender</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_3">
+   <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
       <x>460</x>
@@ -108,6 +144,12 @@ border: 2px solid black;
       <height>20</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
     <property name="styleSheet">
      <string notr="true">color: black;</string>
     </property>
@@ -115,14 +157,20 @@ border: 2px solid black;
      <string>Status</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_4">
+   <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
-      <x>600</x>
+      <x>610</x>
       <y>40</y>
       <width>63</width>
       <height>20</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <bold>true</bold>
+     </font>
     </property>
     <property name="styleSheet">
      <string notr="true">color: black;</string>
@@ -131,14 +179,20 @@ border: 2px solid black;
      <string>Date</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_5">
+   <widget class="QLabel" name="label_6">
     <property name="geometry">
      <rect>
       <x>750</x>
       <y>40</y>
-      <width>63</width>
+      <width>71</width>
       <height>20</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <bold>true</bold>
+     </font>
     </property>
     <property name="styleSheet">
      <string notr="true">color: black;</string>
@@ -193,9 +247,12 @@ border: 2px solid black;
        </property>
        <property name="font">
         <font>
-         <pointsize>16</pointsize>
+         <pointsize>18</pointsize>
          <bold>true</bold>
         </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
        </property>
        <property name="text">
         <string>Transactions</string>
@@ -302,7 +359,7 @@ border: 2px solid black;
     </property>
     <property name="iconSize">
      <size>
-      <width>20</width>
+      <width>30</width>
       <height>20</height>
      </size>
     </property>

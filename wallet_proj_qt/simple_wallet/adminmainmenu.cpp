@@ -15,13 +15,6 @@ adminmainmenu::~adminmainmenu()
     delete ui;
 }
 
-void adminmainmenu::on_backButton_clicked()
-{
-    MainWindow::stackedWidget->setCurrentWidget(MainWindow::loginwindow);
-}
-
-
-
 void adminmainmenu::on_viewusersbutton_clicked()
 {
     MainWindow::view->populatelist();
@@ -29,23 +22,6 @@ void adminmainmenu::on_viewusersbutton_clicked()
 
 }
 
-
-void adminmainmenu::on_edituserbutton_clicked()
-{
-
-}
-
-
-void adminmainmenu::on_deleteuserbutton_clicked()
-{
-
-}
-
-
-void adminmainmenu::on_suspenduserbutton_clicked()
-{
-
-}
 
 
 void adminmainmenu::on_viewusertransactionbutton_clicked()
@@ -55,9 +31,16 @@ void adminmainmenu::on_viewusertransactionbutton_clicked()
 }
 
 
-void adminmainmenu::on_adjustuserbalancebutton_clicked()
+void adminmainmenu::on_adduserbutton_clicked()
 {
     MainWindow::stackedWidget->setCurrentWidget(MainWindow::addUser);
+
+}
+
+
+void adminmainmenu::on_logoutbutton_clicked()
+{
+    MainWindow::stackedWidget->setCurrentWidget(MainWindow::loginwindow);
 
 }
 

@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'adduser.ui'
 **
-** Created by: Qt User Interface Compiler version 6.9.0
+** Created by: Qt User Interface Compiler version 6.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -47,73 +47,113 @@ public:
         label_3 = new QLabel(AddUser);
         label_3->setObjectName("label_3");
         label_3->setGeometry(QRect(250, 10, 571, 621));
-        label_3->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
+        label_3->setStyleSheet(QString::fromUtf8("background-color: #cddce8;\n"
 "border-radius: 30px;         /* rounded corners */\n"
 "    padding: 8px 16px;"));
         userName_add = new QLineEdit(AddUser);
         userName_add->setObjectName("userName_add");
-        userName_add->setGeometry(QRect(380, 240, 321, 41));
+        userName_add->setGeometry(QRect(377, 240, 321, 41));
         QPalette palette;
-        QBrush brush(QColor(238, 238, 238, 255));
-        brush.setStyle(Qt::BrushStyle::SolidPattern);
-        palette.setBrush(QPalette::ColorGroup::Active, QPalette::ColorRole::Base, brush);
-        palette.setBrush(QPalette::ColorGroup::Inactive, QPalette::ColorRole::Base, brush);
+        QBrush brush(QColor(255, 255, 255, 255));
+        brush.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Active, QPalette::Button, brush);
+        palette.setBrush(QPalette::Active, QPalette::Base, brush);
+        palette.setBrush(QPalette::Active, QPalette::Window, brush);
+        palette.setBrush(QPalette::Inactive, QPalette::Button, brush);
+        palette.setBrush(QPalette::Inactive, QPalette::Base, brush);
+        palette.setBrush(QPalette::Inactive, QPalette::Window, brush);
+        palette.setBrush(QPalette::Disabled, QPalette::Button, brush);
+        palette.setBrush(QPalette::Disabled, QPalette::Base, brush);
+        palette.setBrush(QPalette::Disabled, QPalette::Window, brush);
         userName_add->setPalette(palette);
         QFont font;
         font.setFamilies({QString::fromUtf8("Arial Unicode MS")});
         font.setPointSize(14);
         font.setBold(false);
         userName_add->setFont(font);
+        userName_add->setStyleSheet(QString::fromUtf8("background-color:#ffffff"));
         userName_add->setFrame(false);
         firstName_add = new QLineEdit(AddUser);
         firstName_add->setObjectName("firstName_add");
-        firstName_add->setGeometry(QRect(380, 100, 321, 41));
+        firstName_add->setGeometry(QRect(377, 100, 321, 41));
         QPalette palette1;
-        palette1.setBrush(QPalette::ColorGroup::Active, QPalette::ColorRole::Base, brush);
-        palette1.setBrush(QPalette::ColorGroup::Inactive, QPalette::ColorRole::Base, brush);
+        palette1.setBrush(QPalette::Active, QPalette::Button, brush);
+        palette1.setBrush(QPalette::Active, QPalette::Base, brush);
+        palette1.setBrush(QPalette::Active, QPalette::Window, brush);
+        palette1.setBrush(QPalette::Inactive, QPalette::Button, brush);
+        palette1.setBrush(QPalette::Inactive, QPalette::Base, brush);
+        palette1.setBrush(QPalette::Inactive, QPalette::Window, brush);
+        palette1.setBrush(QPalette::Disabled, QPalette::Button, brush);
+        palette1.setBrush(QPalette::Disabled, QPalette::Base, brush);
+        palette1.setBrush(QPalette::Disabled, QPalette::Window, brush);
         firstName_add->setPalette(palette1);
         firstName_add->setFont(font);
+        firstName_add->setStyleSheet(QString::fromUtf8("background-color:#ffffff"));
         firstName_add->setFrame(false);
         email_add = new QLineEdit(AddUser);
         email_add->setObjectName("email_add");
-        email_add->setGeometry(QRect(380, 310, 321, 41));
+        email_add->setGeometry(QRect(377, 310, 321, 41));
         QPalette palette2;
-        palette2.setBrush(QPalette::ColorGroup::Active, QPalette::ColorRole::Base, brush);
-        palette2.setBrush(QPalette::ColorGroup::Inactive, QPalette::ColorRole::Base, brush);
+        palette2.setBrush(QPalette::Active, QPalette::Button, brush);
+        palette2.setBrush(QPalette::Active, QPalette::Base, brush);
+        palette2.setBrush(QPalette::Active, QPalette::Window, brush);
+        palette2.setBrush(QPalette::Inactive, QPalette::Button, brush);
+        palette2.setBrush(QPalette::Inactive, QPalette::Base, brush);
+        palette2.setBrush(QPalette::Inactive, QPalette::Window, brush);
+        palette2.setBrush(QPalette::Disabled, QPalette::Button, brush);
+        palette2.setBrush(QPalette::Disabled, QPalette::Base, brush);
+        palette2.setBrush(QPalette::Disabled, QPalette::Window, brush);
         email_add->setPalette(palette2);
         QFont font1;
         font1.setFamilies({QString::fromUtf8("Arial Unicode MS")});
         font1.setPointSize(14);
         email_add->setFont(font1);
+        email_add->setStyleSheet(QString::fromUtf8("background-color:#ffffff"));
         email_add->setFrame(false);
         password_add = new QLineEdit(AddUser);
         password_add->setObjectName("password_add");
-        password_add->setGeometry(QRect(380, 520, 321, 41));
+        password_add->setGeometry(QRect(377, 520, 321, 41));
         QPalette palette3;
-        palette3.setBrush(QPalette::ColorGroup::Active, QPalette::ColorRole::Base, brush);
-        palette3.setBrush(QPalette::ColorGroup::Inactive, QPalette::ColorRole::Base, brush);
+        palette3.setBrush(QPalette::Active, QPalette::Button, brush);
+        palette3.setBrush(QPalette::Active, QPalette::Base, brush);
+        palette3.setBrush(QPalette::Active, QPalette::Window, brush);
+        palette3.setBrush(QPalette::Inactive, QPalette::Button, brush);
+        palette3.setBrush(QPalette::Inactive, QPalette::Base, brush);
+        palette3.setBrush(QPalette::Inactive, QPalette::Window, brush);
+        palette3.setBrush(QPalette::Disabled, QPalette::Button, brush);
+        palette3.setBrush(QPalette::Disabled, QPalette::Base, brush);
+        palette3.setBrush(QPalette::Disabled, QPalette::Window, brush);
         password_add->setPalette(palette3);
         password_add->setFont(font);
+        password_add->setStyleSheet(QString::fromUtf8("background-color:#ffffff"));
         password_add->setFrame(false);
         password_add->setEchoMode(QLineEdit::EchoMode::Password);
         id_add = new QLineEdit(AddUser);
         id_add->setObjectName("id_add");
-        id_add->setGeometry(QRect(380, 380, 321, 41));
+        id_add->setGeometry(QRect(377, 380, 321, 41));
         QPalette palette4;
-        palette4.setBrush(QPalette::ColorGroup::Active, QPalette::ColorRole::Base, brush);
-        palette4.setBrush(QPalette::ColorGroup::Inactive, QPalette::ColorRole::Base, brush);
+        palette4.setBrush(QPalette::Active, QPalette::Button, brush);
+        palette4.setBrush(QPalette::Active, QPalette::Base, brush);
+        palette4.setBrush(QPalette::Active, QPalette::Window, brush);
+        palette4.setBrush(QPalette::Inactive, QPalette::Button, brush);
+        palette4.setBrush(QPalette::Inactive, QPalette::Base, brush);
+        palette4.setBrush(QPalette::Inactive, QPalette::Window, brush);
+        palette4.setBrush(QPalette::Disabled, QPalette::Button, brush);
+        palette4.setBrush(QPalette::Disabled, QPalette::Base, brush);
+        palette4.setBrush(QPalette::Disabled, QPalette::Window, brush);
         id_add->setPalette(palette4);
         id_add->setFont(font);
+        id_add->setStyleSheet(QString::fromUtf8("background-color:#ffffff"));
         id_add->setFrame(false);
         showButton_add = new QPushButton(AddUser);
         showButton_add->setObjectName("showButton_add");
-        showButton_add->setGeometry(QRect(700, 530, 81, 29));
+        showButton_add->setGeometry(QRect(698, 530, 81, 29));
         QFont font2;
         font2.setFamilies({QString::fromUtf8("Arial Unicode MS")});
         font2.setBold(false);
         showButton_add->setFont(font2);
         showButton_add->setStyleSheet(QString::fromUtf8("QPushButton {\n"
-"    background-color: #ffffff;   /* dark blue */\n"
+"    background-color: #cddce8;   /* dark blue */\n"
 "    color: black;\n"
 "    border: none;                /* no border line */\n"
 "    border-radius: 10px;         /* rounded corners */\n"
@@ -124,43 +164,78 @@ public:
         showButton_add->setFlat(true);
         lastName_add = new QLineEdit(AddUser);
         lastName_add->setObjectName("lastName_add");
-        lastName_add->setGeometry(QRect(380, 170, 321, 41));
+        lastName_add->setGeometry(QRect(377, 170, 321, 41));
         QPalette palette5;
-        palette5.setBrush(QPalette::ColorGroup::Active, QPalette::ColorRole::Base, brush);
-        palette5.setBrush(QPalette::ColorGroup::Inactive, QPalette::ColorRole::Base, brush);
+        palette5.setBrush(QPalette::Active, QPalette::Button, brush);
+        palette5.setBrush(QPalette::Active, QPalette::Base, brush);
+        palette5.setBrush(QPalette::Active, QPalette::Window, brush);
+        palette5.setBrush(QPalette::Inactive, QPalette::Button, brush);
+        palette5.setBrush(QPalette::Inactive, QPalette::Base, brush);
+        palette5.setBrush(QPalette::Inactive, QPalette::Window, brush);
+        palette5.setBrush(QPalette::Disabled, QPalette::Button, brush);
+        palette5.setBrush(QPalette::Disabled, QPalette::Base, brush);
+        palette5.setBrush(QPalette::Disabled, QPalette::Window, brush);
         lastName_add->setPalette(palette5);
         lastName_add->setFont(font);
+        lastName_add->setStyleSheet(QString::fromUtf8("background-color:#ffffff"));
         lastName_add->setFrame(false);
         phoneNum_add = new QLineEdit(AddUser);
         phoneNum_add->setObjectName("phoneNum_add");
-        phoneNum_add->setGeometry(QRect(380, 450, 321, 41));
+        phoneNum_add->setGeometry(QRect(377, 450, 321, 41));
         QPalette palette6;
-        palette6.setBrush(QPalette::ColorGroup::Active, QPalette::ColorRole::Base, brush);
-        palette6.setBrush(QPalette::ColorGroup::Inactive, QPalette::ColorRole::Base, brush);
+        palette6.setBrush(QPalette::Active, QPalette::Button, brush);
+        palette6.setBrush(QPalette::Active, QPalette::Base, brush);
+        palette6.setBrush(QPalette::Active, QPalette::Window, brush);
+        palette6.setBrush(QPalette::Inactive, QPalette::Button, brush);
+        palette6.setBrush(QPalette::Inactive, QPalette::Base, brush);
+        palette6.setBrush(QPalette::Inactive, QPalette::Window, brush);
+        palette6.setBrush(QPalette::Disabled, QPalette::Button, brush);
+        palette6.setBrush(QPalette::Disabled, QPalette::Base, brush);
+        palette6.setBrush(QPalette::Disabled, QPalette::Window, brush);
         phoneNum_add->setPalette(palette6);
         phoneNum_add->setFont(font);
+        phoneNum_add->setStyleSheet(QString::fromUtf8("background-color:#ffffff"));
         phoneNum_add->setFrame(false);
         label = new QLabel(AddUser);
         label->setObjectName("label");
-        label->setGeometry(QRect(420, 0, 311, 81));
+        label->setGeometry(QRect(420, 0, 321, 81));
         QPalette palette7;
         QBrush brush1(QColor(15, 106, 186, 255));
-        brush1.setStyle(Qt::BrushStyle::SolidPattern);
-        palette7.setBrush(QPalette::ColorGroup::Active, QPalette::ColorRole::WindowText, brush1);
+        brush1.setStyle(Qt::SolidPattern);
+        palette7.setBrush(QPalette::Active, QPalette::WindowText, brush1);
         QBrush brush2(QColor(89, 139, 184, 255));
-        brush2.setStyle(Qt::BrushStyle::SolidPattern);
-        palette7.setBrush(QPalette::ColorGroup::Active, QPalette::ColorRole::Text, brush2);
-        palette7.setBrush(QPalette::ColorGroup::Inactive, QPalette::ColorRole::WindowText, brush1);
-        palette7.setBrush(QPalette::ColorGroup::Inactive, QPalette::ColorRole::Text, brush2);
+        brush2.setStyle(Qt::SolidPattern);
+        palette7.setBrush(QPalette::Active, QPalette::Text, brush2);
+        QBrush brush3(QColor(13, 27, 90, 255));
+        brush3.setStyle(Qt::SolidPattern);
+        palette7.setBrush(QPalette::Active, QPalette::ButtonText, brush3);
+        QBrush brush4(QColor(13, 27, 90, 128));
+        brush4.setStyle(Qt::SolidPattern);
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette7.setBrush(QPalette::Active, QPalette::PlaceholderText, brush4);
+#endif
+        palette7.setBrush(QPalette::Inactive, QPalette::WindowText, brush1);
+        palette7.setBrush(QPalette::Inactive, QPalette::Text, brush2);
+        palette7.setBrush(QPalette::Inactive, QPalette::ButtonText, brush3);
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette7.setBrush(QPalette::Inactive, QPalette::PlaceholderText, brush4);
+#endif
+        palette7.setBrush(QPalette::Disabled, QPalette::WindowText, brush3);
+        palette7.setBrush(QPalette::Disabled, QPalette::Text, brush3);
+        palette7.setBrush(QPalette::Disabled, QPalette::ButtonText, brush3);
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette7.setBrush(QPalette::Disabled, QPalette::PlaceholderText, brush4);
+#endif
         label->setPalette(palette7);
         QFont font3;
-        font3.setFamilies({QString::fromUtf8("Arial Unicode MS")});
+        font3.setFamilies({QString::fromUtf8("Segoe UI")});
         font3.setPointSize(28);
-        font3.setBold(false);
+        font3.setBold(true);
         label->setFont(font3);
+        label->setStyleSheet(QString::fromUtf8("color:#0D1B5A"));
         addNewButton = new QPushButton(AddUser);
         addNewButton->setObjectName("addNewButton");
-        addNewButton->setGeometry(QRect(420, 580, 221, 41));
+        addNewButton->setGeometry(QRect(419, 580, 221, 41));
         addNewButton->setFont(font2);
         addNewButton->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "    background-color: #598bb8;   /* dark blue */\n"
@@ -182,7 +257,7 @@ public:
         font4.setFamilies({QString::fromUtf8("Arial Unicode MS")});
         backAddButton->setFont(font4);
         backAddButton->setStyleSheet(QString::fromUtf8("QPushButton {\n"
-"    background-color: #ffffff;   /* dark blue */\n"
+"    background-color: #cddce8;   /* dark blue */\n"
 "    color: black;\n"
 "    border: none;                /* no border line */\n"
 "    border-radius: 12px;         /* rounded corners */\n"
@@ -190,7 +265,9 @@ public:
 "    font-size: 15px;\n"
 "    background-image: none;      /* no image */\n"
 "}\n"
-""));
+"QPushButton:hover {\n"
+"    background-color: #598bb8;   /* darker on hover */\n"
+"}"));
 
         retranslateUi(AddUser);
 

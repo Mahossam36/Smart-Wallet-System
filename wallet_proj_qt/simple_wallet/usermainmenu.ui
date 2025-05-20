@@ -36,7 +36,7 @@
   <widget class="QLabel" name="label_3">
    <property name="geometry">
     <rect>
-     <x>190</x>
+     <x>182</x>
      <y>90</y>
      <width>721</width>
      <height>471</height>
@@ -54,7 +54,7 @@ border-radius: 30px;         /* rounded corners */
   <widget class="QPushButton" name="logoutbutton">
    <property name="geometry">
     <rect>
-     <x>560</x>
+     <x>552</x>
      <y>410</y>
      <width>331</width>
      <height>131</height>
@@ -89,11 +89,11 @@ border-radius: 12px;         /* rounded corners */
 }</string>
    </property>
    <property name="text">
-    <string>Delete Account</string>
+    <string>Logout</string>
    </property>
    <property name="icon">
     <iconset>
-     <normaloff>deleteuser.png</normaloff>deleteuser.png</iconset>
+     <normaloff>logouticon.png</normaloff>logouticon.png</iconset>
    </property>
    <property name="iconSize">
     <size>
@@ -111,7 +111,7 @@ border-radius: 12px;         /* rounded corners */
   <widget class="QPushButton" name="editprofilebutton">
    <property name="geometry">
     <rect>
-     <x>560</x>
+     <x>552</x>
      <y>110</y>
      <width>331</width>
      <height>131</height>
@@ -165,10 +165,10 @@ border-radius: 12px;         /* rounded corners */
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QPushButton" name="sendmoneybutton">
+  <widget class="QPushButton" name="sendorrequestmoneybutton">
    <property name="geometry">
     <rect>
-     <x>210</x>
+     <x>202</x>
      <y>260</y>
      <width>331</width>
      <height>131</height>
@@ -203,7 +203,7 @@ border-radius: 12px;         /* rounded corners */
 }</string>
    </property>
    <property name="text">
-    <string>Send Money</string>
+    <string>Send/Request Money</string>
    </property>
    <property name="icon">
     <iconset>
@@ -225,7 +225,7 @@ border-radius: 12px;         /* rounded corners */
   <widget class="QPushButton" name="requestmoneybutton">
    <property name="geometry">
     <rect>
-     <x>560</x>
+     <x>552</x>
      <y>260</y>
      <width>331</width>
      <height>131</height>
@@ -260,7 +260,7 @@ border-radius: 12px;         /* rounded corners */
 }</string>
    </property>
    <property name="text">
-    <string>Request Money</string>
+    <string>Money Requests</string>
    </property>
    <property name="icon">
     <iconset>
@@ -282,7 +282,7 @@ border-radius: 12px;         /* rounded corners */
   <widget class="QPushButton" name="transactionhistorybutton">
    <property name="geometry">
     <rect>
-     <x>210</x>
+     <x>202</x>
      <y>410</y>
      <width>331</width>
      <height>131</height>
@@ -339,7 +339,7 @@ border-radius: 12px;         /* rounded corners */
   <widget class="QPushButton" name="balancebutton">
    <property name="geometry">
     <rect>
-     <x>210</x>
+     <x>202</x>
      <y>110</y>
      <width>331</width>
      <height>131</height>
@@ -391,42 +391,6 @@ border-radius: 12px;         /* rounded corners */
    </property>
    <property name="flat">
     <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="backButton">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>578</y>
-     <width>111</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Segoe UI</family>
-     <pointsize>-1</pointsize>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QPushButton {
-    background-color: #ffffff;   /* dark blue */
-    color: black;
-    border: none;                /* no border line */
-    border-radius: 12px;         /* rounded corners */
-    padding: 8px 16px;
-    font-size: 15px;
-    background-image: none;      /* no image */
-}
-</string>
-   </property>
-   <property name="text">
-    <string>  Logout</string>
-   </property>
-   <property name="icon">
-    <iconset>
-     <normaloff>logouticon.png</normaloff>logouticon.png</iconset>
    </property>
   </widget>
  </widget>

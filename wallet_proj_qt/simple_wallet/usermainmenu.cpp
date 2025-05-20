@@ -19,12 +19,6 @@ void usermainmenu::on_balancebutton_clicked()
 }
 
 
-void usermainmenu::on_backButton_clicked()
-{
-    MainWindow::stackedWidget->setCurrentWidget(MainWindow::loginwindow);
-}
-
-
 void usermainmenu::on_editprofilebutton_clicked()
 {
     MainWindow::editprofile->populate();
@@ -32,10 +26,6 @@ void usermainmenu::on_editprofilebutton_clicked()
 }
 
 
-void usermainmenu::on_sendmoneybutton_clicked()
-{
-    MainWindow::stackedWidget->setCurrentWidget(MainWindow::sendRequestWin);
-}
 
 
 void usermainmenu::on_requestmoneybutton_clicked()
@@ -62,5 +52,11 @@ void usermainmenu::on_transactionhistorybutton_clicked()
     MainWindow::stackedWidget->setCurrentWidget(MainWindow::Admin_Transaction);
     MainWindow::Admin_Transaction->displa_User_Info_on_Screen();
     MainWindow::Admin_Transaction->on_pushButton_4_clicked();
+}
+
+
+void usermainmenu::on_sendorrequestmoneybutton_clicked()
+{
+    MainWindow::stackedWidget->setCurrentWidget(MainWindow::sendRequestWin);
 }
 

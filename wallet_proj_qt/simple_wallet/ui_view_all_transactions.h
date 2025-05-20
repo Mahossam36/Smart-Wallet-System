@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'view_all_transactions.ui'
 **
-** Created by: Qt User Interface Compiler version 6.9.0
+** Created by: Qt User Interface Compiler version 6.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -25,14 +25,15 @@ QT_BEGIN_NAMESPACE
 class Ui_view_all_transactions
 {
 public:
+    QLabel *label;
     QWidget *widget_3;
     QLabel *Username_icon_4;
     QFrame *line;
-    QLabel *label;
     QLabel *label_2;
     QLabel *label_3;
     QLabel *label_4;
     QLabel *label_5;
+    QLabel *label_6;
     QWidget *layoutWidget;
     QHBoxLayout *horizontalLayout_6;
     QPushButton *pushButton;
@@ -45,11 +46,19 @@ public:
         if (view_all_transactions->objectName().isEmpty())
             view_all_transactions->setObjectName("view_all_transactions");
         view_all_transactions->resize(1057, 649);
+        view_all_transactions->setAutoFillBackground(false);
+        view_all_transactions->setStyleSheet(QString::fromUtf8("background-color: #cddce8;"));
+        label = new QLabel(view_all_transactions);
+        label->setObjectName("label");
+        label->setGeometry(QRect(0, 0, 1061, 651));
+        label->setStyleSheet(QString::fromUtf8("background-color:#cddce8;\n"
+"\n"
+""));
         widget_3 = new QWidget(view_all_transactions);
         widget_3->setObjectName("widget_3");
-        widget_3->setGeometry(QRect(20, 20, 991, 601));
+        widget_3->setGeometry(QRect(40, 30, 981, 581));
         widget_3->setStyleSheet(QString::fromUtf8("border-radius: 32;\n"
-"background-color: #598bb8;\n"
+"background-color:#598bb8;\n"
 ""));
         Username_icon_4 = new QLabel(widget_3);
         Username_icon_4->setObjectName("Username_icon_4");
@@ -62,28 +71,36 @@ public:
         line->setStyleSheet(QString::fromUtf8(" background-color: rgb(0, 0, 0);\n"
 "border: 2px solid black;\n"
 ""));
-        line->setFrameShape(QFrame::Shape::HLine);
-        line->setFrameShadow(QFrame::Shadow::Sunken);
-        label = new QLabel(widget_3);
-        label->setObjectName("label");
-        label->setGeometry(QRect(40, 45, 63, 20));
-        label->setStyleSheet(QString::fromUtf8("color: black;"));
+        line->setFrameShape(QFrame::HLine);
+        line->setFrameShadow(QFrame::Sunken);
         label_2 = new QLabel(widget_3);
         label_2->setObjectName("label_2");
-        label_2->setGeometry(QRect(250, 45, 63, 20));
+        label_2->setGeometry(QRect(40, 45, 71, 20));
+        QFont font;
+        font.setPointSize(10);
+        font.setBold(true);
+        label_2->setFont(font);
         label_2->setStyleSheet(QString::fromUtf8("color: black;"));
         label_3 = new QLabel(widget_3);
         label_3->setObjectName("label_3");
-        label_3->setGeometry(QRect(460, 45, 63, 20));
+        label_3->setGeometry(QRect(250, 45, 63, 20));
+        label_3->setFont(font);
         label_3->setStyleSheet(QString::fromUtf8("color: black;"));
         label_4 = new QLabel(widget_3);
         label_4->setObjectName("label_4");
-        label_4->setGeometry(QRect(600, 40, 63, 20));
+        label_4->setGeometry(QRect(460, 45, 63, 20));
+        label_4->setFont(font);
         label_4->setStyleSheet(QString::fromUtf8("color: black;"));
         label_5 = new QLabel(widget_3);
         label_5->setObjectName("label_5");
-        label_5->setGeometry(QRect(750, 40, 63, 20));
+        label_5->setGeometry(QRect(610, 40, 63, 20));
+        label_5->setFont(font);
         label_5->setStyleSheet(QString::fromUtf8("color: black;"));
+        label_6 = new QLabel(widget_3);
+        label_6->setObjectName("label_6");
+        label_6->setGeometry(QRect(750, 40, 71, 20));
+        label_6->setFont(font);
+        label_6->setStyleSheet(QString::fromUtf8("color: black;"));
         layoutWidget = new QWidget(widget_3);
         layoutWidget->setObjectName("layoutWidget");
         layoutWidget->setGeometry(QRect(40, 10, 529, 41));
@@ -94,7 +111,7 @@ public:
         pushButton->setObjectName("pushButton");
         pushButton->setMaximumSize(QSize(35, 35));
         QIcon icon;
-        icon.addFile(QString::fromUtf8("left_12655291.png"), QSize(), QIcon::Mode::Normal, QIcon::State::Off);
+        icon.addFile(QString::fromUtf8("left_12655291.png"), QSize(), QIcon::Normal, QIcon::Off);
         pushButton->setIcon(icon);
         pushButton->setIconSize(QSize(35, 35));
 
@@ -104,10 +121,11 @@ public:
         label_12->setObjectName("label_12");
         label_12->setEnabled(true);
         label_12->setMaximumSize(QSize(16777215, 35));
-        QFont font;
-        font.setPointSize(16);
-        font.setBold(true);
-        label_12->setFont(font);
+        QFont font1;
+        font1.setPointSize(18);
+        font1.setBold(true);
+        label_12->setFont(font1);
+        label_12->setStyleSheet(QString::fromUtf8(""));
 
         horizontalLayout_6->addWidget(label_12);
 
@@ -116,10 +134,10 @@ public:
             tableWidget->setColumnCount(5);
         tableWidget->setObjectName("tableWidget");
         tableWidget->setGeometry(QRect(35, 71, 911, 511));
-        QFont font1;
-        font1.setPointSize(12);
-        font1.setBold(true);
-        tableWidget->setFont(font1);
+        QFont font2;
+        font2.setPointSize(12);
+        font2.setBold(true);
+        tableWidget->setFont(font2);
         tableWidget->setAutoFillBackground(false);
         tableWidget->setStyleSheet(QString::fromUtf8("QTableWidget::item {\n"
 "    border-bottom: 1px solid rgba(255, 255, 255, 0.3);  /* white with 30% opacity */\n"
@@ -146,9 +164,9 @@ public:
         pushButton_3->setGeometry(QRect(885, 21, 20, 20));
         pushButton_3->setMaximumSize(QSize(20, 20));
         QIcon icon1;
-        icon1.addFile(QString::fromUtf8("back_14493189.png"), QSize(), QIcon::Mode::Normal, QIcon::State::Off);
+        icon1.addFile(QString::fromUtf8("back_14493189.png"), QSize(), QIcon::Normal, QIcon::Off);
         pushButton_3->setIcon(icon1);
-        pushButton_3->setIconSize(QSize(20, 20));
+        pushButton_3->setIconSize(QSize(30, 20));
 
         retranslateUi(view_all_transactions);
 
@@ -158,12 +176,13 @@ public:
     void retranslateUi(QWidget *view_all_transactions)
     {
         view_all_transactions->setWindowTitle(QCoreApplication::translate("view_all_transactions", "Form", nullptr));
+        label->setText(QString());
         Username_icon_4->setText(QString());
-        label->setText(QCoreApplication::translate("view_all_transactions", "Receiver", nullptr));
-        label_2->setText(QCoreApplication::translate("view_all_transactions", "Sender", nullptr));
-        label_3->setText(QCoreApplication::translate("view_all_transactions", "Status", nullptr));
-        label_4->setText(QCoreApplication::translate("view_all_transactions", "Date", nullptr));
-        label_5->setText(QCoreApplication::translate("view_all_transactions", "Amount", nullptr));
+        label_2->setText(QCoreApplication::translate("view_all_transactions", "Receiver", nullptr));
+        label_3->setText(QCoreApplication::translate("view_all_transactions", "Sender", nullptr));
+        label_4->setText(QCoreApplication::translate("view_all_transactions", "Status", nullptr));
+        label_5->setText(QCoreApplication::translate("view_all_transactions", "Date", nullptr));
+        label_6->setText(QCoreApplication::translate("view_all_transactions", "Amount", nullptr));
         pushButton->setText(QString());
         label_12->setText(QCoreApplication::translate("view_all_transactions", "Transactions", nullptr));
         pushButton_3->setText(QString());

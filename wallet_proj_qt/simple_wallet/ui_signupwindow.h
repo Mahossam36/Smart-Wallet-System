@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'signupwindow.ui'
 **
-** Created by: Qt User Interface Compiler version 6.9.0
+** Created by: Qt User Interface Compiler version 6.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -41,12 +41,12 @@ public:
         signupwindow->resize(1151, 653);
         firstNameLine = new QLineEdit(signupwindow);
         firstNameLine->setObjectName("firstNameLine");
-        firstNameLine->setGeometry(QRect(620, 110, 321, 41));
+        firstNameLine->setGeometry(QRect(610, 110, 321, 41));
         QPalette palette;
         QBrush brush(QColor(238, 238, 238, 255));
-        brush.setStyle(Qt::BrushStyle::SolidPattern);
-        palette.setBrush(QPalette::ColorGroup::Active, QPalette::ColorRole::Base, brush);
-        palette.setBrush(QPalette::ColorGroup::Inactive, QPalette::ColorRole::Base, brush);
+        brush.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Active, QPalette::Base, brush);
+        palette.setBrush(QPalette::Inactive, QPalette::Base, brush);
         firstNameLine->setPalette(palette);
         QFont font;
         font.setFamilies({QString::fromUtf8("Arial Unicode MS")});
@@ -56,10 +56,10 @@ public:
         firstNameLine->setFrame(false);
         phoneNumLine = new QLineEdit(signupwindow);
         phoneNumLine->setObjectName("phoneNumLine");
-        phoneNumLine->setGeometry(QRect(620, 460, 321, 41));
+        phoneNumLine->setGeometry(QRect(610, 460, 321, 41));
         QPalette palette1;
-        palette1.setBrush(QPalette::ColorGroup::Active, QPalette::ColorRole::Base, brush);
-        palette1.setBrush(QPalette::ColorGroup::Inactive, QPalette::ColorRole::Base, brush);
+        palette1.setBrush(QPalette::Active, QPalette::Base, brush);
+        palette1.setBrush(QPalette::Inactive, QPalette::Base, brush);
         phoneNumLine->setPalette(palette1);
         phoneNumLine->setFont(font);
         phoneNumLine->setFrame(false);
@@ -103,16 +103,16 @@ public:
 "}"));
         label = new QLabel(signupwindow);
         label->setObjectName("label");
-        label->setGeometry(QRect(570, 0, 441, 81));
+        label->setGeometry(QRect(600, 0, 441, 81));
         QPalette palette2;
         QBrush brush1(QColor(15, 106, 186, 255));
-        brush1.setStyle(Qt::BrushStyle::SolidPattern);
-        palette2.setBrush(QPalette::ColorGroup::Active, QPalette::ColorRole::WindowText, brush1);
+        brush1.setStyle(Qt::SolidPattern);
+        palette2.setBrush(QPalette::Active, QPalette::WindowText, brush1);
         QBrush brush2(QColor(89, 139, 184, 255));
-        brush2.setStyle(Qt::BrushStyle::SolidPattern);
-        palette2.setBrush(QPalette::ColorGroup::Active, QPalette::ColorRole::Text, brush2);
-        palette2.setBrush(QPalette::ColorGroup::Inactive, QPalette::ColorRole::WindowText, brush1);
-        palette2.setBrush(QPalette::ColorGroup::Inactive, QPalette::ColorRole::Text, brush2);
+        brush2.setStyle(Qt::SolidPattern);
+        palette2.setBrush(QPalette::Active, QPalette::Text, brush2);
+        palette2.setBrush(QPalette::Inactive, QPalette::WindowText, brush1);
+        palette2.setBrush(QPalette::Inactive, QPalette::Text, brush2);
         label->setPalette(palette2);
         QFont font2;
         font2.setFamilies({QString::fromUtf8("Arial Unicode MS")});
@@ -121,28 +121,28 @@ public:
         label->setFont(font2);
         userNameLine = new QLineEdit(signupwindow);
         userNameLine->setObjectName("userNameLine");
-        userNameLine->setGeometry(QRect(620, 250, 321, 41));
+        userNameLine->setGeometry(QRect(610, 250, 321, 41));
         QPalette palette3;
-        palette3.setBrush(QPalette::ColorGroup::Active, QPalette::ColorRole::Base, brush);
-        palette3.setBrush(QPalette::ColorGroup::Inactive, QPalette::ColorRole::Base, brush);
+        palette3.setBrush(QPalette::Active, QPalette::Base, brush);
+        palette3.setBrush(QPalette::Inactive, QPalette::Base, brush);
         userNameLine->setPalette(palette3);
         userNameLine->setFont(font);
         userNameLine->setFrame(false);
         idLine = new QLineEdit(signupwindow);
         idLine->setObjectName("idLine");
-        idLine->setGeometry(QRect(620, 390, 321, 41));
+        idLine->setGeometry(QRect(610, 390, 321, 41));
         QPalette palette4;
-        palette4.setBrush(QPalette::ColorGroup::Active, QPalette::ColorRole::Base, brush);
-        palette4.setBrush(QPalette::ColorGroup::Inactive, QPalette::ColorRole::Base, brush);
+        palette4.setBrush(QPalette::Active, QPalette::Base, brush);
+        palette4.setBrush(QPalette::Inactive, QPalette::Base, brush);
         idLine->setPalette(palette4);
         idLine->setFont(font);
         idLine->setFrame(false);
         emailLine = new QLineEdit(signupwindow);
         emailLine->setObjectName("emailLine");
-        emailLine->setGeometry(QRect(620, 320, 321, 41));
+        emailLine->setGeometry(QRect(610, 320, 321, 41));
         QPalette palette5;
-        palette5.setBrush(QPalette::ColorGroup::Active, QPalette::ColorRole::Base, brush);
-        palette5.setBrush(QPalette::ColorGroup::Inactive, QPalette::ColorRole::Base, brush);
+        palette5.setBrush(QPalette::Active, QPalette::Base, brush);
+        palette5.setBrush(QPalette::Inactive, QPalette::Base, brush);
         emailLine->setPalette(palette5);
         QFont font3;
         font3.setFamilies({QString::fromUtf8("Arial Unicode MS")});
@@ -155,26 +155,26 @@ public:
         label_2->setStyleSheet(QString::fromUtf8("image: url(:/screen1Background/screen1Background.png);"));
         passwordLine = new QLineEdit(signupwindow);
         passwordLine->setObjectName("passwordLine");
-        passwordLine->setGeometry(QRect(620, 530, 321, 41));
+        passwordLine->setGeometry(QRect(610, 530, 321, 41));
         QPalette palette6;
-        palette6.setBrush(QPalette::ColorGroup::Active, QPalette::ColorRole::Base, brush);
-        palette6.setBrush(QPalette::ColorGroup::Inactive, QPalette::ColorRole::Base, brush);
+        palette6.setBrush(QPalette::Active, QPalette::Base, brush);
+        palette6.setBrush(QPalette::Inactive, QPalette::Base, brush);
         passwordLine->setPalette(palette6);
         passwordLine->setFont(font);
         passwordLine->setFrame(false);
         passwordLine->setEchoMode(QLineEdit::EchoMode::Password);
         lastNameLine = new QLineEdit(signupwindow);
         lastNameLine->setObjectName("lastNameLine");
-        lastNameLine->setGeometry(QRect(620, 180, 321, 41));
+        lastNameLine->setGeometry(QRect(610, 180, 321, 41));
         QPalette palette7;
-        palette7.setBrush(QPalette::ColorGroup::Active, QPalette::ColorRole::Base, brush);
-        palette7.setBrush(QPalette::ColorGroup::Inactive, QPalette::ColorRole::Base, brush);
+        palette7.setBrush(QPalette::Active, QPalette::Base, brush);
+        palette7.setBrush(QPalette::Inactive, QPalette::Base, brush);
         lastNameLine->setPalette(palette7);
         lastNameLine->setFont(font);
         lastNameLine->setFrame(false);
         showButton = new QPushButton(signupwindow);
         showButton->setObjectName("showButton");
-        showButton->setGeometry(QRect(940, 540, 81, 29));
+        showButton->setGeometry(QRect(930, 540, 81, 29));
         showButton->setFont(font1);
         showButton->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "    background-color: #ffffff;   /* dark blue */\n"

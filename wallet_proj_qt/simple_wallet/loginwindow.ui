@@ -465,9 +465,9 @@ border-radius: 30px;         /* rounded corners */
    <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
-      <x>290</x>
+      <x>270</x>
       <y>120</y>
-      <width>111</width>
+      <width>141</width>
       <height>111</height>
      </rect>
     </property>
@@ -592,7 +592,7 @@ border-radius: 30px;         /* rounded corners */
     <property name="font">
      <font>
       <family>Brush Script MT</family>
-      <pointsize>36</pointsize>
+      <pointsize>48</pointsize>
       <italic>true</italic>
       <bold>false</bold>
      </font>
@@ -629,7 +629,11 @@ border-radius: 30px;         /* rounded corners */
     font-size: 15px;
     background-image: none;      /* no image */
 }
-</string>
+
+QPushButton:hover {
+    background-color: #598bb8;   /* darker on hover */
+color: white;
+}</string>
     </property>
     <property name="text">
      <string>&lt;  BACK</string>

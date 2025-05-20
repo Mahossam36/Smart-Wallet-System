@@ -24,7 +24,10 @@ private slots :
     void handleAccept(int transactionId);
     void handleReject(int transactionId);
 
-    void on_backBtn_clicked();
+
+
+
+    void on_backButton_clicked();
 
 private:
     Ui::approveRequestWin *ui;

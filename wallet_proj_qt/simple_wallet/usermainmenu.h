@@ -17,15 +17,10 @@ public:
 
 private slots:
     void on_balancebutton_clicked();
-
-    void on_backButton_clicked();
-
     void on_editprofilebutton_clicked();
 
-    void on_sendmoneybutton_clicked();
-
-    void on_requestmoneybutton_clicked();
-
+    void on_sendorrequestmoneybutton_clicked();
+void on_requestmoneybutton_clicked();
     void on_logoutbutton_clicked();
 
 

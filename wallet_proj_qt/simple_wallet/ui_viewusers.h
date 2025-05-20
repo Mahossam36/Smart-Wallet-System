@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'viewusers.ui'
 **
-** Created by: Qt User Interface Compiler version 6.9.0
+** Created by: Qt User Interface Compiler version 6.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -93,6 +93,7 @@ public:
         if (ViewUsers->objectName().isEmpty())
             ViewUsers->setObjectName("ViewUsers");
         ViewUsers->resize(1054, 640);
+        ViewUsers->setStyleSheet(QString::fromUtf8("background-color: #cddce8;"));
         verticalLayoutWidget_3 = new QWidget(ViewUsers);
         verticalLayoutWidget_3->setObjectName("verticalLayoutWidget_3");
         verticalLayoutWidget_3->setGeometry(QRect(10, 10, 1031, 611));
@@ -124,7 +125,7 @@ public:
         sizePolicy1.setVerticalStretch(0);
         sizePolicy1.setHeightForWidth(listWidget->sizePolicy().hasHeightForWidth());
         listWidget->setSizePolicy(sizePolicy1);
-        listWidget->setStyleSheet(QString::fromUtf8(""));
+        listWidget->setStyleSheet(QString::fromUtf8("background-color:#ffffff"));
         listWidget->setFrameShape(QFrame::Shape::NoFrame);
 
         verticalLayout_2->addWidget(listWidget);
@@ -160,15 +161,18 @@ public:
         font.setFamilies({QString::fromUtf8("Arial Unicode MS")});
         backButton_2->setFont(font);
         backButton_2->setStyleSheet(QString::fromUtf8("QPushButton {\n"
-"    background-color: #b0c4d4;   /* dark blue */\n"
-"    color: black;\n"
+"    background-color: #598bb8;   /* dark blue */\n"
+"    color: white;\n"
 "    border: none;                /* no border line */\n"
 "    border-radius: 12px;         /* rounded corners */\n"
 "    padding: 8px 16px;\n"
-"    font-size: 15px;\n"
+"    font-size: 19px;\n"
 "    background-image: none;      /* no image */\n"
 "}\n"
-""));
+"\n"
+"QPushButton:hover {\n"
+"    background-color: #0D1B5A;   /* darker on hover */\n"
+"}"));
 
         horizontalLayout_9->addWidget(backButton_2);
 
@@ -205,8 +209,8 @@ public:
         line_4 = new QFrame(verticalLayoutWidget);
         line_4->setObjectName("line_4");
         line_4->setStyleSheet(QString::fromUtf8("border-top: 2px solid #598bb8;"));
-        line_4->setFrameShape(QFrame::Shape::HLine);
-        line_4->setFrameShadow(QFrame::Shadow::Sunken);
+        line_4->setFrameShape(QFrame::HLine);
+        line_4->setFrameShadow(QFrame::Sunken);
 
         verticalLayout->addWidget(line_4);
 
@@ -227,8 +231,8 @@ public:
         line_3 = new QFrame(verticalLayoutWidget);
         line_3->setObjectName("line_3");
         line_3->setStyleSheet(QString::fromUtf8("border-top: 2px solid #598bb8;"));
-        line_3->setFrameShape(QFrame::Shape::HLine);
-        line_3->setFrameShadow(QFrame::Shadow::Sunken);
+        line_3->setFrameShape(QFrame::HLine);
+        line_3->setFrameShadow(QFrame::Sunken);
 
         verticalLayout->addWidget(line_3);
 
@@ -306,8 +310,8 @@ public:
         line_2 = new QFrame(verticalLayoutWidget);
         line_2->setObjectName("line_2");
         line_2->setStyleSheet(QString::fromUtf8("border-top: 2px solid #598bb8;"));
-        line_2->setFrameShape(QFrame::Shape::HLine);
-        line_2->setFrameShadow(QFrame::Shadow::Sunken);
+        line_2->setFrameShape(QFrame::HLine);
+        line_2->setFrameShadow(QFrame::Sunken);
 
         verticalLayout->addWidget(line_2);
 
@@ -326,6 +330,7 @@ public:
         email_lineedit = new QLineEdit(verticalLayoutWidget);
         email_lineedit->setObjectName("email_lineedit");
         email_lineedit->setFont(font4);
+        email_lineedit->setStyleSheet(QString::fromUtf8("background-color:#ffffff"));
         email_lineedit->setFrame(false);
 
         verticalLayout_3->addWidget(email_lineedit);
@@ -351,7 +356,7 @@ public:
         phonenum_label = new QLabel(verticalLayoutWidget);
         phonenum_label->setObjectName("phonenum_label");
         phonenum_label->setFont(font4);
-        phonenum_label->setAutoFillBackground(true);
+        phonenum_label->setAutoFillBackground(false);
         phonenum_label->setFrameShape(QFrame::Shape::NoFrame);
 
         verticalLayout_5->addWidget(phonenum_label);
@@ -384,6 +389,7 @@ public:
         Balance_lineEdit = new QLineEdit(verticalLayoutWidget);
         Balance_lineEdit->setObjectName("Balance_lineEdit");
         Balance_lineEdit->setFont(font4);
+        Balance_lineEdit->setStyleSheet(QString::fromUtf8("background-color:#ffffff"));
         Balance_lineEdit->setFrame(false);
 
         horizontalLayout_5->addWidget(Balance_lineEdit);
@@ -404,8 +410,8 @@ public:
         line_5 = new QFrame(verticalLayoutWidget);
         line_5->setObjectName("line_5");
         line_5->setStyleSheet(QString::fromUtf8("border-top: 2px solid #598bb8;"));
-        line_5->setFrameShape(QFrame::Shape::HLine);
-        line_5->setFrameShadow(QFrame::Shadow::Sunken);
+        line_5->setFrameShape(QFrame::HLine);
+        line_5->setFrameShadow(QFrame::Sunken);
 
         verticalLayout_6->addWidget(line_5);
 
