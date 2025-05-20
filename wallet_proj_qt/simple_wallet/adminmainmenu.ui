@@ -251,7 +251,7 @@ border-radius: 12px;         /* rounded corners */
 }</string>
    </property>
    <property name="text">
-    <string>Delete User</string>
+    <string>Delete </string>
    </property>
    <property name="icon">
     <iconset>

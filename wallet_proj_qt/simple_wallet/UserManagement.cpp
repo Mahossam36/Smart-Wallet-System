@@ -2,6 +2,11 @@
 #include <iostream>
 #include "FileHandler.h"
 #include<QMessageBox>
+#include<sodium.h>
+#include<iostream>
+#include<string>
+#include <sstream>
+#include <iomanip>
 using namespace std;
 
 
@@ -10,7 +15,9 @@ auto& users = FileHandler::usersData;
 auto& transaction_data = FileHandler::transactionsData;
 
 bool UserManagement::searchAccount(const string& username, const string& password) {
-	if (users.find(username) != users.end() && password == users[username].getPassword())
+    string hashpass= hashPass(password);
+    cout<<hashpass;
+    if (users.find(username) != users.end() && hashpass == users[username].getPassword())
 	{
 		const User& user = users[username]; {
 			if (user.getSuspensionStatus()) {
@@ -26,8 +33,8 @@ void UserManagement::createAccount(const string& firstName, const string& lastNa
 	const string& username, const string& password,
     const string& phoneNumber, const string& email, int id) {
 
-
-    User newUser(firstName, lastName, username, password, id,email, phoneNumber);
+ string hashpass= hashPass(password);
+    User newUser(firstName, lastName, username, hashpass, id,email, phoneNumber);
 		users[username] = newUser;
 
 	
@@ -92,3 +99,32 @@ void UserManagement::deleteUser(const string& username){
         it++;
     }
 }
+
+std::string toHexString(const unsigned char* hash, size_t length) {
+    std::ostringstream oss;
+    oss << std::hex << std::setfill('0');
+    for (size_t i = 0; i < length; ++i) {
+        oss << std::setw(2) << static_cast<int>(hash[i]);
+    }
+    return oss.str();
+}
+
+string UserManagement::hashPass(const string& pass){
+    if (sodium_init() == -1) {
+        std::cerr << "Failed to initialize libsodium." << std::endl;
+    }
+
+    // Take input from user
+
+    // Output hash will be 32 bytes (256 bits)
+    unsigned char hash[crypto_generichash_BYTES];
+
+    // Hash the input string
+    crypto_generichash(
+        hash, sizeof(hash),                             // Output buffer
+        reinterpret_cast<const unsigned char*>(pass.c_str()), pass.length(), // Input
+        NULL, 0                                          // No key (use NULL for generic hash)
+        );
+    return toHexString(hash ,sizeof(hash));
+}
+

@@ -1,4 +1,16 @@
 {
+    "hashtest": {
+        "balance": 0.0,
+        "email": "hashtes@gmail.com",
+        "firstName": "test",
+        "id": 1234,
+        "isSuspended": false,
+        "lastName": "testt",
+        "password": "f66920cab437166c61893df279cea317cf3ed1951c2c2c5cfadbe29441ccca13",
+        "phoneNumber": "01011550362",
+        "userfailedattempts": true,
+        "username": "hashtest"
+    },
     "user1": {
         "balance": 3000.0,
         "email": "user1@gmail.com",
@@ -6,7 +18,7 @@
         "id": 4343,
         "isSuspended": false,
         "lastName": "mohamed",
-        "password": "Test_",
+        "password": "08f1c6e377ca95c36c3b8dbc438b6dd835ddecf2e4f1b76b384fc572118b193f",
         "phoneNumber": "01146053877",
         "userfailedattempts": true,
         "username": "user1"
@@ -18,7 +30,7 @@
         "id": 4343,
         "isSuspended": false,
         "lastName": "elkomy",
-        "password": "Test_",
+        "password": "08f1c6e377ca95c36c3b8dbc438b6dd835ddecf2e4f1b76b384fc572118b193f",
         "phoneNumber": "01146053877",
         "userfailedattempts": true,
         "username": "user2"
@@ -30,7 +42,7 @@
         "id": 4343,
         "isSuspended": false,
         "lastName": "yasser",
-        "password": "Test_",
+        "password": "dfcd5ae1872fbcea751202d3f9cadd5a254051f2bd5e5fce927ff9bd0b12765c",
         "phoneNumber": "01146053877",
         "userfailedattempts": true,
         "username": "user3"

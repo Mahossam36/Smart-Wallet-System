@@ -4,6 +4,7 @@
 #include"SignUp.h"
 #include"Login.h"
 #include<qmessagebox.h>
+#include"UserManagement.h"
 using namespace std;
 
 ChangePassword::ChangePassword(QWidget *parent )
@@ -30,7 +31,8 @@ void ChangePassword::on_confirm_Button_clicked()
     }
     else
     {
-        FileHandler::usersData[cuser].setPassword(pass);
+         string hashpass= UserManagement::hashPass(pass);
+        FileHandler::usersData[cuser].setPassword(hashpass);
         QMessageBox::information(this,"Updated","User Password Was Updated Successfully!");
         this->close();
     }

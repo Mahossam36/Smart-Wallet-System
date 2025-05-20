@@ -262,10 +262,10 @@ public:
         backButton->setText(QCoreApplication::translate("adminmainmenu", "<  BACK", nullptr));
         viewusersbutton->setText(QCoreApplication::translate("adminmainmenu", "View Users", nullptr));
         edituserbutton->setText(QCoreApplication::translate("adminmainmenu", "Edit User Account", nullptr));
-        deleteuserbutton->setText(QCoreApplication::translate("adminmainmenu", "Delete User", nullptr));
+        deleteuserbutton->setText(QCoreApplication::translate("adminmainmenu", "Delete ", nullptr));
         suspenduserbutton->setText(QCoreApplication::translate("adminmainmenu", "Suspend User", nullptr));
         viewusertransactionbutton->setText(QCoreApplication::translate("adminmainmenu", "View User Transaction", nullptr));
-        adjustuserbalancebutton->setText(QCoreApplication::translate("adminmainmenu", "Adjust User Balance", nullptr));
+        adjustuserbalancebutton->setText(QCoreApplication::translate("adminmainmenu", "add User", nullptr));
     } // retranslateUi
 
 };

@@ -10,18 +10,22 @@
 #include <QMessageBox>
 #include "mainwindow.h"
 #include "viewusers.h"
+#include<sodium.h>
+#include"UserManagement.h"
 using namespace std;
 
 
-Admin Login::admin("admin", "123");
+Admin Login::admin("admin", "f5d67bae73b0e10d0dfd3043b3f4f100ada014c5c37bd5ce97813b13f5ab2bcf");
 int Login::totalFailedAttempts = 0;
 const int Login::maxFailedAttempts = 3;
 string Login::ActiveUser = "";//intail value of the active user is empty;
 bool Login::adminlogged = false ;
 void Login::login(string& username, string& password) {
     // Admin login
+    string pass;
+    pass = UserManagement::hashPass(password);
 
-    if (username == admin.getUsername() && password == admin.getPassword()) {
+    if (username == admin.getUsername() && pass == admin.getPassword()) {
         adminlogged = true ;
         QMessageBox::information(nullptr, "Login Successful", "Admin login successful!");
         MainWindow::stackedWidget->setCurrentWidget(MainWindow::adminmainmenuWin);

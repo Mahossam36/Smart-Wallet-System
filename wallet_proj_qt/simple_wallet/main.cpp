@@ -1,5 +1,5 @@
 #include "mainwindow.h"
-
+#include <sodium.h>
 #include <QApplication>
 #include "FileHandler.h"
 #include <unordered_map>
@@ -14,5 +14,8 @@ int main(int argc, char *argv[])
     MainWindow w;
     w.show();
     FileHandler fh;
+
     return a.exec();
+
+
 }

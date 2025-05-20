@@ -92,3 +92,7 @@ DISTFILES += \
 
 RESOURCES += \
     screens.qrc
+
+INCLUDEPATH += C:\libsodium-1.0.20-stable-mingw\libsodium-win64\include
+
+LIBS += -LC:\libsodium-1.0.20-stable-mingw\libsodium-win64\lib -lsodium

@@ -12,5 +12,6 @@ public:
 	static void suspendUser(const string& username);
 	static void activateUser(const string& username);
     static void deleteUser(const string& username);
+    static string hashPass(const string& password);
 };
 
