@@ -22,5 +22,17 @@
         "phoneNumber": "01234567890",
         "userfailedattempts": true,
         "username": "mah"
+    },
+    "user2": {
+        "balance": 2400.0,
+        "email": "user2",
+        "firstName": "ahmed",
+        "id": "01234567890123",
+        "isSuspended": false,
+        "lastName": "mohamed",
+        "password": "7700c6e5b6ef1eb88ad4bc60bfabe240c7dbcb06e95e0aad07a14d6b667103b7",
+        "phoneNumber": "01146053877",
+        "userfailedattempts": true,
+        "username": "user2"
     }
 }

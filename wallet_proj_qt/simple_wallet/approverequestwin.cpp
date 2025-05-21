@@ -56,11 +56,17 @@ void approveRequestWin::showListOfRequests() {
 void approveRequestWin::handleAccept(int transactionId) {
     int approveRes = transactionsManagement::approveRequest(transactionId, false);
 
-    if(approveRes == 1) {
+
+
+
+    if(approveRes == 2) {
         QMessageBox::warning(this, "Balance Error", "you dont have enough balance");
         return;
     }
 
+    if(approveRes == 0) {
+        QMessageBox::warning(this, "Requester not found", "Recipient user account is deleted");
+    }
 
     auto it = itemMap.find(transactionId);
     if(it != itemMap.end()) {

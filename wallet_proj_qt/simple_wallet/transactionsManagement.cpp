@@ -73,9 +73,10 @@ int transactionsManagement::requestMoney(string recipientUser, string senderUser
 
 
 
-// function output : 0 --> sender doesnot have enough  money and request is erased
-//					 1 --> sender rejected the request 
-//					 2 --> request is approved and money is transfered
+// function output : 0 --> requester is deleted
+//                   1 --> rejected the request
+//					 2 --> sender rejected the request
+//					 3 --> request is approved and money is transfered
 int transactionsManagement::approveRequest(int requestID, bool reject) {
     Transaction request = tmTransactions[requestID];
 
@@ -83,16 +84,25 @@ int transactionsManagement::approveRequest(int requestID, bool reject) {
     string senderUser = request.getSenderUsername();
     double amount = request.getAmount();
 
-    // sender reject the request
-    if (reject == true) {
+    // requester is deleted
+
+    if(tmUsers.find(recipientUser) == tmUsers.end()) {
         tmRequests[senderUser].erase(requestID);
         tmTransactions.erase(requestID);
         return 0;
     }
 
+
+    // sender reject the request
+    if (reject == true) {
+        tmRequests[senderUser].erase(requestID);
+        tmTransactions.erase(requestID);
+        return 1;
+    }
+
     // check if sender doesnot have enough money
     if (tmUsers[senderUser].getBalance() < request.getAmount()) {
-        return 1;
+        return 2;
     }
 
 
@@ -106,7 +116,7 @@ int transactionsManagement::approveRequest(int requestID, bool reject) {
     tmRequests[senderUser].erase(requestID);
     sender_map[senderUser].insert(requestID);
     recipient_map[recipientUser].insert(requestID);
-    return 2;
+    return 3;
 }
 
 

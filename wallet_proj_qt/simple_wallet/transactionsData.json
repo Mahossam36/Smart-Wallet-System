@@ -3,48 +3,40 @@
         "amount": 100.0,
         "id": 1,
         "isApproved": true,
-        "recipient": "ahmed",
-        "sender": "mah",
-        "transTime": 1747831314
+        "recipient": "deletedUser",
+        "sender": "user2",
+        "transTime": 1747835624
     },
     {
-        "amount": 2000.0,
+        "amount": 200.0,
         "id": 2,
         "isApproved": true,
-        "recipient": "ahmed",
-        "sender": "mah",
-        "transTime": 1747831320
+        "recipient": "deletedUser",
+        "sender": "user2",
+        "transTime": 1747835629
     },
     {
-        "amount": 500.0,
+        "amount": 300.0,
         "id": 3,
         "isApproved": true,
-        "recipient": "ahmed",
-        "sender": "mah",
-        "transTime": 1747831327
+        "recipient": "deletedUser",
+        "sender": "user2",
+        "transTime": 1747835634
     },
     {
         "amount": 100.0,
         "id": 4,
         "isApproved": true,
-        "recipient": "mah",
-        "sender": "ahmed",
-        "transTime": 1747831335
+        "recipient": "deletedUser",
+        "sender": "user2",
+        "transTime": 1747835672
     },
     {
-        "amount": 200.0,
-        "id": 5,
+        "amount": 100.0,
+        "id": 7,
         "isApproved": true,
-        "recipient": "mah",
-        "sender": "ahmed",
-        "transTime": 1747831339
-    },
-    {
-        "amount": 1400.0,
-        "id": 6,
-        "isApproved": true,
-        "recipient": "mah",
-        "sender": "ahmed",
-        "transTime": 1747831346
+        "recipient": "user2",
+        "sender": "deletedUser",
+        "transTime": 1747835769
     }
 ]
