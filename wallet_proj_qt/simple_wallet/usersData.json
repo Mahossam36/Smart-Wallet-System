@@ -1,3 +1,26 @@
 {
-
+    "ahmed": {
+        "balance": 120900.0,
+        "email": "ahmed",
+        "firstName": "ahmed",
+        "id": "12345678912345",
+        "isSuspended": false,
+        "lastName": "ahmed",
+        "password": "6ea403df7e4b4311b3561b88a562030ae3fb578cdfd6e4556e709f8d38956f60",
+        "phoneNumber": "01111222234",
+        "userfailedattempts": true,
+        "username": "ahmed"
+    },
+    "mah": {
+        "balance": 119100.0,
+        "email": "mah",
+        "firstName": "mah",
+        "id": "12345678910234",
+        "isSuspended": false,
+        "lastName": "mah",
+        "password": "b49697d9eec4a0a255f0f81881e4bf78beec26267ae4d3fb49a4aba0b31ca6ca",
+        "phoneNumber": "01234567890",
+        "userfailedattempts": true,
+        "username": "mah"
+    }
 }

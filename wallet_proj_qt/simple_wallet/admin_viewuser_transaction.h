@@ -16,6 +16,7 @@ public:
     ~Admin_ViewUser_Transaction();
     void displa_User_Info_on_Screen();
     void on_pushButton_4_clicked();
+    void statistical();
     int index;
     bool isNewest;
     int current ;

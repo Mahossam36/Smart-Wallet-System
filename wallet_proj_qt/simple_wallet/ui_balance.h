@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'balance.ui'
 **
-** Created by: Qt User Interface Compiler version 6.6.3
+** Created by: Qt User Interface Compiler version 6.9.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -73,28 +73,28 @@ public:
         label_5->setGeometry(QRect(452, 70, 181, 151));
         QPalette palette;
         QBrush brush(QColor(15, 106, 186, 255));
-        brush.setStyle(Qt::SolidPattern);
-        palette.setBrush(QPalette::Active, QPalette::WindowText, brush);
+        brush.setStyle(Qt::BrushStyle::SolidPattern);
+        palette.setBrush(QPalette::ColorGroup::Active, QPalette::ColorRole::WindowText, brush);
         QBrush brush1(QColor(255, 255, 255, 255));
-        brush1.setStyle(Qt::SolidPattern);
-        palette.setBrush(QPalette::Active, QPalette::Text, brush1);
-        palette.setBrush(QPalette::Active, QPalette::ButtonText, brush1);
+        brush1.setStyle(Qt::BrushStyle::SolidPattern);
+        palette.setBrush(QPalette::ColorGroup::Active, QPalette::ColorRole::Text, brush1);
+        palette.setBrush(QPalette::ColorGroup::Active, QPalette::ColorRole::ButtonText, brush1);
         QBrush brush2(QColor(255, 255, 255, 128));
-        brush2.setStyle(Qt::SolidPattern);
+        brush2.setStyle(Qt::BrushStyle::SolidPattern);
 #if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette.setBrush(QPalette::Active, QPalette::PlaceholderText, brush2);
+        palette.setBrush(QPalette::ColorGroup::Active, QPalette::ColorRole::PlaceholderText, brush2);
 #endif
-        palette.setBrush(QPalette::Inactive, QPalette::WindowText, brush);
-        palette.setBrush(QPalette::Inactive, QPalette::Text, brush1);
-        palette.setBrush(QPalette::Inactive, QPalette::ButtonText, brush1);
+        palette.setBrush(QPalette::ColorGroup::Inactive, QPalette::ColorRole::WindowText, brush);
+        palette.setBrush(QPalette::ColorGroup::Inactive, QPalette::ColorRole::Text, brush1);
+        palette.setBrush(QPalette::ColorGroup::Inactive, QPalette::ColorRole::ButtonText, brush1);
 #if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette.setBrush(QPalette::Inactive, QPalette::PlaceholderText, brush2);
+        palette.setBrush(QPalette::ColorGroup::Inactive, QPalette::ColorRole::PlaceholderText, brush2);
 #endif
-        palette.setBrush(QPalette::Disabled, QPalette::WindowText, brush1);
-        palette.setBrush(QPalette::Disabled, QPalette::Text, brush1);
-        palette.setBrush(QPalette::Disabled, QPalette::ButtonText, brush1);
+        palette.setBrush(QPalette::ColorGroup::Disabled, QPalette::ColorRole::WindowText, brush1);
+        palette.setBrush(QPalette::ColorGroup::Disabled, QPalette::ColorRole::Text, brush1);
+        palette.setBrush(QPalette::ColorGroup::Disabled, QPalette::ColorRole::ButtonText, brush1);
 #if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette.setBrush(QPalette::Disabled, QPalette::PlaceholderText, brush2);
+        palette.setBrush(QPalette::ColorGroup::Disabled, QPalette::ColorRole::PlaceholderText, brush2);
 #endif
         label_5->setPalette(palette);
         QFont font2;
@@ -119,6 +119,7 @@ public:
         balancelabel->setStyleSheet(QString::fromUtf8("background-color:rgb(89, 139, 184);\n"
 "border-radius: 30px;         /* rounded corners */\n"
 "    padding: 8px 16px;"));
+        balancelabel->setAlignment(Qt::AlignmentFlag::AlignCenter);
 
         retranslateUi(balance);
 

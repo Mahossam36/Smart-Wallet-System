@@ -187,9 +187,9 @@ QPushButton:hover {
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>600</x>
+     <x>480</x>
      <y>0</y>
-     <width>441</width>
+     <width>551</width>
      <height>81</height>
     </rect>
    </property>
@@ -247,6 +247,9 @@ QPushButton:hover {
    </property>
    <property name="text">
     <string>Create Your Account</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
    </property>
   </widget>
   <widget class="QLineEdit" name="userNameLine">

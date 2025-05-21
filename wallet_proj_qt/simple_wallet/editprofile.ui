@@ -51,9 +51,9 @@ border-radius: 30px;         /* rounded corners */
   <widget class="QWidget" name="verticalLayoutWidget_2">
    <property name="geometry">
     <rect>
-     <x>0</x>
+     <x>70</x>
      <y>489</y>
-     <width>1051</width>
+     <width>921</width>
      <height>152</height>
     </rect>
    </property>

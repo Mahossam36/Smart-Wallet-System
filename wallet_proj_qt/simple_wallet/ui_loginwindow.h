@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'loginwindow.ui'
 **
-** Created by: Qt User Interface Compiler version 6.6.3
+** Created by: Qt User Interface Compiler version 6.9.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -38,7 +38,7 @@ public:
     {
         if (LoginWindow->objectName().isEmpty())
             LoginWindow->setObjectName("LoginWindow");
-        LoginWindow->resize(1054, 640);
+        LoginWindow->resize(1071, 640);
         centralwidget = new QWidget(LoginWindow);
         centralwidget->setObjectName("centralwidget");
         loginPageButton = new QPushButton(centralwidget);
@@ -63,9 +63,9 @@ public:
         usernameLogin->setGeometry(QRect(140, 260, 381, 41));
         QPalette palette;
         QBrush brush(QColor(238, 238, 238, 255));
-        brush.setStyle(Qt::SolidPattern);
-        palette.setBrush(QPalette::Active, QPalette::Base, brush);
-        palette.setBrush(QPalette::Inactive, QPalette::Base, brush);
+        brush.setStyle(Qt::BrushStyle::SolidPattern);
+        palette.setBrush(QPalette::ColorGroup::Active, QPalette::ColorRole::Base, brush);
+        palette.setBrush(QPalette::ColorGroup::Inactive, QPalette::ColorRole::Base, brush);
         usernameLogin->setPalette(palette);
         QFont font;
         font.setFamilies({QString::fromUtf8("Arial Unicode MS")});
@@ -76,8 +76,8 @@ public:
         passwordLogin->setObjectName("passwordLogin");
         passwordLogin->setGeometry(QRect(140, 340, 381, 41));
         QPalette palette1;
-        palette1.setBrush(QPalette::Active, QPalette::Base, brush);
-        palette1.setBrush(QPalette::Inactive, QPalette::Base, brush);
+        palette1.setBrush(QPalette::ColorGroup::Active, QPalette::ColorRole::Base, brush);
+        palette1.setBrush(QPalette::ColorGroup::Inactive, QPalette::ColorRole::Base, brush);
         passwordLogin->setPalette(palette1);
         passwordLogin->setFont(font);
         passwordLogin->setFrame(false);
@@ -87,28 +87,28 @@ public:
         label->setGeometry(QRect(660, 260, 401, 71));
         QPalette palette2;
         QBrush brush1(QColor(15, 106, 186, 255));
-        brush1.setStyle(Qt::SolidPattern);
-        palette2.setBrush(QPalette::Active, QPalette::WindowText, brush1);
+        brush1.setStyle(Qt::BrushStyle::SolidPattern);
+        palette2.setBrush(QPalette::ColorGroup::Active, QPalette::ColorRole::WindowText, brush1);
         QBrush brush2(QColor(255, 255, 255, 255));
-        brush2.setStyle(Qt::SolidPattern);
-        palette2.setBrush(QPalette::Active, QPalette::Text, brush2);
-        palette2.setBrush(QPalette::Active, QPalette::ButtonText, brush2);
+        brush2.setStyle(Qt::BrushStyle::SolidPattern);
+        palette2.setBrush(QPalette::ColorGroup::Active, QPalette::ColorRole::Text, brush2);
+        palette2.setBrush(QPalette::ColorGroup::Active, QPalette::ColorRole::ButtonText, brush2);
         QBrush brush3(QColor(255, 255, 255, 128));
-        brush3.setStyle(Qt::SolidPattern);
+        brush3.setStyle(Qt::BrushStyle::SolidPattern);
 #if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette2.setBrush(QPalette::Active, QPalette::PlaceholderText, brush3);
+        palette2.setBrush(QPalette::ColorGroup::Active, QPalette::ColorRole::PlaceholderText, brush3);
 #endif
-        palette2.setBrush(QPalette::Inactive, QPalette::WindowText, brush1);
-        palette2.setBrush(QPalette::Inactive, QPalette::Text, brush2);
-        palette2.setBrush(QPalette::Inactive, QPalette::ButtonText, brush2);
+        palette2.setBrush(QPalette::ColorGroup::Inactive, QPalette::ColorRole::WindowText, brush1);
+        palette2.setBrush(QPalette::ColorGroup::Inactive, QPalette::ColorRole::Text, brush2);
+        palette2.setBrush(QPalette::ColorGroup::Inactive, QPalette::ColorRole::ButtonText, brush2);
 #if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette2.setBrush(QPalette::Inactive, QPalette::PlaceholderText, brush3);
+        palette2.setBrush(QPalette::ColorGroup::Inactive, QPalette::ColorRole::PlaceholderText, brush3);
 #endif
-        palette2.setBrush(QPalette::Disabled, QPalette::WindowText, brush2);
-        palette2.setBrush(QPalette::Disabled, QPalette::Text, brush2);
-        palette2.setBrush(QPalette::Disabled, QPalette::ButtonText, brush2);
+        palette2.setBrush(QPalette::ColorGroup::Disabled, QPalette::ColorRole::WindowText, brush2);
+        palette2.setBrush(QPalette::ColorGroup::Disabled, QPalette::ColorRole::Text, brush2);
+        palette2.setBrush(QPalette::ColorGroup::Disabled, QPalette::ColorRole::ButtonText, brush2);
 #if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette2.setBrush(QPalette::Disabled, QPalette::PlaceholderText, brush3);
+        palette2.setBrush(QPalette::ColorGroup::Disabled, QPalette::ColorRole::PlaceholderText, brush3);
 #endif
         label->setPalette(palette2);
         QFont font1;
@@ -131,23 +131,23 @@ public:
         label_4->setObjectName("label_4");
         label_4->setGeometry(QRect(720, 340, 271, 61));
         QPalette palette3;
-        palette3.setBrush(QPalette::Active, QPalette::WindowText, brush1);
-        palette3.setBrush(QPalette::Active, QPalette::Text, brush2);
-        palette3.setBrush(QPalette::Active, QPalette::ButtonText, brush2);
+        palette3.setBrush(QPalette::ColorGroup::Active, QPalette::ColorRole::WindowText, brush1);
+        palette3.setBrush(QPalette::ColorGroup::Active, QPalette::ColorRole::Text, brush2);
+        palette3.setBrush(QPalette::ColorGroup::Active, QPalette::ColorRole::ButtonText, brush2);
 #if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette3.setBrush(QPalette::Active, QPalette::PlaceholderText, brush3);
+        palette3.setBrush(QPalette::ColorGroup::Active, QPalette::ColorRole::PlaceholderText, brush3);
 #endif
-        palette3.setBrush(QPalette::Inactive, QPalette::WindowText, brush1);
-        palette3.setBrush(QPalette::Inactive, QPalette::Text, brush2);
-        palette3.setBrush(QPalette::Inactive, QPalette::ButtonText, brush2);
+        palette3.setBrush(QPalette::ColorGroup::Inactive, QPalette::ColorRole::WindowText, brush1);
+        palette3.setBrush(QPalette::ColorGroup::Inactive, QPalette::ColorRole::Text, brush2);
+        palette3.setBrush(QPalette::ColorGroup::Inactive, QPalette::ColorRole::ButtonText, brush2);
 #if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette3.setBrush(QPalette::Inactive, QPalette::PlaceholderText, brush3);
+        palette3.setBrush(QPalette::ColorGroup::Inactive, QPalette::ColorRole::PlaceholderText, brush3);
 #endif
-        palette3.setBrush(QPalette::Disabled, QPalette::WindowText, brush2);
-        palette3.setBrush(QPalette::Disabled, QPalette::Text, brush2);
-        palette3.setBrush(QPalette::Disabled, QPalette::ButtonText, brush2);
+        palette3.setBrush(QPalette::ColorGroup::Disabled, QPalette::ColorRole::WindowText, brush2);
+        palette3.setBrush(QPalette::ColorGroup::Disabled, QPalette::ColorRole::Text, brush2);
+        palette3.setBrush(QPalette::ColorGroup::Disabled, QPalette::ColorRole::ButtonText, brush2);
 #if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette3.setBrush(QPalette::Disabled, QPalette::PlaceholderText, brush3);
+        palette3.setBrush(QPalette::ColorGroup::Disabled, QPalette::ColorRole::PlaceholderText, brush3);
 #endif
         label_4->setPalette(palette3);
         label_4->setFont(font1);
@@ -156,23 +156,23 @@ public:
         label_5->setObjectName("label_5");
         label_5->setGeometry(QRect(270, 120, 141, 111));
         QPalette palette4;
-        palette4.setBrush(QPalette::Active, QPalette::WindowText, brush1);
-        palette4.setBrush(QPalette::Active, QPalette::Text, brush2);
-        palette4.setBrush(QPalette::Active, QPalette::ButtonText, brush2);
+        palette4.setBrush(QPalette::ColorGroup::Active, QPalette::ColorRole::WindowText, brush1);
+        palette4.setBrush(QPalette::ColorGroup::Active, QPalette::ColorRole::Text, brush2);
+        palette4.setBrush(QPalette::ColorGroup::Active, QPalette::ColorRole::ButtonText, brush2);
 #if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette4.setBrush(QPalette::Active, QPalette::PlaceholderText, brush3);
+        palette4.setBrush(QPalette::ColorGroup::Active, QPalette::ColorRole::PlaceholderText, brush3);
 #endif
-        palette4.setBrush(QPalette::Inactive, QPalette::WindowText, brush1);
-        palette4.setBrush(QPalette::Inactive, QPalette::Text, brush2);
-        palette4.setBrush(QPalette::Inactive, QPalette::ButtonText, brush2);
+        palette4.setBrush(QPalette::ColorGroup::Inactive, QPalette::ColorRole::WindowText, brush1);
+        palette4.setBrush(QPalette::ColorGroup::Inactive, QPalette::ColorRole::Text, brush2);
+        palette4.setBrush(QPalette::ColorGroup::Inactive, QPalette::ColorRole::ButtonText, brush2);
 #if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette4.setBrush(QPalette::Inactive, QPalette::PlaceholderText, brush3);
+        palette4.setBrush(QPalette::ColorGroup::Inactive, QPalette::ColorRole::PlaceholderText, brush3);
 #endif
-        palette4.setBrush(QPalette::Disabled, QPalette::WindowText, brush2);
-        palette4.setBrush(QPalette::Disabled, QPalette::Text, brush2);
-        palette4.setBrush(QPalette::Disabled, QPalette::ButtonText, brush2);
+        palette4.setBrush(QPalette::ColorGroup::Disabled, QPalette::ColorRole::WindowText, brush2);
+        palette4.setBrush(QPalette::ColorGroup::Disabled, QPalette::ColorRole::Text, brush2);
+        palette4.setBrush(QPalette::ColorGroup::Disabled, QPalette::ColorRole::ButtonText, brush2);
 #if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette4.setBrush(QPalette::Disabled, QPalette::PlaceholderText, brush3);
+        palette4.setBrush(QPalette::ColorGroup::Disabled, QPalette::ColorRole::PlaceholderText, brush3);
 #endif
         label_5->setPalette(palette4);
         QFont font2;
@@ -184,7 +184,7 @@ public:
         label_5->setStyleSheet(QString::fromUtf8("color: 598bb8"));
         backButton = new QPushButton(centralwidget);
         backButton->setObjectName("backButton");
-        backButton->setGeometry(QRect(60, 590, 93, 29));
+        backButton->setGeometry(QRect(80, 590, 93, 29));
         QFont font3;
         font3.setFamilies({QString::fromUtf8("Arial Unicode MS")});
         backButton->setFont(font3);
@@ -240,7 +240,7 @@ public:
     {
         LoginWindow->setWindowTitle(QCoreApplication::translate("LoginWindow", "MainWindow", nullptr));
         loginPageButton->setText(QCoreApplication::translate("LoginWindow", "login", nullptr));
-        usernameLogin->setPlaceholderText(QCoreApplication::translate("LoginWindow", "UserName", nullptr));
+        usernameLogin->setPlaceholderText(QCoreApplication::translate("LoginWindow", "Username", nullptr));
         passwordLogin->setPlaceholderText(QCoreApplication::translate("LoginWindow", "Password", nullptr));
         label->setText(QCoreApplication::translate("LoginWindow", "Login To Your", nullptr));
         label_2->setText(QString());

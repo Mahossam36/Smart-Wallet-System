@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'editprofile.ui'
 **
-** Created by: Qt User Interface Compiler version 6.6.3
+** Created by: Qt User Interface Compiler version 6.9.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -94,7 +94,7 @@ public:
 "    padding: 8px 16px;"));
         verticalLayoutWidget_2 = new QWidget(EditProfile);
         verticalLayoutWidget_2->setObjectName("verticalLayoutWidget_2");
-        verticalLayoutWidget_2->setGeometry(QRect(0, 489, 1051, 152));
+        verticalLayoutWidget_2->setGeometry(QRect(70, 489, 921, 152));
         verticalLayout_4 = new QVBoxLayout(verticalLayoutWidget_2);
         verticalLayout_4->setObjectName("verticalLayout_4");
         verticalLayout_4->setContentsMargins(0, 0, 0, 0);
@@ -256,8 +256,8 @@ public:
         line_4 = new QFrame(verticalLayoutWidget);
         line_4->setObjectName("line_4");
         line_4->setStyleSheet(QString::fromUtf8("border-top: 2px solid #598bb8;"));
-        line_4->setFrameShape(QFrame::HLine);
-        line_4->setFrameShadow(QFrame::Sunken);
+        line_4->setFrameShape(QFrame::Shape::HLine);
+        line_4->setFrameShadow(QFrame::Shadow::Sunken);
 
         verticalLayout->addWidget(line_4);
 
@@ -278,8 +278,8 @@ public:
         line_3 = new QFrame(verticalLayoutWidget);
         line_3->setObjectName("line_3");
         line_3->setStyleSheet(QString::fromUtf8("border-top: 2px solid #598bb8;"));
-        line_3->setFrameShape(QFrame::HLine);
-        line_3->setFrameShadow(QFrame::Sunken);
+        line_3->setFrameShape(QFrame::Shape::HLine);
+        line_3->setFrameShadow(QFrame::Shadow::Sunken);
 
         verticalLayout->addWidget(line_3);
 
@@ -354,8 +354,8 @@ public:
         line_2 = new QFrame(verticalLayoutWidget);
         line_2->setObjectName("line_2");
         line_2->setStyleSheet(QString::fromUtf8("border-top: 2px solid #598bb8;"));
-        line_2->setFrameShape(QFrame::HLine);
-        line_2->setFrameShadow(QFrame::Sunken);
+        line_2->setFrameShape(QFrame::Shape::HLine);
+        line_2->setFrameShadow(QFrame::Shadow::Sunken);
 
         verticalLayout->addWidget(line_2);
 

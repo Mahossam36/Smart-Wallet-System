@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'admin_viewuser_transaction.ui'
 **
-** Created by: Qt User Interface Compiler version 6.6.3
+** Created by: Qt User Interface Compiler version 6.9.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -44,8 +44,21 @@ public:
     QTableWidget *tableWidget;
     QPushButton *pushButton_3;
     QWidget *widget_2;
-    QLabel *label_10;
     QWidget *widget;
+    QVBoxLayout *verticalLayout;
+    QHBoxLayout *horizontalLayout_10;
+    QLabel *label_11;
+    QLabel *total_transaction;
+    QHBoxLayout *horizontalLayout_9;
+    QLabel *label_15;
+    QLabel *highest_lowest;
+    QHBoxLayout *horizontalLayout_8;
+    QLabel *label_13;
+    QLabel *spending_income;
+    QHBoxLayout *horizontalLayout_7;
+    QLabel *label_14;
+    QLabel *average_amount;
+    QWidget *widget1;
     QWidget *layoutWidget_2;
     QHBoxLayout *horizontalLayout_4;
     QLabel *Balance_icon;
@@ -96,8 +109,8 @@ public:
         line->setStyleSheet(QString::fromUtf8(" background-color: rgb(0, 0, 0);\n"
 "border: 2px solid black;\n"
 ""));
-        line->setFrameShape(QFrame::HLine);
-        line->setFrameShadow(QFrame::Sunken);
+        line->setFrameShape(QFrame::Shape::HLine);
+        line->setFrameShadow(QFrame::Shadow::Sunken);
         label = new QLabel(widget_3);
         label->setObjectName("label");
         label->setGeometry(QRect(40, 45, 63, 20));
@@ -128,7 +141,7 @@ public:
         pushButton->setObjectName("pushButton");
         pushButton->setMaximumSize(QSize(35, 35));
         QIcon icon;
-        icon.addFile(QString::fromUtf8("left_12655291.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon.addFile(QString::fromUtf8("left_12655291.png"), QSize(), QIcon::Mode::Normal, QIcon::State::Off);
         pushButton->setIcon(icon);
         pushButton->setIconSize(QSize(35, 35));
 
@@ -194,7 +207,7 @@ public:
         pushButton_3->setGeometry(QRect(885, 21, 20, 20));
         pushButton_3->setMaximumSize(QSize(20, 20));
         QIcon icon1;
-        icon1.addFile(QString::fromUtf8("back_14493189.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon1.addFile(QString::fromUtf8("back_14493189.png"), QSize(), QIcon::Mode::Normal, QIcon::State::Off);
         pushButton_3->setIcon(icon1);
         pushButton_3->setIconSize(QSize(20, 20));
         widget_2 = new QWidget(centralwidget);
@@ -203,21 +216,111 @@ public:
         widget_2->setStyleSheet(QString::fromUtf8("border-radius: 32;\n"
 "background-color: #598bb8;\n"
 ""));
-        label_10 = new QLabel(widget_2);
-        label_10->setObjectName("label_10");
-        label_10->setEnabled(true);
-        label_10->setGeometry(QRect(30, 100, 471, 46));
-        QFont font2;
-        font2.setPointSize(28);
-        font2.setBold(true);
-        label_10->setFont(font2);
-        widget = new QWidget(centralwidget);
+        widget = new QWidget(widget_2);
         widget->setObjectName("widget");
-        widget->setGeometry(QRect(46, 30, 400, 301));
-        widget->setStyleSheet(QString::fromUtf8("border-radius: 32;\n"
+        widget->setGeometry(QRect(30, 20, 511, 251));
+        verticalLayout = new QVBoxLayout(widget);
+        verticalLayout->setObjectName("verticalLayout");
+        verticalLayout->setContentsMargins(0, 0, 0, 0);
+        horizontalLayout_10 = new QHBoxLayout();
+        horizontalLayout_10->setObjectName("horizontalLayout_10");
+        label_11 = new QLabel(widget);
+        label_11->setObjectName("label_11");
+        label_11->setEnabled(true);
+        label_11->setFont(font);
+        label_11->setStyleSheet(QString::fromUtf8(""));
+        label_11->setAlignment(Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter);
+
+        horizontalLayout_10->addWidget(label_11);
+
+        total_transaction = new QLabel(widget);
+        total_transaction->setObjectName("total_transaction");
+        total_transaction->setEnabled(true);
+        total_transaction->setFont(font);
+        total_transaction->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255)"));
+        total_transaction->setAlignment(Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter);
+
+        horizontalLayout_10->addWidget(total_transaction);
+
+
+        verticalLayout->addLayout(horizontalLayout_10);
+
+        horizontalLayout_9 = new QHBoxLayout();
+        horizontalLayout_9->setObjectName("horizontalLayout_9");
+        label_15 = new QLabel(widget);
+        label_15->setObjectName("label_15");
+        label_15->setEnabled(true);
+        label_15->setFont(font);
+        label_15->setStyleSheet(QString::fromUtf8(""));
+        label_15->setAlignment(Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter);
+
+        horizontalLayout_9->addWidget(label_15);
+
+        highest_lowest = new QLabel(widget);
+        highest_lowest->setObjectName("highest_lowest");
+        highest_lowest->setEnabled(true);
+        highest_lowest->setFont(font);
+        highest_lowest->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255)"));
+        highest_lowest->setAlignment(Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter);
+
+        horizontalLayout_9->addWidget(highest_lowest);
+
+
+        verticalLayout->addLayout(horizontalLayout_9);
+
+        horizontalLayout_8 = new QHBoxLayout();
+        horizontalLayout_8->setObjectName("horizontalLayout_8");
+        label_13 = new QLabel(widget);
+        label_13->setObjectName("label_13");
+        label_13->setEnabled(true);
+        label_13->setFont(font);
+        label_13->setStyleSheet(QString::fromUtf8(""));
+        label_13->setAlignment(Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter);
+
+        horizontalLayout_8->addWidget(label_13);
+
+        spending_income = new QLabel(widget);
+        spending_income->setObjectName("spending_income");
+        spending_income->setEnabled(true);
+        spending_income->setFont(font);
+        spending_income->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255)"));
+        spending_income->setAlignment(Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter);
+
+        horizontalLayout_8->addWidget(spending_income);
+
+
+        verticalLayout->addLayout(horizontalLayout_8);
+
+        horizontalLayout_7 = new QHBoxLayout();
+        horizontalLayout_7->setObjectName("horizontalLayout_7");
+        label_14 = new QLabel(widget);
+        label_14->setObjectName("label_14");
+        label_14->setEnabled(true);
+        label_14->setFont(font);
+        label_14->setStyleSheet(QString::fromUtf8(""));
+        label_14->setAlignment(Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter);
+
+        horizontalLayout_7->addWidget(label_14);
+
+        average_amount = new QLabel(widget);
+        average_amount->setObjectName("average_amount");
+        average_amount->setEnabled(true);
+        average_amount->setFont(font);
+        average_amount->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255)"));
+        average_amount->setAlignment(Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter);
+
+        horizontalLayout_7->addWidget(average_amount);
+
+
+        verticalLayout->addLayout(horizontalLayout_7);
+
+        widget1 = new QWidget(centralwidget);
+        widget1->setObjectName("widget1");
+        widget1->setGeometry(QRect(46, 30, 400, 301));
+        widget1->setStyleSheet(QString::fromUtf8("border-radius: 32;\n"
 "background-color: #598bb8;\n"
 ""));
-        layoutWidget_2 = new QWidget(widget);
+        layoutWidget_2 = new QWidget(widget1);
         layoutWidget_2->setObjectName("layoutWidget_2");
         layoutWidget_2->setGeometry(QRect(30, 10, 358, 71));
         horizontalLayout_4 = new QHBoxLayout(layoutWidget_2);
@@ -236,14 +339,14 @@ public:
         Balance_Labe->setEnabled(true);
         Balance_Labe->setMinimumSize(QSize(289, 40));
         Balance_Labe->setMaximumSize(QSize(289, 40));
-        QFont font3;
-        font3.setPointSize(24);
-        font3.setBold(true);
-        Balance_Labe->setFont(font3);
+        QFont font2;
+        font2.setPointSize(24);
+        font2.setBold(true);
+        Balance_Labe->setFont(font2);
 
         horizontalLayout_4->addWidget(Balance_Labe);
 
-        layoutWidget_3 = new QWidget(widget);
+        layoutWidget_3 = new QWidget(widget1);
         layoutWidget_3->setObjectName("layoutWidget_3");
         layoutWidget_3->setGeometry(QRect(30, 90, 342, 176));
         verticalLayout_2 = new QVBoxLayout(layoutWidget_3);
@@ -253,10 +356,10 @@ public:
         Full_Name->setObjectName("Full_Name");
         Full_Name->setMinimumSize(QSize(340, 30));
         Full_Name->setMaximumSize(QSize(289, 30));
-        QFont font4;
-        font4.setPointSize(20);
-        font4.setBold(true);
-        Full_Name->setFont(font4);
+        QFont font3;
+        font3.setPointSize(20);
+        font3.setBold(true);
+        Full_Name->setFont(font3);
 
         verticalLayout_2->addWidget(Full_Name);
 
@@ -385,7 +488,14 @@ public:
         tableWidget->setSortingEnabled(__sortingEnabled);
 
         pushButton_3->setText(QString());
-        label_10->setText(QCoreApplication::translate("Admin_ViewUser_Transaction", "Dashboard here", nullptr));
+        label_11->setText(QCoreApplication::translate("Admin_ViewUser_Transaction", "Total Transactions :", nullptr));
+        total_transaction->setText(QCoreApplication::translate("Admin_ViewUser_Transaction", "1234", nullptr));
+        label_15->setText(QCoreApplication::translate("Admin_ViewUser_Transaction", "Highest / Lowest :", nullptr));
+        highest_lowest->setText(QCoreApplication::translate("Admin_ViewUser_Transaction", "1234", nullptr));
+        label_13->setText(QCoreApplication::translate("Admin_ViewUser_Transaction", "Total Spending / Income :", nullptr));
+        spending_income->setText(QCoreApplication::translate("Admin_ViewUser_Transaction", "1234", nullptr));
+        label_14->setText(QCoreApplication::translate("Admin_ViewUser_Transaction", "Average Transaction Amount :", nullptr));
+        average_amount->setText(QCoreApplication::translate("Admin_ViewUser_Transaction", "1234", nullptr));
         Balance_icon->setText(QString());
         Balance_Labe->setText(QCoreApplication::translate("Admin_ViewUser_Transaction", "TEST", nullptr));
         Full_Name->setText(QCoreApplication::translate("Admin_ViewUser_Transaction", "Full Name", nullptr));

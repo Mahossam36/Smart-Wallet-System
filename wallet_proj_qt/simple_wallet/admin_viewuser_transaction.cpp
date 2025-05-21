@@ -91,7 +91,7 @@ void Admin_ViewUser_Transaction::on_pushButton_4_clicked() {
     static bool Isnew= true;
 
     ui->tableWidget->setRowCount(0);
-
+    statistical();
     lastUsername = user.getUsername();
     Isnew= isNewest;
 
@@ -123,3 +123,50 @@ void Admin_ViewUser_Transaction::on_pushButton_3_clicked()
 
 }
 
+
+void Admin_ViewUser_Transaction::statistical(){
+    int number_of_transactions=0;
+    long long highest=-1,lowest=1000000000,spending=0 ,income=0;
+    auto it = FileHandler::recipientData[user.getUsername()];
+    for(int id :it){
+        int amount= FileHandler::transactionsData[id].getAmount();
+        income+=amount;
+        if (highest<amount)
+            highest =amount;
+        if (lowest>amount)
+            lowest=amount;
+    }
+
+    if(!it.empty())
+        number_of_transactions+= it.size();
+
+
+
+    auto it1 = FileHandler::senderData[user.getUsername()];
+    for(int id :it1){
+        int amount= FileHandler::transactionsData[id].getAmount();
+        spending+=amount;
+        if (highest<amount)
+            highest =amount;
+        if (lowest>amount)
+            lowest=amount;
+    }
+
+
+    if(!it1.empty())
+        number_of_transactions+= it1.size();
+
+
+    if(highest==-1)
+        highest=0;
+    if(lowest==1000000000)
+        lowest=0;
+    long long average =0;
+    if((it.size()+it1.size())!=0)
+        average = (spending+income)/(it.size()+it1.size());
+    ui->total_transaction->setText(QString::fromStdString(to_string(number_of_transactions)));
+    ui->highest_lowest->setText(QString::fromStdString(to_string(highest)+" / "+to_string(lowest)));
+    ui->spending_income->setText(QString::fromStdString(to_string(spending)+" / "+to_string(income)));
+    ui->average_amount->setText(QString::fromStdString(to_string(average)));
+
+}

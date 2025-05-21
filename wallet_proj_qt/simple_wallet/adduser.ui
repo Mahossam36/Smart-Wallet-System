@@ -905,9 +905,9 @@ border-radius: 30px;         /* rounded corners */
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>420</x>
+     <x>260</x>
      <y>0</y>
-     <width>321</width>
+     <width>551</width>
      <height>81</height>
     </rect>
    </property>
@@ -1041,6 +1041,9 @@ border-radius: 30px;         /* rounded corners */
    </property>
    <property name="text">
     <string>Add New User</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
    </property>
   </widget>
   <widget class="QPushButton" name="addNewButton">
