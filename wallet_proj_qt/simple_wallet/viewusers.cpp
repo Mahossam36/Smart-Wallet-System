@@ -202,6 +202,7 @@ void ViewUsers::on_save_pushButton_clicked()
 
 void ViewUsers::on_sus_pushButton_clicked()
 {
+    if(ui->listWidget->currentIndex().isValid()){
     string username=ui->username_label->text().toStdString();
 
     if( FileHandler::usersData[username].getSuspensionStatus()){
@@ -215,11 +216,13 @@ void ViewUsers::on_sus_pushButton_clicked()
         QMessageBox::information(this,"Susbend","User Was Suspended Successfully!");
         ui->sus_pushButton->setText("UnSuspend");
     }
+    }
 }
 
 
 void ViewUsers::on_del_pushButton_clicked()
 {
+    if(ui->listWidget->currentIndex().isValid()){
     string username=ui->username_label->text().toStdString();
     QListWidgetItem *item =ui->listWidget->takeItem(ui->listWidget->currentRow());//remove the iteam from the widget
     delete item;//free the space the iteam was reserving
@@ -229,6 +232,7 @@ void ViewUsers::on_del_pushButton_clicked()
     UserManagement::deleteUser(username);
 
     QMessageBox::information(this,"Deleted","User Was Deleted Successfully!");
+    }
 }
 
 ViewUsers::~ViewUsers()
@@ -246,9 +250,11 @@ void ViewUsers::on_backButton_2_clicked()
 
 void ViewUsers::on_vth_pushButton_2_clicked()
 {
+    if(ui->listWidget->currentIndex().isValid()){
     MainWindow::stackedWidget->setCurrentWidget(MainWindow::Admin_Transaction);
     MainWindow::Admin_Transaction->displa_User_Info_on_Screen();
     MainWindow::Admin_Transaction->on_pushButton_4_clicked();
+    }
 
 }
 

@@ -77,27 +77,24 @@ void UserManagement::activateUser(const string& username) {
 }
 
 void UserManagement::deleteUser(const string& username){
-    //first we itearte on the transaction data and if found a sender or receiver with the same name replace it with deletedUser
+    set <int> combinedset(FileHandler::senderData[username]);//first we create the set
+    combinedset.insert(FileHandler::recipientData[username].begin(),FileHandler::recipientData[username].end());//we mix it with the recipent set
+    //now we have a set that have all the transactions of the user
 
-    for(size_t i =1 ; i<=transaction_data.size();i++){
-        if(transaction_data[i].getSenderUsername()==username){
-            transaction_data[i].setSenderUsername("deletedUser");
+    auto it = combinedset.begin();
+
+    while(it!=combinedset.end()){
+        if(transaction_data[*it].getSenderUsername()==username){
+            transaction_data[*it].setSenderUsername("deletedUser");
         }
-        if(transaction_data[i].getRecipientUsername()==username){
-            transaction_data[i].setRecipientUsername("deletedUser");
-        }
-
-    }
-
-    //second we itreate in the users data and if user found then erase this user
-    auto it=users.begin();
-    while(it!=users.end()){
-        if(it->second.getUsername()==username){
-            users.erase(it);
-            break;
+        if(transaction_data[*it].getRecipientUsername()==username){
+            transaction_data[*it].setRecipientUsername("deletedUser");
         }
         it++;
     }
+
+    //second we delete the user from the unorderd map
+    FileHandler::usersData.erase(username);
 }
 
 string toHexString(const unsigned char* hash, size_t length) {
