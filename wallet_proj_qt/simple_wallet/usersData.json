@@ -23,6 +23,18 @@
         "userfailedattempts": true,
         "username": "ahmed"
     },
+    "deleteduser": {
+        "balance": 0.0,
+        "email": "dfkfjdk@gmail.com",
+        "firstName": "fgfdgq",
+        "id": 34343,
+        "isSuspended": false,
+        "lastName": "fdffd",
+        "password": "08f1c6e377ca95c36c3b8dbc438b6dd835ddecf2e4f1b76b384fc572118b193f",
+        "phoneNumber": "01146053877",
+        "userfailedattempts": true,
+        "username": "deleteduser"
+    },
     "hashtest": {
         "balance": 0.0,
         "email": "hashtes@gmail.com",
@@ -70,5 +82,41 @@
         "phoneNumber": "01146053877",
         "userfailedattempts": false,
         "username": "user3"
+    },
+    "user4": {
+        "balance": 3849.75,
+        "email": "user4@gmail.com",
+        "firstName": "ahmed",
+        "id": 34343,
+        "isSuspended": false,
+        "lastName": "mohamed",
+        "password": "08f1c6e377ca95c36c3b8dbc438b6dd835ddecf2e4f1b76b384fc572118b193f",
+        "phoneNumber": "01146053877",
+        "userfailedattempts": true,
+        "username": "user4"
+    },
+    "user5": {
+        "balance": 400.25,
+        "email": "user5@gmail.com",
+        "firstName": "mahmoud",
+        "id": 33434,
+        "isSuspended": false,
+        "lastName": "hossam",
+        "password": "08f1c6e377ca95c36c3b8dbc438b6dd835ddecf2e4f1b76b384fc572118b193f",
+        "phoneNumber": "01146053877",
+        "userfailedattempts": true,
+        "username": "user5"
+    },
+    "user6": {
+        "balance": 1750.0,
+        "email": "user6@gmail.com",
+        "firstName": "ahmed",
+        "id": 34343,
+        "isSuspended": false,
+        "lastName": "mohamed",
+        "password": "08f1c6e377ca95c36c3b8dbc438b6dd835ddecf2e4f1b76b384fc572118b193f",
+        "phoneNumber": "01146053877",
+        "userfailedattempts": true,
+        "username": "user6"
     }
 }

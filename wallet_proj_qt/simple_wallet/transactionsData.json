@@ -78,5 +78,45 @@
         "recipient": "Elkomy",
         "sender": "test",
         "transTime": 1747784795
+    },
+    {
+        "amount": 150.25,
+        "id": 11,
+        "isApproved": true,
+        "recipient": "user5",
+        "sender": "user4",
+        "transTime": 1747814690
+    },
+    {
+        "amount": 200.0,
+        "id": 12,
+        "isApproved": true,
+        "recipient": "user4",
+        "sender": "user6",
+        "transTime": 1747815082
+    },
+    {
+        "amount": 100.0,
+        "id": 13,
+        "isApproved": true,
+        "recipient": "user5",
+        "sender": "user6",
+        "transTime": 1747815088
+    },
+    {
+        "amount": 50.0,
+        "id": 14,
+        "isApproved": true,
+        "recipient": "user6",
+        "sender": "user5",
+        "transTime": 1747815406
+    },
+    {
+        "amount": 200.0,
+        "id": 15,
+        "isApproved": true,
+        "recipient": "user5",
+        "sender": "user4",
+        "transTime": 1747815556
     }
 ]

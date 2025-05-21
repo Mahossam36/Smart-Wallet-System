@@ -74,9 +74,17 @@ void signupwindow::on_signUpButton_clicked()
     string email=qEmail.toStdString();
     string id = qId.toStdString();
 
+
+
     if (firstname.empty() || lastname.empty() || username.empty() ||
         password.empty() || phonenumber.empty()|| email.empty() ||id.empty()) {
         QMessageBox::warning(this, "Input Error", "Please fill in all fields.");
+        return;
+    }
+
+    if(username == "deletedUser") {
+
+        QMessageBox::warning(this, "Input Error", "Reserved Username, choose other username");
         return;
     }
 

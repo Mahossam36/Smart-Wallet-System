@@ -56,5 +56,19 @@ MainWindow::MainWindow(QWidget *parent)
 
 MainWindow::~MainWindow()
 {
+
+    delete stackedWidget;
+    delete loginwindow;
+    delete signwindow;
+    delete usermainmenuWin;
+    delete adminmainmenuWin;
+    delete balanceWin;
+    delete view;
+    delete Admin_Transaction;
+    delete userApproveRequest;
+    delete editprofile;
+    delete alltransactions;
+    delete addUser;
+
     delete ui;
 }

@@ -114,16 +114,13 @@ string UserManagement::hashPass(const string& pass){
         std::cerr << "Failed to initialize libsodium." << std::endl;
     }
 
-    // Take input from user
 
-    // Output hash will be 32 bytes (256 bits)
     unsigned char hash[crypto_generichash_BYTES];
 
-    // Hash the input string
     crypto_generichash(
-        hash, sizeof(hash),                             // Output buffer
-        reinterpret_cast<const unsigned char*>(pass.c_str()), pass.length(), // Input
-        NULL, 0                                          // No key (use NULL for generic hash)
+        hash, sizeof(hash),
+        reinterpret_cast<const unsigned char*>(pass.c_str()), pass.length(),
+        NULL, 0
         );
     return toHexString(hash ,sizeof(hash));
 }

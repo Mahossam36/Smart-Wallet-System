@@ -229,6 +229,7 @@ compiler_rcc_clean:
 debug/qrc_screens.cpp: screens.qrc \
 		C:/Qt/6.9.0/mingw_64/bin/rcc.exe \
 		undraw_vault_tyfh.svg \
+		checked.png \
 		sendmoneyicon.png \
 		adjustbalanceicon.jpg \
 		transactionhistoryicon.jpg \
@@ -456,7 +457,7 @@ debug/moc_adduser.cpp: adduser.h \
 		C:/Qt/6.9.0/mingw_64/include/QtGui/qguiapplication_platform.h \
 		debug/moc_predefs.h \
 		C:/Qt/6.9.0/mingw_64/bin/moc.exe
-	C:\Qt\6.9.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Hp/Documents/Smart-Wallet-System/wallet_proj_qt/simple_wallet/debug/moc_predefs.h -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -IC:/Users/Hp/Documents/Smart-Wallet-System/wallet_proj_qt/simple_wallet -IC:/libsodium-1.0.20-stable-mingw/libsodium-win64/include -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtSvgWidgets -IC:/Qt/6.9.0/mingw_64/include/QtSvg -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtCore -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IF:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include adduser.h -o debug\moc_adduser.cpp
+	C:\Qt\6.9.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/gawad/OneDrive/Desktop/Smart-Wallet-System/wallet_proj_qt/simple_wallet/debug/moc_predefs.h -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -IC:/Users/gawad/OneDrive/Desktop/Smart-Wallet-System/wallet_proj_qt/simple_wallet -IC:/libsodium-1.0.20-stable-mingw/libsodium-win64/include -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtSvgWidgets -IC:/Qt/6.9.0/mingw_64/include/QtSvg -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtCore -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IF:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include adduser.h -o debug\moc_adduser.cpp
 
 debug/moc_admin_viewuser_transaction.cpp: admin_viewuser_transaction.h \
 		C:/Qt/6.9.0/mingw_64/include/QtWidgets/QMainWindow \
@@ -660,7 +661,7 @@ debug/moc_admin_viewuser_transaction.cpp: admin_viewuser_transaction.h \
 		C:/Qt/6.9.0/mingw_64/include/QtWidgets/qtabwidget.h \
 		debug/moc_predefs.h \
 		C:/Qt/6.9.0/mingw_64/bin/moc.exe
-	C:\Qt\6.9.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Hp/Documents/Smart-Wallet-System/wallet_proj_qt/simple_wallet/debug/moc_predefs.h -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -IC:/Users/Hp/Documents/Smart-Wallet-System/wallet_proj_qt/simple_wallet -IC:/libsodium-1.0.20-stable-mingw/libsodium-win64/include -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtSvgWidgets -IC:/Qt/6.9.0/mingw_64/include/QtSvg -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtCore -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IF:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include admin_viewuser_transaction.h -o debug\moc_admin_viewuser_transaction.cpp
+	C:\Qt\6.9.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/gawad/OneDrive/Desktop/Smart-Wallet-System/wallet_proj_qt/simple_wallet/debug/moc_predefs.h -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -IC:/Users/gawad/OneDrive/Desktop/Smart-Wallet-System/wallet_proj_qt/simple_wallet -IC:/libsodium-1.0.20-stable-mingw/libsodium-win64/include -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtSvgWidgets -IC:/Qt/6.9.0/mingw_64/include/QtSvg -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtCore -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IF:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include admin_viewuser_transaction.h -o debug\moc_admin_viewuser_transaction.cpp
 
 debug/moc_adminmainmenu.cpp: adminmainmenu.h \
 		C:/Qt/6.9.0/mingw_64/include/QtWidgets/QDialog \
@@ -863,7 +864,7 @@ debug/moc_adminmainmenu.cpp: adminmainmenu.h \
 		C:/Qt/6.9.0/mingw_64/include/QtGui/qguiapplication_platform.h \
 		debug/moc_predefs.h \
 		C:/Qt/6.9.0/mingw_64/bin/moc.exe
-	C:\Qt\6.9.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Hp/Documents/Smart-Wallet-System/wallet_proj_qt/simple_wallet/debug/moc_predefs.h -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -IC:/Users/Hp/Documents/Smart-Wallet-System/wallet_proj_qt/simple_wallet -IC:/libsodium-1.0.20-stable-mingw/libsodium-win64/include -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtSvgWidgets -IC:/Qt/6.9.0/mingw_64/include/QtSvg -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtCore -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IF:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include adminmainmenu.h -o debug\moc_adminmainmenu.cpp
+	C:\Qt\6.9.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/gawad/OneDrive/Desktop/Smart-Wallet-System/wallet_proj_qt/simple_wallet/debug/moc_predefs.h -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -IC:/Users/gawad/OneDrive/Desktop/Smart-Wallet-System/wallet_proj_qt/simple_wallet -IC:/libsodium-1.0.20-stable-mingw/libsodium-win64/include -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtSvgWidgets -IC:/Qt/6.9.0/mingw_64/include/QtSvg -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtCore -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IF:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include adminmainmenu.h -o debug\moc_adminmainmenu.cpp
 
 debug/moc_approverequestwin.cpp: approverequestwin.h \
 		C:/Qt/6.9.0/mingw_64/include/QtWidgets/QWidget \
@@ -1084,7 +1085,7 @@ debug/moc_approverequestwin.cpp: approverequestwin.h \
 		C:/Qt/6.9.0/mingw_64/include/QtWidgets/qrubberband.h \
 		debug/moc_predefs.h \
 		C:/Qt/6.9.0/mingw_64/bin/moc.exe
-	C:\Qt\6.9.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Hp/Documents/Smart-Wallet-System/wallet_proj_qt/simple_wallet/debug/moc_predefs.h -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -IC:/Users/Hp/Documents/Smart-Wallet-System/wallet_proj_qt/simple_wallet -IC:/libsodium-1.0.20-stable-mingw/libsodium-win64/include -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtSvgWidgets -IC:/Qt/6.9.0/mingw_64/include/QtSvg -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtCore -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IF:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include approverequestwin.h -o debug\moc_approverequestwin.cpp
+	C:\Qt\6.9.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/gawad/OneDrive/Desktop/Smart-Wallet-System/wallet_proj_qt/simple_wallet/debug/moc_predefs.h -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -IC:/Users/gawad/OneDrive/Desktop/Smart-Wallet-System/wallet_proj_qt/simple_wallet -IC:/libsodium-1.0.20-stable-mingw/libsodium-win64/include -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtSvgWidgets -IC:/Qt/6.9.0/mingw_64/include/QtSvg -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtCore -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IF:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include approverequestwin.h -o debug\moc_approverequestwin.cpp
 
 debug/moc_balance.cpp: balance.h \
 		C:/Qt/6.9.0/mingw_64/include/QtWidgets/QDialog \
@@ -1287,7 +1288,7 @@ debug/moc_balance.cpp: balance.h \
 		C:/Qt/6.9.0/mingw_64/include/QtGui/qguiapplication_platform.h \
 		debug/moc_predefs.h \
 		C:/Qt/6.9.0/mingw_64/bin/moc.exe
-	C:\Qt\6.9.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Hp/Documents/Smart-Wallet-System/wallet_proj_qt/simple_wallet/debug/moc_predefs.h -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -IC:/Users/Hp/Documents/Smart-Wallet-System/wallet_proj_qt/simple_wallet -IC:/libsodium-1.0.20-stable-mingw/libsodium-win64/include -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtSvgWidgets -IC:/Qt/6.9.0/mingw_64/include/QtSvg -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtCore -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IF:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include balance.h -o debug\moc_balance.cpp
+	C:\Qt\6.9.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/gawad/OneDrive/Desktop/Smart-Wallet-System/wallet_proj_qt/simple_wallet/debug/moc_predefs.h -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -IC:/Users/gawad/OneDrive/Desktop/Smart-Wallet-System/wallet_proj_qt/simple_wallet -IC:/libsodium-1.0.20-stable-mingw/libsodium-win64/include -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtSvgWidgets -IC:/Qt/6.9.0/mingw_64/include/QtSvg -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtCore -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IF:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include balance.h -o debug\moc_balance.cpp
 
 debug/moc_changepassword.cpp: changepassword.h \
 		C:/Qt/6.9.0/mingw_64/include/QtWidgets/QDialog \
@@ -1490,7 +1491,7 @@ debug/moc_changepassword.cpp: changepassword.h \
 		C:/Qt/6.9.0/mingw_64/include/QtGui/qguiapplication_platform.h \
 		debug/moc_predefs.h \
 		C:/Qt/6.9.0/mingw_64/bin/moc.exe
-	C:\Qt\6.9.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Hp/Documents/Smart-Wallet-System/wallet_proj_qt/simple_wallet/debug/moc_predefs.h -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -IC:/Users/Hp/Documents/Smart-Wallet-System/wallet_proj_qt/simple_wallet -IC:/libsodium-1.0.20-stable-mingw/libsodium-win64/include -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtSvgWidgets -IC:/Qt/6.9.0/mingw_64/include/QtSvg -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtCore -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IF:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include changepassword.h -o debug\moc_changepassword.cpp
+	C:\Qt\6.9.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/gawad/OneDrive/Desktop/Smart-Wallet-System/wallet_proj_qt/simple_wallet/debug/moc_predefs.h -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -IC:/Users/gawad/OneDrive/Desktop/Smart-Wallet-System/wallet_proj_qt/simple_wallet -IC:/libsodium-1.0.20-stable-mingw/libsodium-win64/include -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtSvgWidgets -IC:/Qt/6.9.0/mingw_64/include/QtSvg -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtCore -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IF:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include changepassword.h -o debug\moc_changepassword.cpp
 
 debug/moc_editprofile.cpp: editprofile.h \
 		C:/Qt/6.9.0/mingw_64/include/QtWidgets/QDialog \
@@ -1693,7 +1694,7 @@ debug/moc_editprofile.cpp: editprofile.h \
 		C:/Qt/6.9.0/mingw_64/include/QtGui/qguiapplication_platform.h \
 		debug/moc_predefs.h \
 		C:/Qt/6.9.0/mingw_64/bin/moc.exe
-	C:\Qt\6.9.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Hp/Documents/Smart-Wallet-System/wallet_proj_qt/simple_wallet/debug/moc_predefs.h -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -IC:/Users/Hp/Documents/Smart-Wallet-System/wallet_proj_qt/simple_wallet -IC:/libsodium-1.0.20-stable-mingw/libsodium-win64/include -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtSvgWidgets -IC:/Qt/6.9.0/mingw_64/include/QtSvg -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtCore -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IF:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include editprofile.h -o debug\moc_editprofile.cpp
+	C:\Qt\6.9.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/gawad/OneDrive/Desktop/Smart-Wallet-System/wallet_proj_qt/simple_wallet/debug/moc_predefs.h -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -IC:/Users/gawad/OneDrive/Desktop/Smart-Wallet-System/wallet_proj_qt/simple_wallet -IC:/libsodium-1.0.20-stable-mingw/libsodium-win64/include -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtSvgWidgets -IC:/Qt/6.9.0/mingw_64/include/QtSvg -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtCore -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IF:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include editprofile.h -o debug\moc_editprofile.cpp
 
 debug/moc_loginwindow.cpp: loginwindow.h \
 		C:/Qt/6.9.0/mingw_64/include/QtWidgets/QMainWindow \
@@ -1897,7 +1898,7 @@ debug/moc_loginwindow.cpp: loginwindow.h \
 		C:/Qt/6.9.0/mingw_64/include/QtWidgets/qtabwidget.h \
 		debug/moc_predefs.h \
 		C:/Qt/6.9.0/mingw_64/bin/moc.exe
-	C:\Qt\6.9.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Hp/Documents/Smart-Wallet-System/wallet_proj_qt/simple_wallet/debug/moc_predefs.h -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -IC:/Users/Hp/Documents/Smart-Wallet-System/wallet_proj_qt/simple_wallet -IC:/libsodium-1.0.20-stable-mingw/libsodium-win64/include -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtSvgWidgets -IC:/Qt/6.9.0/mingw_64/include/QtSvg -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtCore -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IF:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include loginwindow.h -o debug\moc_loginwindow.cpp
+	C:\Qt\6.9.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/gawad/OneDrive/Desktop/Smart-Wallet-System/wallet_proj_qt/simple_wallet/debug/moc_predefs.h -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -IC:/Users/gawad/OneDrive/Desktop/Smart-Wallet-System/wallet_proj_qt/simple_wallet -IC:/libsodium-1.0.20-stable-mingw/libsodium-win64/include -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtSvgWidgets -IC:/Qt/6.9.0/mingw_64/include/QtSvg -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtCore -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IF:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include loginwindow.h -o debug\moc_loginwindow.cpp
 
 debug/moc_mainwindow.cpp: mainwindow.h \
 		C:/Qt/6.9.0/mingw_64/include/QtWidgets/QMainWindow \
@@ -2137,7 +2138,7 @@ debug/moc_mainwindow.cpp: mainwindow.h \
 		adduser.h \
 		debug/moc_predefs.h \
 		C:/Qt/6.9.0/mingw_64/bin/moc.exe
-	C:\Qt\6.9.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Hp/Documents/Smart-Wallet-System/wallet_proj_qt/simple_wallet/debug/moc_predefs.h -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -IC:/Users/Hp/Documents/Smart-Wallet-System/wallet_proj_qt/simple_wallet -IC:/libsodium-1.0.20-stable-mingw/libsodium-win64/include -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtSvgWidgets -IC:/Qt/6.9.0/mingw_64/include/QtSvg -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtCore -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IF:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include mainwindow.h -o debug\moc_mainwindow.cpp
+	C:\Qt\6.9.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/gawad/OneDrive/Desktop/Smart-Wallet-System/wallet_proj_qt/simple_wallet/debug/moc_predefs.h -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -IC:/Users/gawad/OneDrive/Desktop/Smart-Wallet-System/wallet_proj_qt/simple_wallet -IC:/libsodium-1.0.20-stable-mingw/libsodium-win64/include -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtSvgWidgets -IC:/Qt/6.9.0/mingw_64/include/QtSvg -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtCore -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IF:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include mainwindow.h -o debug\moc_mainwindow.cpp
 
 debug/moc_mycustomrow1.cpp: mycustomrow1.h \
 		C:/Qt/6.9.0/mingw_64/include/QtWidgets/QWidget \
@@ -2339,7 +2340,7 @@ debug/moc_mycustomrow1.cpp: mycustomrow1.h \
 		C:/Qt/6.9.0/mingw_64/include/QtGui/qguiapplication_platform.h \
 		debug/moc_predefs.h \
 		C:/Qt/6.9.0/mingw_64/bin/moc.exe
-	C:\Qt\6.9.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Hp/Documents/Smart-Wallet-System/wallet_proj_qt/simple_wallet/debug/moc_predefs.h -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -IC:/Users/Hp/Documents/Smart-Wallet-System/wallet_proj_qt/simple_wallet -IC:/libsodium-1.0.20-stable-mingw/libsodium-win64/include -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtSvgWidgets -IC:/Qt/6.9.0/mingw_64/include/QtSvg -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtCore -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IF:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include mycustomrow1.h -o debug\moc_mycustomrow1.cpp
+	C:\Qt\6.9.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/gawad/OneDrive/Desktop/Smart-Wallet-System/wallet_proj_qt/simple_wallet/debug/moc_predefs.h -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -IC:/Users/gawad/OneDrive/Desktop/Smart-Wallet-System/wallet_proj_qt/simple_wallet -IC:/libsodium-1.0.20-stable-mingw/libsodium-win64/include -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtSvgWidgets -IC:/Qt/6.9.0/mingw_64/include/QtSvg -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtCore -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IF:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include mycustomrow1.h -o debug\moc_mycustomrow1.cpp
 
 debug/moc_requestitem.cpp: requestitem.h \
 		C:/Qt/6.9.0/mingw_64/include/QtWidgets/QWidget \
@@ -2542,7 +2543,7 @@ debug/moc_requestitem.cpp: requestitem.h \
 		Transaction.h \
 		debug/moc_predefs.h \
 		C:/Qt/6.9.0/mingw_64/bin/moc.exe
-	C:\Qt\6.9.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Hp/Documents/Smart-Wallet-System/wallet_proj_qt/simple_wallet/debug/moc_predefs.h -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -IC:/Users/Hp/Documents/Smart-Wallet-System/wallet_proj_qt/simple_wallet -IC:/libsodium-1.0.20-stable-mingw/libsodium-win64/include -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtSvgWidgets -IC:/Qt/6.9.0/mingw_64/include/QtSvg -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtCore -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IF:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include requestitem.h -o debug\moc_requestitem.cpp
+	C:\Qt\6.9.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/gawad/OneDrive/Desktop/Smart-Wallet-System/wallet_proj_qt/simple_wallet/debug/moc_predefs.h -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -IC:/Users/gawad/OneDrive/Desktop/Smart-Wallet-System/wallet_proj_qt/simple_wallet -IC:/libsodium-1.0.20-stable-mingw/libsodium-win64/include -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtSvgWidgets -IC:/Qt/6.9.0/mingw_64/include/QtSvg -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtCore -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IF:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include requestitem.h -o debug\moc_requestitem.cpp
 
 debug/moc_signupwindow.cpp: signupwindow.h \
 		C:/Qt/6.9.0/mingw_64/include/QtWidgets/QDialog \
@@ -2745,7 +2746,7 @@ debug/moc_signupwindow.cpp: signupwindow.h \
 		C:/Qt/6.9.0/mingw_64/include/QtGui/qguiapplication_platform.h \
 		debug/moc_predefs.h \
 		C:/Qt/6.9.0/mingw_64/bin/moc.exe
-	C:\Qt\6.9.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Hp/Documents/Smart-Wallet-System/wallet_proj_qt/simple_wallet/debug/moc_predefs.h -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -IC:/Users/Hp/Documents/Smart-Wallet-System/wallet_proj_qt/simple_wallet -IC:/libsodium-1.0.20-stable-mingw/libsodium-win64/include -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtSvgWidgets -IC:/Qt/6.9.0/mingw_64/include/QtSvg -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtCore -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IF:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include signupwindow.h -o debug\moc_signupwindow.cpp
+	C:\Qt\6.9.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/gawad/OneDrive/Desktop/Smart-Wallet-System/wallet_proj_qt/simple_wallet/debug/moc_predefs.h -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -IC:/Users/gawad/OneDrive/Desktop/Smart-Wallet-System/wallet_proj_qt/simple_wallet -IC:/libsodium-1.0.20-stable-mingw/libsodium-win64/include -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtSvgWidgets -IC:/Qt/6.9.0/mingw_64/include/QtSvg -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtCore -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IF:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include signupwindow.h -o debug\moc_signupwindow.cpp
 
 debug/moc_usermainmenu.cpp: usermainmenu.h \
 		C:/Qt/6.9.0/mingw_64/include/QtWidgets/QDialog \
@@ -2948,7 +2949,7 @@ debug/moc_usermainmenu.cpp: usermainmenu.h \
 		C:/Qt/6.9.0/mingw_64/include/QtGui/qguiapplication_platform.h \
 		debug/moc_predefs.h \
 		C:/Qt/6.9.0/mingw_64/bin/moc.exe
-	C:\Qt\6.9.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Hp/Documents/Smart-Wallet-System/wallet_proj_qt/simple_wallet/debug/moc_predefs.h -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -IC:/Users/Hp/Documents/Smart-Wallet-System/wallet_proj_qt/simple_wallet -IC:/libsodium-1.0.20-stable-mingw/libsodium-win64/include -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtSvgWidgets -IC:/Qt/6.9.0/mingw_64/include/QtSvg -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtCore -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IF:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include usermainmenu.h -o debug\moc_usermainmenu.cpp
+	C:\Qt\6.9.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/gawad/OneDrive/Desktop/Smart-Wallet-System/wallet_proj_qt/simple_wallet/debug/moc_predefs.h -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -IC:/Users/gawad/OneDrive/Desktop/Smart-Wallet-System/wallet_proj_qt/simple_wallet -IC:/libsodium-1.0.20-stable-mingw/libsodium-win64/include -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtSvgWidgets -IC:/Qt/6.9.0/mingw_64/include/QtSvg -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtCore -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IF:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include usermainmenu.h -o debug\moc_usermainmenu.cpp
 
 debug/moc_usersendrequest_gui.cpp: usersendrequest_gui.h \
 		C:/Qt/6.9.0/mingw_64/include/QtWidgets/QWidget \
@@ -3150,7 +3151,7 @@ debug/moc_usersendrequest_gui.cpp: usersendrequest_gui.h \
 		C:/Qt/6.9.0/mingw_64/include/QtGui/qguiapplication_platform.h \
 		debug/moc_predefs.h \
 		C:/Qt/6.9.0/mingw_64/bin/moc.exe
-	C:\Qt\6.9.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Hp/Documents/Smart-Wallet-System/wallet_proj_qt/simple_wallet/debug/moc_predefs.h -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -IC:/Users/Hp/Documents/Smart-Wallet-System/wallet_proj_qt/simple_wallet -IC:/libsodium-1.0.20-stable-mingw/libsodium-win64/include -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtSvgWidgets -IC:/Qt/6.9.0/mingw_64/include/QtSvg -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtCore -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IF:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include usersendrequest_gui.h -o debug\moc_usersendrequest_gui.cpp
+	C:\Qt\6.9.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/gawad/OneDrive/Desktop/Smart-Wallet-System/wallet_proj_qt/simple_wallet/debug/moc_predefs.h -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -IC:/Users/gawad/OneDrive/Desktop/Smart-Wallet-System/wallet_proj_qt/simple_wallet -IC:/libsodium-1.0.20-stable-mingw/libsodium-win64/include -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtSvgWidgets -IC:/Qt/6.9.0/mingw_64/include/QtSvg -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtCore -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IF:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include usersendrequest_gui.h -o debug\moc_usersendrequest_gui.cpp
 
 debug/moc_view_all_transactions.cpp: view_all_transactions.h \
 		C:/Qt/6.9.0/mingw_64/include/QtWidgets/QWidget \
@@ -3352,7 +3353,7 @@ debug/moc_view_all_transactions.cpp: view_all_transactions.h \
 		C:/Qt/6.9.0/mingw_64/include/QtGui/qguiapplication_platform.h \
 		debug/moc_predefs.h \
 		C:/Qt/6.9.0/mingw_64/bin/moc.exe
-	C:\Qt\6.9.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Hp/Documents/Smart-Wallet-System/wallet_proj_qt/simple_wallet/debug/moc_predefs.h -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -IC:/Users/Hp/Documents/Smart-Wallet-System/wallet_proj_qt/simple_wallet -IC:/libsodium-1.0.20-stable-mingw/libsodium-win64/include -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtSvgWidgets -IC:/Qt/6.9.0/mingw_64/include/QtSvg -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtCore -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IF:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include view_all_transactions.h -o debug\moc_view_all_transactions.cpp
+	C:\Qt\6.9.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/gawad/OneDrive/Desktop/Smart-Wallet-System/wallet_proj_qt/simple_wallet/debug/moc_predefs.h -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -IC:/Users/gawad/OneDrive/Desktop/Smart-Wallet-System/wallet_proj_qt/simple_wallet -IC:/libsodium-1.0.20-stable-mingw/libsodium-win64/include -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtSvgWidgets -IC:/Qt/6.9.0/mingw_64/include/QtSvg -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtCore -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IF:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include view_all_transactions.h -o debug\moc_view_all_transactions.cpp
 
 debug/moc_viewusers.cpp: viewusers.h \
 		C:/Qt/6.9.0/mingw_64/include/QtWidgets/QDialog \
@@ -3556,7 +3557,7 @@ debug/moc_viewusers.cpp: viewusers.h \
 		User.h \
 		debug/moc_predefs.h \
 		C:/Qt/6.9.0/mingw_64/bin/moc.exe
-	C:\Qt\6.9.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Hp/Documents/Smart-Wallet-System/wallet_proj_qt/simple_wallet/debug/moc_predefs.h -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -IC:/Users/Hp/Documents/Smart-Wallet-System/wallet_proj_qt/simple_wallet -IC:/libsodium-1.0.20-stable-mingw/libsodium-win64/include -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtSvgWidgets -IC:/Qt/6.9.0/mingw_64/include/QtSvg -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtCore -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IF:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include viewusers.h -o debug\moc_viewusers.cpp
+	C:\Qt\6.9.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/gawad/OneDrive/Desktop/Smart-Wallet-System/wallet_proj_qt/simple_wallet/debug/moc_predefs.h -IC:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -IC:/Users/gawad/OneDrive/Desktop/Smart-Wallet-System/wallet_proj_qt/simple_wallet -IC:/libsodium-1.0.20-stable-mingw/libsodium-win64/include -IC:/Qt/6.9.0/mingw_64/include -IC:/Qt/6.9.0/mingw_64/include/QtSvgWidgets -IC:/Qt/6.9.0/mingw_64/include/QtSvg -IC:/Qt/6.9.0/mingw_64/include/QtWidgets -IC:/Qt/6.9.0/mingw_64/include/QtGui -IC:/Qt/6.9.0/mingw_64/include/QtCore -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IF:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IF:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include viewusers.h -o debug\moc_viewusers.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
@@ -3910,7 +3911,73 @@ debug/Login.o: Login.cpp Login.h \
 		C:/Qt/6.9.0/mingw_64/include/QtWidgets/qrubberband.h \
 		editprofile.h \
 		view_all_transactions.h \
-		adduser.h
+		adduser.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/version.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/export.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/core.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_aead_aegis128l.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_aead_aegis256.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_aead_aes256gcm.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_aead_chacha20poly1305.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_aead_xchacha20poly1305.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_auth.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_auth_hmacsha512256.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_auth_hmacsha512.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_hash_sha512.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_auth_hmacsha256.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_hash_sha256.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_box.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_box_curve25519xsalsa20poly1305.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_stream_xsalsa20.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_core_hchacha20.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_core_hsalsa20.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_core_salsa20.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_core_salsa2012.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_core_salsa208.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_generichash.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_generichash_blake2b.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_hash.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_kdf.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_kdf_blake2b.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_kdf_hkdf_sha256.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_kdf_hkdf_sha512.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_kx.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_onetimeauth.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_onetimeauth_poly1305.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_pwhash.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_pwhash_argon2i.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_pwhash_argon2id.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_scalarmult.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_scalarmult_curve25519.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_secretbox.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_secretbox_xsalsa20poly1305.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_secretstream_xchacha20poly1305.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_stream_chacha20.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_shorthash.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_shorthash_siphash24.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_sign.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_sign_ed25519.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_stream.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_stream_salsa20.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_verify_16.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_verify_32.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_verify_64.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/randombytes.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/randombytes_internal_random.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/randombytes_sysrandom.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/runtime.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/utils.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_box_curve25519xchacha20poly1305.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_stream_xchacha20.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_core_ed25519.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_core_ristretto255.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_pwhash_scryptsalsa208sha256.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_scalarmult_ed25519.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_scalarmult_ristretto255.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_secretbox_xchacha20poly1305.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_stream_salsa2012.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_stream_salsa208.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\Login.o Login.cpp
 
 debug/SignUp.o: SignUp.cpp SignUp.h \
@@ -4391,7 +4458,73 @@ debug/UserManagement.o: UserManagement.cpp UserManagement.h \
 		C:/Qt/6.9.0/mingw_64/include/QtGui/qinputmethod.h \
 		C:/Qt/6.9.0/mingw_64/include/QtCore/qlocale.h \
 		C:/Qt/6.9.0/mingw_64/include/QtGui/qguiapplication_platform.h \
-		C:/Qt/6.9.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h
+		C:/Qt/6.9.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/version.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/export.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/core.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_aead_aegis128l.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_aead_aegis256.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_aead_aes256gcm.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_aead_chacha20poly1305.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_aead_xchacha20poly1305.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_auth.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_auth_hmacsha512256.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_auth_hmacsha512.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_hash_sha512.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_auth_hmacsha256.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_hash_sha256.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_box.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_box_curve25519xsalsa20poly1305.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_stream_xsalsa20.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_core_hchacha20.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_core_hsalsa20.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_core_salsa20.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_core_salsa2012.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_core_salsa208.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_generichash.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_generichash_blake2b.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_hash.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_kdf.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_kdf_blake2b.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_kdf_hkdf_sha256.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_kdf_hkdf_sha512.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_kx.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_onetimeauth.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_onetimeauth_poly1305.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_pwhash.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_pwhash_argon2i.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_pwhash_argon2id.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_scalarmult.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_scalarmult_curve25519.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_secretbox.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_secretbox_xsalsa20poly1305.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_secretstream_xchacha20poly1305.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_stream_chacha20.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_shorthash.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_shorthash_siphash24.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_sign.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_sign_ed25519.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_stream.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_stream_salsa20.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_verify_16.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_verify_32.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_verify_64.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/randombytes.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/randombytes_internal_random.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/randombytes_sysrandom.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/runtime.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/utils.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_box_curve25519xchacha20poly1305.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_stream_xchacha20.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_core_ed25519.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_core_ristretto255.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_pwhash_scryptsalsa208sha256.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_scalarmult_ed25519.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_scalarmult_ristretto255.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_secretbox_xchacha20poly1305.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_stream_salsa2012.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_stream_salsa208.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\UserManagement.o UserManagement.cpp
 
 debug/adduser.o: adduser.cpp adduser.h \
@@ -6697,6 +6830,72 @@ debug/main.o: main.cpp mainwindow.h \
 		editprofile.h \
 		view_all_transactions.h \
 		adduser.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/version.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/export.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/core.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_aead_aegis128l.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_aead_aegis256.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_aead_aes256gcm.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_aead_chacha20poly1305.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_aead_xchacha20poly1305.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_auth.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_auth_hmacsha512256.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_auth_hmacsha512.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_hash_sha512.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_auth_hmacsha256.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_hash_sha256.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_box.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_box_curve25519xsalsa20poly1305.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_stream_xsalsa20.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_core_hchacha20.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_core_hsalsa20.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_core_salsa20.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_core_salsa2012.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_core_salsa208.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_generichash.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_generichash_blake2b.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_hash.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_kdf.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_kdf_blake2b.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_kdf_hkdf_sha256.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_kdf_hkdf_sha512.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_kx.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_onetimeauth.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_onetimeauth_poly1305.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_pwhash.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_pwhash_argon2i.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_pwhash_argon2id.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_scalarmult.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_scalarmult_curve25519.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_secretbox.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_secretbox_xsalsa20poly1305.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_secretstream_xchacha20poly1305.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_stream_chacha20.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_shorthash.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_shorthash_siphash24.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_sign.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_sign_ed25519.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_stream.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_stream_salsa20.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_verify_16.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_verify_32.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_verify_64.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/randombytes.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/randombytes_internal_random.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/randombytes_sysrandom.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/runtime.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/utils.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_box_curve25519xchacha20poly1305.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_stream_xchacha20.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_core_ed25519.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_core_ristretto255.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_pwhash_scryptsalsa208sha256.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_scalarmult_ed25519.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_scalarmult_ristretto255.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_secretbox_xchacha20poly1305.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_stream_salsa2012.h \
+		C:/libsodium-1.0.20-stable-mingw/libsodium-win64/include/sodium/crypto_stream_salsa208.h \
 		C:/Qt/6.9.0/mingw_64/include/QtWidgets/QApplication \
 		C:/Qt/6.9.0/mingw_64/include/QtWidgets/qapplication.h \
 		FileHandler.h \

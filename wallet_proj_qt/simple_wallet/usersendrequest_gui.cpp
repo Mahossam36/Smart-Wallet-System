@@ -80,6 +80,12 @@ void userSendRequest_gui::on_done_clicked()
         return;
     }
 
+
+    if(username == Login::ActiveUser) {
+        QMessageBox::warning(this, "Input Error", "You cannot request or send money to your self");
+        return;
+    }
+
     int radioOption;
 
     QAbstractButton * selected = ui->buttonGroup->checkedButton();

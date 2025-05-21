@@ -19,5 +19,6 @@
     <qresource prefix="/"/>
     <qresource prefix="/sendrequest">
         <file>undraw_vault_tyfh.svg</file>
+        <file>checked.png</file>
     </qresource>
 </RCC>

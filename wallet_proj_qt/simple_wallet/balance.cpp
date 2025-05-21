@@ -19,7 +19,7 @@ void balance::showEvent(QShowEvent *event) {
 
     if (it != FileHandler::usersData.end()) {
         double currentBalance = it->second.getBalance();
-        QString balanceStr = QString("Your Balance: $%1").arg(currentBalance, 0, 'f', 2);
+        QString balanceStr = QString("Your Balance: EGP%1").arg(currentBalance, 0, 'f', 2);
         ui->balancelabel->setText(balanceStr);  // 👈 make sure balanceLabel exists in the UI
     } else {
         ui->balancelabel->setText("User not found.");

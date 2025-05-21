@@ -8,7 +8,6 @@
 using json = nlohmann::json;
 using namespace std;
 
-// this line is added for every data structure in header file otherwise error happens
 unordered_map<string, User> FileHandler::usersData;
 unordered_map<int,Transaction> FileHandler::transactionsData;
 unordered_map<string,set<int>> FileHandler::senderData;
@@ -89,7 +88,7 @@ void FileHandler::saveTransactionsToFile() {
 	ofstream saveinJson("transactionsData.json");
 
 	if (saveinJson.is_open()) {
-		saveinJson << setw(4) << jTransactions;  // Pretty print with indentation
+        saveinJson << setw(4) << jTransactions;
 		saveinJson.close();
 		cout << "Successfully saved user data to transactionsData.json.\n";
 	}
@@ -108,11 +107,11 @@ void FileHandler::loadUsersFromFile() {
 
 		//iterating on each user on json file
 		for (const auto& i : jUsers.items()) {
-			const string& username = i.key(); // el.key() will be the "username"
-			const json& juser = i.value();  // el.value() contains the user object
+            const string& username = i.key();
+            const json& juser = i.value();
 
 			try {
-				//  add users by the correct order
+
 				User user(
 					juser.at("firstName").get<string>(),
 					juser.at("lastName").get<string>(),
@@ -126,7 +125,7 @@ void FileHandler::loadUsersFromFile() {
 					juser.at("userfailedattempts").get<bool>()
 				);
 
-				usersData[username] = user;  // Storing user in the map
+                usersData[username] = user;
 			}
 			catch (const json::exception& e) {
 				cerr << "User '" << username << "' has invalid data: " << e.what() << '\n';

@@ -56,8 +56,6 @@ void approveRequestWin::showListOfRequests() {
 void approveRequestWin::handleAccept(int transactionId) {
     int approveRes = transactionsManagement::approveRequest(transactionId, false);
 
-    cout << "Accept : " << approveRes  << " transID : " << transactionId << endl;
-
     if(approveRes == 1) {
         QMessageBox::warning(this, "Balance Error", "you dont have enough balance");
         return;
@@ -75,7 +73,6 @@ void approveRequestWin::handleAccept(int transactionId) {
 
 void approveRequestWin::handleReject(int transactionId) {
     int approveRes = transactionsManagement::approveRequest(transactionId, true);
-    cout << "Reject : " << approveRes  << " transID : " << transactionId << endl;
 
     auto it = itemMap.find(transactionId);
     if(it != itemMap.end()) {
