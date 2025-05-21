@@ -47,7 +47,7 @@ void Admin_ViewUser_Transaction:: displa_User_Info_on_Screen(){
     ui->PhoneNo_Labe->setText(QString::fromStdString(user.getPhoneNumber()));
     ui->UserName_Label->setText(QString::fromStdString(user.getUsername()));
     ui->Email_Label->setText(QString::fromStdString(user.getEmail()));
-    ui->Nationalid_Labe->setText(QString::fromStdString(to_string((user.getId()))));
+    ui->Nationalid_Labe->setText(QString::fromStdString(user.getId()));
     ui->Balance_Labe->setText(QString::fromStdString(to_string(user.getBalance())));
 }
 

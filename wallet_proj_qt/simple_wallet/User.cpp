@@ -6,7 +6,7 @@ User::User() {
 
 };
 
-User::User(const string& first, const string& last, const string& uname, const string& pass, int userId,const string& mail, const string& phone
+User::User(const string& first, const string& last, const string& uname, const string& pass, const string &userId,const string& mail, const string& phone
 	, double initialBalance, bool isSus,bool flag) {
 	firstName = first;
 	lastName = last;
@@ -55,7 +55,7 @@ bool User::getuserfailedattempts() const
 	return userfailedattempts;
 }
 
-int User::getId() const {
+string User::getId() const {
 	return id;
 }
 
@@ -72,7 +72,7 @@ void User::setBalance(double newBalance) {
 	balance = newBalance;
 }
 
-void User::setId(int newId) {
+void User::setId(string &newId) {
 	id = newId;
 }
 

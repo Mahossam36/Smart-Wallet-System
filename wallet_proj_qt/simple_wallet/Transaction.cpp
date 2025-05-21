@@ -79,14 +79,13 @@ void Transaction::saveTransactions_to_structures(){
 
 
 string Transaction::getFormattedTransactionTime() const {
-    time_t timeT = chrono::system_clock::to_time_t(transactionTime);
+    time_t timeT = std::chrono::system_clock::to_time_t(transactionTime);
 
-
-    struct tm* tm = std::localtime(&timeT);
-
+    std::tm tm{};
+    localtime_s(&tm, &timeT);
 
     std::stringstream ss;
-    ss << std::put_time(tm, "%Y-%m-%d %H:%M:%S");
+    ss << std::put_time(&tm, "%Y-%m-%d %H:%M:%S");
     return ss.str();
 }
 

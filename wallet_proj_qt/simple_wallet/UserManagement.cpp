@@ -31,7 +31,7 @@ bool UserManagement::searchAccount(const string& username, const string& passwor
 
 void UserManagement::createAccount(const string& firstName, const string& lastName, //create the user and save it to the hashe table 
 	const string& username, const string& password,
-    const string& phoneNumber, const string& email, int id) {
+    const string& phoneNumber, const string& email, string & id) {
 
  string hashpass= hashPass(password);
     User newUser(firstName, lastName, username, hashpass, id,email, phoneNumber);
@@ -100,7 +100,7 @@ void UserManagement::deleteUser(const string& username){
     }
 }
 
-std::string toHexString(const unsigned char* hash, size_t length) {
+string toHexString(const unsigned char* hash, size_t length) {
     std::ostringstream oss;
     oss << std::hex << std::setfill('0');
     for (size_t i = 0; i < length; ++i) {

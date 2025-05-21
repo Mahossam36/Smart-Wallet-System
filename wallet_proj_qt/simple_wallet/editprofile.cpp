@@ -34,7 +34,7 @@ void EditProfile::populate(){
     ui->username_label->setText(QString::fromStdString(cuser.getUsername()));
     ui->Fname_lineedit->setText(QString::fromStdString((cuser.getFirstName())));
     ui->LastName_lineedit->setText(QString::fromStdString(cuser.getLastName()));
-    ui->id_label->setText(QString::fromStdString(to_string(cuser.getId())));
+    ui->id_label->setText(QString::fromStdString(cuser.getId()));
     ui->email_lineedit->setText(QString::fromStdString(cuser.getEmail()));
     ui->phonenum_label->setText(QString::fromStdString(cuser.getPhoneNumber()));
     ui->Balance_lineEdit->setText(QString::fromStdString(to_string(cuser.getBalance())));

@@ -12,7 +12,7 @@ private:
 	string password;
 	string phoneNumber;
     string email;
-	int id;
+    string id;
 	double balance;
 	bool isSuspended;
 	bool userfailedattempts;
@@ -21,7 +21,7 @@ private:
 public:
 	// constructor
 	User();
-    User(const string& first, const string& last, const string& uname, const string& pass, int userId, const string& mail, const string& phone = ""
+    User(const string& first, const string& last, const string& uname, const string& pass,const string & userId, const string& mail, const string& phone = ""
 		, double initialBalance = 0.0, bool isSus = false ,bool flag=true);
 
 	// Getters
@@ -31,7 +31,7 @@ public:
 	string getPassword() const;
 	string getPhoneNumber() const;
     string getEmail() const;
-	int getId() const;
+    string getId() const;
 	double getBalance() const;
 	bool getSuspensionStatus() const;
 	bool getuserfailedattempts()const;
@@ -40,7 +40,7 @@ public:
 	// Setters
 	void setPassword(const string& newPass);
 	void setBalance(double newBalance);
-	void setId(int newId);
+    void setId(string & newId);
 	void setPhoneNumber(const string& newPhone);
 	void setuserfailedattempts(bool x);
     void setEmail(string& mail);

@@ -6,6 +6,7 @@
 #include <iostream>
 #include <QString>
 #include "UserManagement.h"
+#include <regex>
 #include <string>
 
 signupwindow::signupwindow(QWidget *parent)
@@ -89,6 +90,19 @@ void signupwindow::on_signUpButton_clicked()
     }
 
 
+    if(id.length() != 14) {
+        QMessageBox::warning(this, "Input Error", "National Id must contain 14 digits");
+        return;
+    }
+
+    std::regex pattern("^\\d+$");
+
+    if(!std::regex_match(id, pattern)) {
+
+        QMessageBox::warning(this, "Input Error", "National Id must contain only numbers");
+        return;
+    }
+
     string validationMessage = SignUp::DataValidation(firstname, lastname, phonenumber);
     if(validationMessage != "") {
         QString qValidMessage = QString::fromStdString(validationMessage);
@@ -108,7 +122,10 @@ void signupwindow::on_signUpButton_clicked()
         return;
     }
 
-    UserManagement::createAccount(firstname,lastname,username,password, phonenumber, email, stoi(id));
+
+
+
+    UserManagement::createAccount(firstname,lastname,username,password, phonenumber, email, id);
     QMessageBox::information(this, "Sign Up Successful", "Created successfully!");
 
     ui->firstNameLine->clear();

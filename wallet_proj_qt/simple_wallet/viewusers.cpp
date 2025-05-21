@@ -121,7 +121,7 @@ void ViewUsers::on_listWidget_currentRowChanged(int currentRow) //return the ind
     ui->username_label->setText(QString::fromStdString(it->first));
     ui->fname_label->setText(QString::fromStdString((it->second).getFirstName()));
     ui->lname_label->setText(QString::fromStdString((it->second).getLastName()));
-    ui->id_label->setText(QString::fromStdString(to_string((it->second).getId())));
+    ui->id_label->setText(QString::fromStdString((it->second).getId()));
     ui->email_lineedit->setText(QString::fromStdString((it->second).getEmail()));
    // ui->password_lineEdit->setText(QString::fromStdString((it->second).getPassword()));
     ui->phonenum_label->setText(QString::fromStdString((it->second).getPhoneNumber()));

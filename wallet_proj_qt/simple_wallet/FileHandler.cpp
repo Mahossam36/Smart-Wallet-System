@@ -117,7 +117,7 @@ void FileHandler::loadUsersFromFile() {
 					juser.at("lastName").get<string>(),
 					username,
 					juser.at("password").get<string>(),
-					juser.at("id").get<int>(),
+                    juser.at("id").get<string>(),
                     juser.at("email").get<string>(),
 					juser.at("phoneNumber").get<string>(),
 					juser.at("balance").get<double>(),
@@ -154,8 +154,6 @@ void FileHandler::loadTransactionsFromFile() {
 			time_t transTime = t.at("transTime").get<time_t>();
 			chrono::system_clock::time_point timestamp = chrono::system_clock::from_time_t(transTime);
 
-            cout << formatTimePoint(timestamp) << endl;
-
 			try {
 				Transaction loadedTransaction(
 					t.at("recipient").get<string>(),
@@ -183,13 +181,4 @@ void FileHandler::loadTransactionsFromFile() {
 }
 
 
-// i used it for testing the format of time (for testing only)
-string FileHandler::formatTimePoint(const chrono::system_clock::time_point& tp) {
-	time_t time_c = chrono::system_clock::to_time_t(tp);
-	tm local_tm{};
-	localtime_s(&local_tm, &time_c);
 
-	stringstream ss;
-	ss << put_time(&local_tm, "%d-%m-%Y %H:%M:%S");
-	return ss.str();
-}
