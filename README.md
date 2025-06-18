@@ -1,6 +1,6 @@
 # 💰 Simple Digital Wallet System
 
-A secure and feature-rich **C++ desktop application** for managing digital wallet operations. This system supports both **terminal-based backend logic** and a **graphical user interface (GUI)** for user-friendly interactions (built with **Qt**). It facilitates account management, transactions, and admin control using persistent **JSON-based storage**.
+A secure and feature-rich **C++ desktop application** for managing digital wallet operations. This system supports a **graphical user interface (GUI)** for user-friendly interactions (built with **Qt**). It facilitates account management, transactions, and admin control using persistent **JSON-based storage**.
 
 ---
 
